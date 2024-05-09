@@ -1,0 +1,26 @@
+.letterContainer {
+    width: 100%;
+    display: flex;
+}
+
+.letterContainerRight,
+.letterContainerLeft {
+    width: 50%;
+}
+
+.letterContainerRight {
+    font-family: 'Kolker Brush', cursive;
+    font-size: 35px;
+    line-height: 1.5;
+    color: white;
+    padding: 0 10%;
+}
+
+.letterContainerLeft {
+    display: flex;
+    font-size: 25px;
+    color: white;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 10%;
+}
