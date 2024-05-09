@@ -3,6 +3,7 @@ import styles from './style.module.css';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import img from 'public/images/salar_de_atacama.jpg';
 
 export default function Index({ imageAtLeft, content }) {
     const container = useRef(null);
@@ -26,7 +27,7 @@ export default function Index({ imageAtLeft, content }) {
         <div ref={container} className={styles.projects}>
             <div className={styles.projectDescription} ref={desciption} style={{ flexDirection: `${imageAtLeft ? 'row-reverse' : 'row'}` }}>
                 <div ref={imageContainer} className={styles.imageContainer}>
-                    <Image src={'/images/salar_de_atacama.jpg'} fill={true} alt="project image" priority={true} />
+                    <Image src={img} fill={true} alt="project image" priority={true} />
                 </div>
                 <div className={styles.column}>
                     {contentDescription.map((contentText, index) => {

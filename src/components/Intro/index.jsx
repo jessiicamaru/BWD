@@ -3,6 +3,7 @@ import styles from './style.module.css';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { CotCo, CotCo1 } from 'src/data.js';
 
 export default function Index() {
     const background = useRef(null);
@@ -26,11 +27,11 @@ export default function Index() {
     return (
         <div className={styles.homeHeader}>
             <div className={styles.backgroundImage} ref={background}>
-                <Image src={'/images/CotCo.jpg'} fill={true} alt="background image" priority={true} />
+                <Image src={CotCo} fill={true} alt="background image" priority={true} />
             </div>
             <div className={styles.intro}>
                 <div ref={introImage} data-scroll data-scroll-speed="0.3" className={styles.introImage}>
-                    <Image src={'/images/CotCo1.jpg'} alt="intro image" fill={true} priority={true} />
+                    <Image src={CotCo1} alt="intro image" fill={true} priority={true} />
                 </div>
                 <h1 data-scroll data-scroll-speed="0.7">
                     VIỆT NAM <br /> HÙNG CƯỜNG

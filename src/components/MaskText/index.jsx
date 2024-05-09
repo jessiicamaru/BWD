@@ -32,7 +32,7 @@ export default function Index() {
             <div ref={container} className={styles.container}>
                 <div ref={stickyMask} className={styles.stickyMask}>
                     <video controls={false} autoPlay loop muted className={styles.video}>
-                        <source src="/mp4/HuyenVi.mp4" type="video/mp4" />
+                        <source src="./mp4/HuyenVi.mp4" type="video/mp4" />
                     </video>
                 </div>
             </div>

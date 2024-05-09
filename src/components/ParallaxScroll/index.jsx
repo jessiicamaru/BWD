@@ -3,8 +3,9 @@ import styles from './style.module.css';
 import Image from 'next/image';
 import Lenis from '@studio-freight/lenis';
 import { useTransform, useScroll, motion } from 'framer-motion';
+import { pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12 } from 'src/data.js';
 
-const images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg'];
+const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12];
 
 export default function Index() {
     const gallery = useRef(null);
@@ -61,7 +62,7 @@ const Column = ({ images, y }) => {
             {images.map((src, i) => {
                 return (
                     <div key={i} className={styles.imageContainer}>
-                        <Image src={`/prallaxImages/${src}`} alt="image" fill />
+                        <Image src={src} alt="image" fill />
                     </div>
                 );
             })}
