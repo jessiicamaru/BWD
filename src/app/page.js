@@ -9,6 +9,7 @@ import MaskText from '../components/MaskText';
 import ParallaxScroll from '../components/ParallaxScroll';
 import GradientText from '../components/GradientText';
 import Letters from '../components/Letters';
+import CardScroll from '../components/CardScroll';
 
 export default function Home() {
     useEffect(() => {
@@ -20,10 +21,10 @@ export default function Home() {
 
     return (
         <main className={styles.main}>
-            <div className={styles.background}>
-                <Intro />
-                <Description />
-            </div>
+            <Intro />
+            <Description />
+            {/* <div className={styles.background}>
+            </div> */}
             <Projects
                 imageAtLeft={false}
                 content={{
@@ -138,7 +139,49 @@ export default function Home() {
                             image: '',
                         },
                         {
-                            content: 'Từ đó, nước Việt Nam thống nhất đã mở ra một kỷ nguyên mới hòa bình, thống nhất và xây dựng đất nước.',
+                            content: 'Từ đó, nước Việt Nam thống nhất đã mở ra một kỷ nguyên mới hòa bình, thống nhất và xây dựng đất nước. ',
+                            image: '',
+                        },
+                    ],
+                }}
+            />
+
+            <Projects
+                imageAtLeft={false}
+                content={{
+                    title: 'Giai đoạn đấu tranh và thống nhất',
+                    description: [
+                        {
+                            content:
+                                'Thế kỷ 19, Pháp xâm chiếm nước ta. Lần đầu tiên trong lịch sử chúng ta đương đầu với sự xâm lược của một nước phương Tây. Trong tình thế khó khăn đó đã có một bộ phận trí thức đưa ra những cải cách nhưng đều bị nhà Nguyễn bác bỏ. Sau đó đất nước rơi vào tình trạng lạc hậu, bế tắc. Việt Nam trở thành thuộc địa nửa phong kiến trong gần 100 năm từ 1858 đến 1945.',
+                            image: '',
+                        },
+                        {
+                            content:
+                                'Cuộc đấu tranh chống thực dân Pháp được khởi xướng bởi hai thế lực là giai cấp tư sản (đại đại diện là Việt Nam Quốc Dân Đảng) và giai cấp vô sản do Đảng Cộng sản Việt Nam lãnh đạo. ',
+                            image: '',
+                        },
+                        {
+                            content:
+                                'Sự ra đời của Đảng Cộng sản Việt Nam đánh dấu sức mạnh vượt trội của giai cấp công nhân và các phong trào cách mạng do giai cấp vô sản lãnh đạo. Tháng 8 năm 1945, dưới sự lãnh đạo của Đảng Cộng sản do Nguyễn Ái Quốc (sau này là Chủ tịch Hồ Chí Minh) đứng đầu đã phát động thành công cuộc tổng khởi nghĩa giành chính quyền. Với tuyên ngôn độc lập ngày 2 tháng 9 năm 1945, nước Việt Nam Dân chủ Cộng hòa ra đời.',
+                            image: '',
+                        },
+                        {
+                            content:
+                                'Chiến thắng tại Điện Biên Phủ và Hiệp định Geneva năm 1954 đánh dấu kết thúc cuộc kháng chiến chống Pháp, mở ra thời kỳ độc lập mới cho Việt Nam. Miền Bắc bước vào chủ nghĩa xã hội, trong khi miền Nam tạm dưới kiểm soát Pháp và Mỹ, nhưng cuộc tổng tuyển cử đã bị Hoa Kỳ can thiệp và không bao giờ diễn ra. Mỹ thành lập nước Cộng hòa miền Nam do Ngô Đình Diệm đứng đầu. Tạo ra sự chia cắt kéo dài hơn 20 năm cho Việt Nam.',
+                            image: '',
+                        },
+                        {
+                            content:
+                                'Từ năm 1954 đến năm 1975, Việt Nam lại phải tiến hành một cuộc chiến tranh giải phóng và thống nhất đất nước. Với bao gian khổ, chiến tranh đã kết thúc thắng lợi sau thắng lợi của Chiến dịch Hồ Chí Minh lịch sử năm 1975. ',
+                            image: '',
+                        },
+                        {
+                            content: 'Từ đó, nước Việt Nam thống nhất đã mở ra một kỷ nguyên mới hòa bình, thống nhất và xây dựng đất nước. ',
+                            image: '/images/CotCo1.jpg',
+                        },
+                        {
+                            content: '',
                             image: '',
                         },
                     ],
@@ -154,6 +197,8 @@ export default function Home() {
             <ParallaxScroll />
 
             <MaskText />
+
+            <CardScroll />
         </main>
     );
 }
