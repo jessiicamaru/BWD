@@ -36,22 +36,22 @@
     filter: brightness(0.7);
 }
 .floatingContainer .plane:nth-of-type(1) img:nth-of-type(1) {
-    left: 90%;
-    top: 70%;
+    left: 80%;
+    top: 65%;
 }
 .floatingContainer .plane:nth-of-type(1) img:nth-of-type(2) {
     left: 5%;
     top: 65%;
 }
 .floatingContainer .plane:nth-of-type(1) img:nth-of-type(3) {
-    left: 35%;
+    left: 30%;
     top: 0%;
 }
 .floatingContainer .plane:nth-of-type(2) {
     filter: brightness(0.6);
 }
 .floatingContainer .plane:nth-of-type(2) img:nth-of-type(1) {
-    left: 5%;
+    left: 1%;
     top: 10%;
 }
 .floatingContainer .plane:nth-of-type(2) img:nth-of-type(2) {
@@ -66,10 +66,10 @@
     filter: brightness(0.5);
 }
 .floatingContainer .plane:nth-of-type(3) img:nth-of-type(1) {
-    left: 65%;
-    top: 2.5%;
+    left: 55%;
+    top: 10%;
 }
 .floatingContainer .plane:nth-of-type(3) img:nth-of-type(2) {
-    left: 40%;
-    top: 75%;
+    left: 33%;
+    top: 60%;
 }

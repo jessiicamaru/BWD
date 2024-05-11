@@ -1,11 +1,11 @@
-import floating1 from '../public/images/floating_1.jpg';
-import floating2 from '../public/images/floating_2.jpg';
-import floating3 from '../public/images/floating_3.jpg';
-import floating4 from '../public/images/floating_4.jpg';
-import floating5 from '../public/images/floating_5.jpg';
-import floating6 from '../public/images/floating_6.jpg';
-import floating7 from '../public/images/floating_7.jpg';
-import floating8 from '../public/images/floating_8.jpg';
+import floating1 from '../public/images/ct1.jpg';
+import floating2 from '../public/images/ct2.jpg';
+import floating3 from '../public/images/ct4.jpg';
+import floating4 from '../public/images/ct5.jpeg';
+import floating5 from '../public/images/ct6.png';
+import floating6 from '../public/images/ct9.jpg';
+import floating7 from '../public/images/ct10.jpg';
+import floating8 from '../public/images/ct13.jpg';
 
 import pic1 from '../public/prallaxImages/1.jpg';
 import pic2 from '../public/prallaxImages/2.jpg';
@@ -22,6 +22,14 @@ import pic12 from '../public/prallaxImages/12.jpg';
 
 import CotCo from '../public/images/CotCo.jpg';
 import CotCo1 from '../public/images/CotCo1.jpg';
+
+import gd2 from '../public/images/gd2.png';
+import gd3 from '../public/images/gd3.png';
+
+import meChoCon from '../public/images/meChoCon.jpg';
+import ty from '../public/images/ty.png';
+import tsdd from '../public/images/tsdd.png';
+import nnmm from '../public/images/nnmm.png';
 
 export {
     floating1,
@@ -46,4 +54,10 @@ export {
     pic10,
     pic11,
     pic12,
+    gd2,
+    gd3,
+    meChoCon,
+    ty,
+    tsdd,
+    nnmm,
 };

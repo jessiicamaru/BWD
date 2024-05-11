@@ -3,10 +3,10 @@ import { useRef, useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
 
-const phrase =
-    'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.';
+// const phrase =
+//     'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.';
 
-export default function Index() {
+export default function Index({ content, fontFamily, fontSize }) {
     let refs = useRef([]);
     const body = useRef(null);
     const container = useRef(null);
@@ -57,9 +57,16 @@ export default function Index() {
     };
 
     return (
-        <div ref={container} className={styles.gradientTextContainer}>
+        <div
+            ref={container}
+            className={styles.gradientTextContainer}
+            style={{
+                fontFamily: fontFamily ? fontFamily : '',
+                fontSize: fontSize ? fontSize : '3.5vw',
+            }}
+        >
             <div ref={body} className={styles.gradientTextBox}>
-                {splitWords(phrase)}
+                {content ? splitWords(content) : ''}
             </div>
         </div>
     );

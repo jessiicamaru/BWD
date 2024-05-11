@@ -11,6 +11,8 @@ import GradientText from '../components/GradientText';
 import Letters from '../components/Letters';
 import CardScroll from '../components/CardScroll';
 
+import { gd2, gd3, meChoCon, ty, tsdd, nnmm } from '../data';
+
 export default function Home() {
     useEffect(() => {
         (async () => {
@@ -67,7 +69,7 @@ export default function Home() {
                         },
                         {
                             content:
-                                'Các phong trào đấu tranh của nhân dân ta đã làm cho kẻ thù suy yếu, đồng thời cổ vũ tinh thần đấu tranh của nhân dân ta, tạo điều kiện cho sự ra đời của chính quyền tự chủ ở thế kỷ X.',
+                                'Các phong trào đấu tranh của nhân dân ta đã làm cho kẻ thù suy yếu, đồng thời cổ vũ tinh thần đấu tranh của nhân dân ta, tạo điều kiện cho sự ra đời của chính quyền tự chủ ở thế kỷ 10.',
                             image: '',
                         },
                     ],
@@ -86,7 +88,7 @@ export default function Home() {
                         },
                         {
                             content:
-                                'Chiến thắng Bạch Đằng năm 938 đã mở ra kỷ nguyên mới trong lịch sử Việt Nam - kỷ nguyên phát triển của nhà nước phong kiến độc lập, kỷ nguyên xây dựng và bảo vệ tổ quốc.',
+                                'Chiến thắng Bạch Đằng năm 938 đã chấm dứt thời kỳ 1000 năm Bắc thuôc.  Mở ra kỷ nguyên mới trong lịch sử Việt Nam - kỷ nguyên phát triển của nhà nước phong kiến độc lập, kỷ nguyên xây dựng và bảo vệ tổ quốc.',
                             image: '',
                         },
                         {
@@ -120,12 +122,7 @@ export default function Home() {
                         },
                         {
                             content:
-                                'Tháng 8 năm 1945, dưới sự lãnh đạo của Đảng Cộng sản do Nguyễn Ái Quốc (sau này là Chủ tịch Hồ Chí Minh) đứng đầu đã phát động thành công cuộc tổng khởi nghĩa giành chính quyền.',
-                            image: '',
-                        },
-                        {
-                            content:
-                                'Chiều ngày 30/8/1945  Vua Bảo Đại trao lại ấn kiếm cho đại diện Chính phủ cách mạng dưới sự lãnh đạo của Chủ tịch Hồ Chí Minh, chấm dứt vĩnh viễn chế độ quân chủ tại Việt Nam.',
+                                'Tháng 8 năm 1945, dưới sự lãnh đạo của Đảng Cộng sản do Nguyễn Ái Quốc (sau này là Chủ tịch Hồ Chí Minh) đứng đầu đã phát động thành công cuộc tổng khởi nghĩa giành chính quyền. Chiều ngày 30/8/1945  Vua Bảo Đại trao lại ấn kiếm cho đại diện Chính phủ cách mạng dưới sự lãnh đạo của Chủ tịch Hồ Chí Minh, chấm dứt vĩnh viễn chế độ quân chủ tại Việt Nam.',
                             image: '',
                         },
                         {
@@ -167,11 +164,31 @@ export default function Home() {
 
             <FloatingImage />
 
-            <GradientText />
+            <GradientText
+                content={
+                    'Lịch sử Việt Nam là một chuỗi các trang sử hào hùng, đầy kiêu hãnh nhưng cũng không kém phần bi thương vì những cuộc chiến tranh tàn khốc. Mỗi một cuộc chiến tranh đều để lại những vết thương và nỗi đau sâu sắc hằn mãi trong tâm hồn người Việt….'
+                }
+            />
 
-            <Letters />
+            <Letters imgs={[gd2, gd3]} title={'Những mái ấm không trọn vẹn'} imgAtLeft={false} />
+
+            <Letters imgs={[meChoCon]} title={'Những người mẹ mòn mỏi chờ con'} imgAtLeft={true} />
+
+            <Letters imgs={[ty]} title={'Những mối tình tuổi 18 chưa thành'} imgAtLeft={false} />
+
+            <Letters imgs={[tsdd]} title={'Giấc mơ đoàn tụ không thành'} imgAtLeft={true} />
+
+            <GradientText
+                content={
+                    'Mẹ ạ! Trong hành trình này nhiều lúc đi đường con buồn lắm, nhớ nhà vô cùng mà lại vất vả nữa. Nhưng con luôn đấu tranh tinh thần, lúc này lùi lại một bước là sa ngã ngay. Vì vậy trong khi đi đường con luôn nhớ đến hình ảnh của mẹ dặn dò trước khi đi và lúc nào nghỉ thì con lại lấy thư của mẹ ra đọc để tự động viên tinh thần mình.'
+                }
+                fontFamily={'BeCool'}
+                fontSize={'21px'}
+            />
 
             <ParallaxScroll />
+
+            <GradientText />
 
             <MaskText />
 

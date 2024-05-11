@@ -52,18 +52,18 @@ export default function Index() {
             className={styles.floatingContainer}
         >
             <div ref={plane1} className={styles.plane}>
-                <Image src={floating1} alt="image" width={300} />
-                <Image src={floating2} alt="image" width={300} />
-                <Image src={floating7} alt="image" width={225} />
+                <Image src={floating1} alt="image" width={400} />
+                <Image src={floating2} alt="image" width={350} />
+                <Image src={floating7} alt="image" width={300} />
             </div>
             <div ref={plane2} className={styles.plane}>
-                <Image src={floating4} alt="image" width={250} />
-                <Image src={floating6} alt="image" width={200} />
+                <Image src={floating3} alt="image" width={350} />
+                <Image src={floating6} alt="image" width={300} />
                 <Image src={floating8} alt="image" width={225} />
             </div>
             <div ref={plane3} className={styles.plane}>
-                <Image src={floating3} alt="image" width={150} />
-                <Image src={floating5} alt="image" width={200} />
+                <Image src={floating4} alt="image" width={300} />
+                <Image src={floating5} alt="image" width={330} />
             </div>
             <div className={styles.title}>
                 <h1>Các di tích lịch sử</h1>
