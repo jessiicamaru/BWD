@@ -1,3 +1,4 @@
+'use client';
 import styles from './style.module.css';
 import { useRef, useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
