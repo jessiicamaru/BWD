@@ -32,12 +32,12 @@ export default function Home() {
                     description: [
                         {
                             content:
-                                'Việt Nam nằm trong khu vực được xem là cái nôi của nhân loại, một trong những trung tâm nông nghiệp trồng lúa nước sớm nhất, nơi diễn ra các cuộc cách mạng đá và luyện kim.  Người ta thường hay nhắc tới các truyền thuyết về Kinh Dương Vương, Lạc Long Quân, Phù Đổng Thiên Vương, Sơn Tinh – Thủy Tinh nhằm giải thích nguồn gốc và sự đấu tranh để tồn tại của dân tộc. ',
+                                'Việt Nam nằm trong khu vực được xem là cái nôi của nhân loại, một trong những trung tâm nông nghiệp trồng lúa nước sớm nhất, nơi diễn ra các cuộc cách mạng đá và luyện kim. Người ta thường hay nhắc tới các truyền thuyết về Kinh Dương Vương, Lạc Long Quân, Phù Đổng Thiên Vương, Sơn Tinh – Thủy Tinh nhằm giải thích nguồn gốc và sự đấu tranh để tồn tại của dân tộc. ',
                             image: '',
                         },
                         {
                             content:
-                                'Văn Lang – nhà nước đầu tiên của VN được thành lập vào thế kỷ thứ 7 trước Công nguyên, nhờ cần cù lao động và tính sáng tạo của mình cư dân Văn Lang đã tạo nên một nền văn minh có ảnh hướng tới toàn bộ khu vực DNA đó chính là là nền văn minh sông Hồng (hay văn minh Đông Sơn) mà biểu tượng  là trống đồng Đông Sơn - một di sản phản ánh tinh hoa lối sống, truyền thống và văn hóa của người Việt Cổ. ',
+                                'Văn Lang – nhà nước đầu tiên của VN được thành lập vào thế kỷ thứ 7 trước Công nguyên, nhờ cần cù lao động và tính sáng tạo của mình cư dân Văn Lang đã tạo nên một nền văn minh có ảnh hướng tới toàn bộ khu vực Đông Nam Á đó chính là là nền văn minh sông Hồng (hay văn minh Đông Sơn) mà biểu tượng  là trống đồng Đông Sơn - một di sản phản ánh tinh hoa lối sống, truyền thống và văn hóa của người Việt Cổ. ',
                             image: '',
                         },
                     ],
@@ -51,7 +51,7 @@ export default function Home() {
                     description: [
                         {
                             content:
-                                'Từ thế kỷ thứ 2 trước Công nguyên, nước ta đã bị các triều đại Trung Quốc khác nhau thống trị trong hơn một nghìn năm, trong thời kỳ này sự tồn vong của dân tộc bị thử thách đã khơi dậy tinh thần bất khuẩt kiên cường của người dân Việt Nam.',
+                                'Từ thế kỷ thứ 2 trước Công nguyên, nước ta đã bị các triều đại Trung Quốc khác nhau thống trị trong hơn một nghìn năm, trong thời kỳ này sự tồn vong của dân tộc bị thử thách đã khơi dậy tinh thần bất khuất kiên cường của người dân Việt Nam.',
                             image: '',
                         },
                         {
@@ -111,7 +111,7 @@ export default function Home() {
             <Projects
                 imageAtLeft={true}
                 content={{
-                    title: 'Giai đoạn đấu tranh và thống nhất',
+                    title: 'Giai đoạn đấu tranh giải phóng dân tộc',
                     description: [
                         {
                             content:
@@ -120,26 +120,17 @@ export default function Home() {
                         },
                         {
                             content:
-                                'Cuộc đấu tranh chống thực dân Pháp được khởi xướng bởi hai thế lực là giai cấp tư sản (đại đại diện là Việt Nam Quốc Dân Đảng) và giai cấp vô sản do Đảng Cộng sản Việt Nam lãnh đạo. ',
+                                'Tháng 8 năm 1945, dưới sự lãnh đạo của Đảng Cộng sản do Nguyễn Ái Quốc (sau này là Chủ tịch Hồ Chí Minh) đứng đầu đã phát động thành công cuộc tổng khởi nghĩa giành chính quyền.',
                             image: '',
                         },
                         {
                             content:
-                                'Sự ra đời của Đảng Cộng sản Việt Nam đánh dấu sức mạnh vượt trội của giai cấp công nhân và các phong trào cách mạng do giai cấp vô sản lãnh đạo. Tháng 8 năm 1945, dưới sự lãnh đạo của Đảng Cộng sản do Nguyễn Ái Quốc (sau này là Chủ tịch Hồ Chí Minh) đứng đầu đã phát động thành công cuộc tổng khởi nghĩa giành chính quyền. Với tuyên ngôn độc lập ngày 2 tháng 9 năm 1945, nước Việt Nam Dân chủ Cộng hòa ra đời.',
+                                'Chiều ngày 30/8/1945  Vua Bảo Đại trao lại ấn kiếm cho đại diện Chính phủ cách mạng dưới sự lãnh đạo của Chủ tịch Hồ Chí Minh, chấm dứt vĩnh viễn chế độ quân chủ tại Việt Nam.',
                             image: '',
                         },
                         {
                             content:
-                                'Chiến thắng tại Điện Biên Phủ và Hiệp định Geneva năm 1954 đánh dấu kết thúc cuộc kháng chiến chống Pháp, mở ra thời kỳ độc lập mới cho Việt Nam. Miền Bắc bước vào chủ nghĩa xã hội, trong khi miền Nam tạm dưới kiểm soát Pháp và Mỹ, nhưng cuộc tổng tuyển cử đã bị Hoa Kỳ can thiệp và không bao giờ diễn ra. Mỹ thành lập nước Cộng hòa miền Nam do Ngô Đình Diệm đứng đầu. Tạo ra sự chia cắt kéo dài hơn 20 năm cho Việt Nam.',
-                            image: '',
-                        },
-                        {
-                            content:
-                                'Từ năm 1954 đến năm 1975, Việt Nam lại phải tiến hành một cuộc chiến tranh giải phóng và thống nhất đất nước. Với bao gian khổ, chiến tranh đã kết thúc thắng lợi sau thắng lợi của Chiến dịch Hồ Chí Minh lịch sử năm 1975. ',
-                            image: '',
-                        },
-                        {
-                            content: 'Từ đó, nước Việt Nam thống nhất đã mở ra một kỷ nguyên mới hòa bình, thống nhất và xây dựng đất nước. ',
+                                'Ngày 2/9/1945, tại quảng trường Ba Đình (Hà Nội) thay mặt Chính phủ lâm thời, Chủ tịch Hồ Chí Minh đọc bản tuyên ngôn độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa.',
                             image: '',
                         },
                     ],
@@ -149,36 +140,22 @@ export default function Home() {
             <Projects
                 imageAtLeft={false}
                 content={{
-                    title: 'Giai đoạn đấu tranh và thống nhất',
+                    title: 'Giai đoạn thống nhất đất nước',
                     description: [
                         {
                             content:
-                                'Thế kỷ 19, Pháp xâm chiếm nước ta. Lần đầu tiên trong lịch sử chúng ta đương đầu với sự xâm lược của một nước phương Tây. Trong tình thế khó khăn đó đã có một bộ phận trí thức đưa ra những cải cách nhưng đều bị nhà Nguyễn bác bỏ. Sau đó đất nước rơi vào tình trạng lạc hậu, bế tắc. Việt Nam trở thành thuộc địa nửa phong kiến trong gần 100 năm từ 1858 đến 1945.',
+                                'Chiến thắng tại Điện Biên Phủ và Hiệp định Geneve năm 1954 đánh dấu kết thúc cuộc kháng chiến chống Pháp, mở ra thời kỳ độc lập mới cho Việt Nam. Miền Bắc bước vào chủ nghĩa xã hội, trong khi miền Nam tạm dưới kiểm soát Pháp và Mỹ, nhưng cuộc tổng tuyển cử đã bị Hoa Kỳ can thiệp và không bao giờ diễn ra. Mỹ thành lập nước Cộng hòa miền Nam do Ngô Đình Diệm đứng đầu. Tạo ra sự chia cắt kéo dài hơn 20 năm cho Việt Nam.',
                             image: '',
                         },
                         {
                             content:
-                                'Cuộc đấu tranh chống thực dân Pháp được khởi xướng bởi hai thế lực là giai cấp tư sản (đại đại diện là Việt Nam Quốc Dân Đảng) và giai cấp vô sản do Đảng Cộng sản Việt Nam lãnh đạo. ',
+                                'Từ năm 1954 đến năm 1975, Việt Nam lại phải tiến hành một cuộc chiến tranh giải phóng và thống nhất đất nước. Với bao gian khổ, chiến tranh đã kết thúc thắng lợi sau thắng lợi của Chiến dịch Hồ Chí Minh lịch sử năm 1975.',
                             image: '',
                         },
                         {
                             content:
-                                'Sự ra đời của Đảng Cộng sản Việt Nam đánh dấu sức mạnh vượt trội của giai cấp công nhân và các phong trào cách mạng do giai cấp vô sản lãnh đạo. Tháng 8 năm 1945, dưới sự lãnh đạo của Đảng Cộng sản do Nguyễn Ái Quốc (sau này là Chủ tịch Hồ Chí Minh) đứng đầu đã phát động thành công cuộc tổng khởi nghĩa giành chính quyền. Với tuyên ngôn độc lập ngày 2 tháng 9 năm 1945, nước Việt Nam Dân chủ Cộng hòa ra đời.',
+                                'Từ đó đến nay, nước Việt Nam thống nhất và đã mở ra một kỷ nguyên mới. Kỷ nguyên của hòa bình, thống nhất, độc lập tự do và xây dựng đất nước',
                             image: '',
-                        },
-                        {
-                            content:
-                                'Chiến thắng tại Điện Biên Phủ và Hiệp định Geneva năm 1954 đánh dấu kết thúc cuộc kháng chiến chống Pháp, mở ra thời kỳ độc lập mới cho Việt Nam. Miền Bắc bước vào chủ nghĩa xã hội, trong khi miền Nam tạm dưới kiểm soát Pháp và Mỹ, nhưng cuộc tổng tuyển cử đã bị Hoa Kỳ can thiệp và không bao giờ diễn ra. Mỹ thành lập nước Cộng hòa miền Nam do Ngô Đình Diệm đứng đầu. Tạo ra sự chia cắt kéo dài hơn 20 năm cho Việt Nam.',
-                            image: '',
-                        },
-                        {
-                            content:
-                                'Từ năm 1954 đến năm 1975, Việt Nam lại phải tiến hành một cuộc chiến tranh giải phóng và thống nhất đất nước. Với bao gian khổ, chiến tranh đã kết thúc thắng lợi sau thắng lợi của Chiến dịch Hồ Chí Minh lịch sử năm 1975. ',
-                            image: '',
-                        },
-                        {
-                            content: 'Từ đó, nước Việt Nam thống nhất đã mở ra một kỷ nguyên mới hòa bình, thống nhất và xây dựng đất nước. ',
-                            image: '/images/CotCo1.jpg',
                         },
                         {
                             content: '',
