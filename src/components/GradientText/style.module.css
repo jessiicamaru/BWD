@@ -4,10 +4,12 @@
     align-items: flex-end;
     justify-content: center;
     color: rgb(211, 211, 211);
+    /* width: 50%; */
+    padding: 24px;
 }
 
 .gradientTextBox {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -21,4 +23,8 @@
 
 .gradientTextBox span {
     opacity: 0.2;
+}
+
+.date {
+    float: right;
 }

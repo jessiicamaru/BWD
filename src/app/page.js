@@ -1,15 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import styles from './page.module.css';
-import Intro from '../components/Intro';
-import Description from '../components/Description';
-import Projects from '../components/Projects';
-import FloatingImage from '../components/FloatingImage';
-import MaskText from '../components/MaskText';
-import ParallaxScroll from '../components/ParallaxScroll';
-import GradientText from '../components/GradientText';
-import Letters from '../components/Letters';
-import CardScroll from '../components/CardScroll';
+import { Intro, Description, Projects, FloatingImage, ParallaxScroll, GradientText, CardScroll, MaskText, Letters } from '../components';
 
 import { gd2, gd3, meChoCon, ty, tsdd, nnmm } from '../data';
 
@@ -178,13 +170,47 @@ export default function Home() {
 
             <Letters imgs={[tsdd]} title={'Giấc mơ đoàn tụ không thành'} imgAtLeft={true} />
 
-            <GradientText
-                content={
-                    'Mẹ ạ! Trong hành trình này nhiều lúc đi đường con buồn lắm, nhớ nhà vô cùng mà lại vất vả nữa. Nhưng con luôn đấu tranh tinh thần, lúc này lùi lại một bước là sa ngã ngay. Vì vậy trong khi đi đường con luôn nhớ đến hình ảnh của mẹ dặn dò trước khi đi và lúc nào nghỉ thì con lại lấy thư của mẹ ra đọc để tự động viên tinh thần mình.'
-                }
-                fontFamily={'BeCool'}
-                fontSize={'21px'}
-            />
+            <h1
+                style={{
+                    color: 'white',
+                    width: '100%',
+                    textAlign: 'center',
+                    marginTop: '18px',
+                }}
+            >
+                Những dòng tâm sự còn dang dở
+            </h1>
+            <div
+                className={styles.row}
+                style={{
+                    marginTop: '-40vh',
+                }}
+            >
+                <div className={styles.column}>
+                    <GradientText
+                        content={
+                            'Mẹ ạ! Trong hành trình này nhiều lúc đi đường con buồn lắm, nhớ nhà vô cùng mà lại vất vả nữa. Nhưng con luôn đấu tranh tinh thần, lúc này lùi lại một bước là sa ngã ngay. Vì vậy trong khi đi đường con luôn nhớ đến hình ảnh của mẹ dặn dò trước khi đi và lúc nào nghỉ thì con lại lấy thư của mẹ ra đọc để tự động viên tinh thần mình.'
+                        }
+                        fontFamily={'BeCool'}
+                        fontSize={'21px'}
+                        width={'100%'}
+                    />
+
+                    <GradientText content={'20/9/69'} fontFamily={'BeCool'} fontSize={'21px'} width={'100%'} transform={'translateY(-90%)'} />
+                </div>
+
+                <div className={styles.column}>
+                    <GradientText
+                        content={
+                            'Nhiều đêm trở dậy thấy đầu võng ướt hết mới biết đêm qua mơ thấy ngày trở về gặp mẹ và nước mắt cứ trào ra. Muốn nhắm mắt lại để mơ tiếp nhưng không được nữa, cả một sự thật phũ phàng trả lời. Ra đi mà không hẹn ngày trở lại...'
+                        }
+                        fontFamily={'BeCool'}
+                        fontSize={'21px'}
+                        width={'100%'}
+                    />
+                    <GradientText content={'20/9/69'} fontFamily={'BeCool'} fontSize={'21px'} width={'100%'} transform={'translateY(-90%)'} />
+                </div>
+            </div>
 
             <ParallaxScroll />
 
