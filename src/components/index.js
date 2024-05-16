@@ -7,5 +7,6 @@ import ParallaxScroll from './ParallaxScroll';
 import GradientText from './GradientText';
 import Letters from './Letters';
 import CardScroll from './CardScroll';
+import Navigation from './Navigation';
 
-export { Intro, Description, Projects, FloatingImage, ParallaxScroll, GradientText, CardScroll, MaskText, Letters };
+export { Intro, Description, Projects, FloatingImage, ParallaxScroll, GradientText, CardScroll, MaskText, Letters, Navigation };

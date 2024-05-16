@@ -48,3 +48,8 @@ body {
 body::-webkit-scrollbar {
     width: 0px;
 }
+
+a[href] {
+    text-decoration: none;
+    color: white;
+}

@@ -66,8 +66,8 @@ export default function Index() {
                 <Image src={floating5} alt="image" width={330} />
             </div>
             <div className={styles.title}>
-                <h1>Các di tích lịch sử</h1>
-                <p>Việt Nam</p>
+                <h1>Các chứng tích lịch sử</h1>
+                <h2>Việt Nam</h2>
             </div>
         </div>
     );

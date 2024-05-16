@@ -1,0 +1,53 @@
+.header {
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+.subnav,
+.navigation {
+    background-color: #690705;
+    border-radius: 20px;
+    box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.4);
+}
+
+.navigation .subnav > li,
+.navigation > li {
+    display: inline-block;
+    padding: 8px 16px;
+    position: relative;
+}
+
+.navigation .subnav > li:hover,
+.navigation li:hover {
+    color: rgb(204, 204, 204);
+    cursor: pointer;
+}
+
+/* .navigation .subnav li {
+    display: block;
+    cursor: pointer;
+} */
+
+.navigation .subnav {
+    width: 480px;
+    position: absolute;
+    z-index: 100;
+    display: none;
+    top: calc(100% + 1px);
+    left: -8px;
+}
+
+.navigation li:hover .subnav {
+    display: block;
+}

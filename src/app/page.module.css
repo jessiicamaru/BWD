@@ -16,3 +16,9 @@
     width: 70%;
     flex-wrap: wrap;
 }
+
+.column80 {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+}

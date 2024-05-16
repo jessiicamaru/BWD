@@ -35,6 +35,7 @@ import project1 from '../public/images/1.jpg';
 import project1_1 from '../public/images/1_1.jpg';
 import project2 from '../public/images/2.png';
 import project3 from '../public/images/3.jpg';
+import project3_1 from '../public/images/3_1.png';
 import project4 from '../public/images/4.jpg';
 import project5_1 from '../public/images/5_1.jpg';
 
@@ -71,6 +72,7 @@ export {
     project1_1,
     project2,
     project3,
+    project3_1,
     project4,
     project5_1,
 };
