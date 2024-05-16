@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import img from 'public/images/salar_de_atacama.jpg';
 
 export default function Index({ imageAtLeft, content }) {
+    console.log(content);
     const container = useRef(null);
     const imageContainer = useRef(null);
     const desciption = useRef(null);
@@ -27,7 +28,7 @@ export default function Index({ imageAtLeft, content }) {
         <div ref={container} className={styles.projects}>
             <div className={styles.projectDescription} ref={desciption} style={{ flexDirection: `${imageAtLeft ? 'row-reverse' : 'row'}` }}>
                 <div ref={imageContainer} className={styles.imageContainer}>
-                    <Image src={img} fill={true} alt="project image" priority={true} />
+                    <Image src={content.mainImage ? content.mainImage : img} fill={true} alt="project image" priority={true} />
                 </div>
                 <div className={styles.column}>
                     {contentDescription.map((contentText, index) => {
@@ -41,15 +42,33 @@ export default function Index({ imageAtLeft, content }) {
                                 </div>
                             );
                         } else {
+                            if (contentText.image.position === 'under') {
+                                return (
+                                    <div className={styles.pContainer} key={index}>
+                                        <p>{contentText.content}</p>
+                                        {contentText.image.src ? (
+                                            <img
+                                                src={contentText.image.src.src}
+                                                fill={true}
+                                                alt="project image"
+                                                priority={true}
+                                                className={styles.imgContent}
+                                            />
+                                        ) : (
+                                            ''
+                                        )}
+                                    </div>
+                                );
+                            }
                             return (
                                 <div className={styles.pContainer} key={index}>
-                                    {contentText.image != '' ? (
+                                    {contentText.image.src ? (
                                         <img
-                                            src={contentText.image}
+                                            src={contentText.image.src.src}
                                             fill={true}
                                             alt="project image"
                                             priority={true}
-                                            className={styles.imgContainer}
+                                            className={styles.imgContent}
                                         />
                                     ) : (
                                         ''

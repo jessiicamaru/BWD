@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import styles from './page.module.css';
 import { Intro, Description, Projects, FloatingImage, ParallaxScroll, GradientText, CardScroll, MaskText, Letters } from '../components';
 
-import { gd2, gd3, meChoCon, ty, tsdd, nnmm } from '../data';
+import { gd2, gd3, meChoCon, ty, tsdd, project1, project1_1, project2, project3, project4, project5_1 } from '../data';
 
 export default function Home() {
     useEffect(() => {
@@ -22,6 +22,7 @@ export default function Home() {
             <Projects
                 imageAtLeft={false}
                 content={{
+                    mainImage: project1,
                     title: 'Giai đoạn Tiền lịch sử và sơ khai dựng nước',
                     description: [
                         {
@@ -32,7 +33,10 @@ export default function Home() {
                         {
                             content:
                                 'Văn Lang – nhà nước đầu tiên của VN được thành lập vào thế kỷ thứ 7 trước Công nguyên, nhờ cần cù lao động và tính sáng tạo của mình cư dân Văn Lang đã tạo nên một nền văn minh có ảnh hướng tới toàn bộ khu vực Đông Nam Á đó chính là là nền văn minh sông Hồng (hay văn minh Đông Sơn) mà biểu tượng  là trống đồng Đông Sơn - một di sản phản ánh tinh hoa lối sống, truyền thống và văn hóa của người Việt Cổ. ',
-                            image: '',
+                            image: {
+                                src: project1_1,
+                                position: '',
+                            },
                         },
                     ],
                 }}
@@ -41,6 +45,7 @@ export default function Home() {
             <Projects
                 imageAtLeft={true}
                 content={{
+                    mainImage: project2,
                     title: 'Giai đoạn đấu tranh giữ nước',
                     description: [
                         {
@@ -71,13 +76,9 @@ export default function Home() {
             <Projects
                 imageAtLeft={false}
                 content={{
+                    mainImage: project3,
                     title: 'Giai đoạn phong kiến xây dựng và bảo vệ tổ quốc',
                     description: [
-                        {
-                            content:
-                                'Từ thế kỷ thứ 2 trước Công nguyên, nước ta đã bị các triều đại Trung Quốc khác nhau thống trị trong hơn một nghìn năm, trong thời kỳ này sự tồn vong của dân tộc bị thử thách đã khơi dậy tinh thần bất khuẩt kiên cường của người dân Việt Nam.',
-                            image: '',
-                        },
                         {
                             content:
                                 'Chiến thắng Bạch Đằng năm 938 đã chấm dứt thời kỳ 1000 năm Bắc thuôc.  Mở ra kỷ nguyên mới trong lịch sử Việt Nam - kỷ nguyên phát triển của nhà nước phong kiến độc lập, kỷ nguyên xây dựng và bảo vệ tổ quốc.',
@@ -105,6 +106,7 @@ export default function Home() {
             <Projects
                 imageAtLeft={true}
                 content={{
+                    mainImage: project4,
                     title: 'Giai đoạn đấu tranh giải phóng dân tộc',
                     description: [
                         {
@@ -119,7 +121,7 @@ export default function Home() {
                         },
                         {
                             content:
-                                'Ngày 2/9/1945, tại quảng trường Ba Đình (Hà Nội) thay mặt Chính phủ lâm thời, Chủ tịch Hồ Chí Minh đọc bản tuyên ngôn độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa.',
+                                'Ngày 2/9/1945, tại quảng trường Ba Đình (Hà Nội) thay mặt Chính phủ lâm thời, Chủ tịch Hồ Chí Minh đọc bản tuyên ngôn độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa. Cách mạng Tháng Tám thành công là thắng lợi vĩ đại đầu tiên của Nhân dân ta từ khi có Đảng lãnh đạo, mở ra bước ngoặt vĩ đại trong lịch sử. Nước Việt Nam từ một nước thuộc địa nửa phong kiến trở thành một nước độc lập, tự do và dân chủ.',
                             image: '',
                         },
                     ],
@@ -133,17 +135,25 @@ export default function Home() {
                     description: [
                         {
                             content:
-                                'Chiến thắng tại Điện Biên Phủ và Hiệp định Geneve năm 1954 đánh dấu kết thúc cuộc kháng chiến chống Pháp, mở ra thời kỳ độc lập mới cho Việt Nam. Miền Bắc bước vào chủ nghĩa xã hội, trong khi miền Nam tạm dưới kiểm soát Pháp và Mỹ, nhưng cuộc tổng tuyển cử đã bị Hoa Kỳ can thiệp và không bao giờ diễn ra. Mỹ thành lập nước Cộng hòa miền Nam do Ngô Đình Diệm đứng đầu. Tạo ra sự chia cắt kéo dài hơn 20 năm cho Việt Nam.',
+                                'Chiến thắng lừng lẫy năm châu chấn động địa cầu tại Điện Biên Phủ buộc Pháp ngồi vào bàn ký Hiệp định Geneva năm 1954 đánh dấu kết thúc cuộc kháng chiến chống Pháp, mở ra thời kỳ độc lập mới cho Việt Nam. ',
                             image: '',
                         },
                         {
                             content:
-                                'Từ năm 1954 đến năm 1975, Việt Nam lại phải tiến hành một cuộc chiến tranh giải phóng và thống nhất đất nước. Với bao gian khổ, chiến tranh đã kết thúc thắng lợi sau thắng lợi của Chiến dịch Hồ Chí Minh lịch sử năm 1975.',
+                                'Miền Bắc bước vào chủ nghĩa xã hội, trong khi miền Nam tạm dưới kiểm soát Pháp và Mỹ chờ tổng tuyển cử nhưng đã bị Hoa Kỳ can thiệp và không bao giờ diễn ra. Mỹ thành lập nước Cộng hòa miền Nam do Ngô Đình Diệm đứng đầu. Tạo ra sự chia cắt kéo dài hơn 20 năm cho Việt Nam.',
+                            image: {
+                                src: project5_1,
+                                position: '',
+                            },
+                        },
+                        {
+                            content:
+                                'Từ năm 1954 đến năm 1975, Việt Nam lại phải tiến hành một cuộc chiến tranh giải phóng và thống nhất đất nước. Với bao gian khổ, chiến tranh đã kết thúc thắng lợi sau Chiến dịch Hồ Chí Minh lịch sử năm 1975.',
                             image: '',
                         },
                         {
                             content:
-                                'Từ đó đến nay, nước Việt Nam thống nhất và đã mở ra một kỷ nguyên mới. Kỷ nguyên của hòa bình, thống nhất, độc lập tự do và xây dựng đất nước',
+                                'Chiến dịch Hồ Chí Minh đã đi vào lịch sử dân tộc như một mốc son chói lọi nhất, một biểu tượng về sự đoàn kết, anh dũng chiến đấu để gìn giữ dân tộc. Từ đó đến nay, nước Việt Nam thống nhất và đã mở ra một kỷ nguyên mới. Kỷ nguyên của hòa bình, thống nhất, độc lập tự do và xây dựng đất nước.',
                             image: '',
                         },
                         {
@@ -176,6 +186,8 @@ export default function Home() {
                     width: '100%',
                     textAlign: 'center',
                     marginTop: '18px',
+                    fontFamily: 'Authoritative',
+                    fontSize: '50px',
                 }}
             >
                 Những dòng tâm sự còn dang dở
@@ -186,35 +198,95 @@ export default function Home() {
                     marginTop: '-40vh',
                 }}
             >
-                <div className={styles.column}>
-                    <GradientText
-                        content={
-                            'Mẹ ạ! Trong hành trình này nhiều lúc đi đường con buồn lắm, nhớ nhà vô cùng mà lại vất vả nữa. Nhưng con luôn đấu tranh tinh thần, lúc này lùi lại một bước là sa ngã ngay. Vì vậy trong khi đi đường con luôn nhớ đến hình ảnh của mẹ dặn dò trước khi đi và lúc nào nghỉ thì con lại lấy thư của mẹ ra đọc để tự động viên tinh thần mình.'
-                        }
-                        fontFamily={'BeCool'}
-                        fontSize={'21px'}
-                        width={'100%'}
-                    />
+                <div className={styles.row}>
+                    <div className={styles.column}>
+                        <GradientText
+                            content={
+                                'Mẹ ạ! Trong hành trình này nhiều lúc đi đường con buồn lắm, nhớ nhà vô cùng mà lại vất vả nữa. Nhưng con luôn đấu tranh tinh thần, lúc này lùi lại một bước là sa ngã ngay. Vì vậy trong khi đi đường con luôn nhớ đến hình ảnh của mẹ dặn dò trước khi đi và lúc nào nghỉ thì con lại lấy thư của mẹ ra đọc để tự động viên tinh thần mình.'
+                            }
+                            fontFamily={'Authoritative'}
+                            fontSize={'40px'}
+                            width={'100%'}
+                        />
 
-                    <GradientText content={'20/9/69'} fontFamily={'BeCool'} fontSize={'21px'} width={'100%'} transform={'translateY(-90%)'} />
+                        <GradientText
+                            content={'20/9/69'}
+                            fontFamily={'Authoritative'}
+                            fontSize={'40px'}
+                            width={'100%'}
+                            transform={'translateY(-90%)'}
+                            justifyContent={'flex-end'}
+                        />
+                        <GradientText
+                            content={'Phạm Ngọc Hùng'}
+                            fontFamily={'Authoritative'}
+                            fontSize={'40px'}
+                            width={'100%'}
+                            transform={'translateY(-185%)'}
+                            justifyContent={'flex-end'}
+                        />
+                    </div>
                 </div>
 
-                <div className={styles.column}>
-                    <GradientText
-                        content={
-                            'Nhiều đêm trở dậy thấy đầu võng ướt hết mới biết đêm qua mơ thấy ngày trở về gặp mẹ và nước mắt cứ trào ra. Muốn nhắm mắt lại để mơ tiếp nhưng không được nữa, cả một sự thật phũ phàng trả lời. Ra đi mà không hẹn ngày trở lại...'
-                        }
-                        fontFamily={'BeCool'}
-                        fontSize={'21px'}
-                        width={'100%'}
-                    />
-                    <GradientText content={'20/9/69'} fontFamily={'BeCool'} fontSize={'21px'} width={'100%'} transform={'translateY(-90%)'} />
+                <div style={{ marginTop: '-240vh' }}>
+                    <div className={styles.row}>
+                        <div className={styles.column}>
+                            <GradientText
+                                content={
+                                    'Bây giờ ta đang phải hy sinh tuổi thanh xuân nhưng chúng ta đã đóng góp công sức ta vào sự nghiệp lớn của dân tộc. Nên chúng ta hưởng hạnh phúc hơi muộn nhưng cũng như triệu triệu người tin rằng ngày đó mới đầm ấm và hạnh phúc gấp vạn lần. '
+                                }
+                                fontFamily={'Authoritative'}
+                                fontSize={'40px'}
+                                width={'100%'}
+                            />
+                            <GradientText
+                                content={'5/11/ 66'}
+                                fontFamily={'Authoritative'}
+                                fontSize={'40px'}
+                                width={'100%'}
+                                transform={'translateY(-90%)'}
+                                justifyContent={'flex-end'}
+                            />
+                            <GradientText
+                                content={'Liệt sĩ Trần Minh Tiến '}
+                                fontFamily={'Authoritative'}
+                                fontSize={'40px'}
+                                width={'100%'}
+                                transform={'translateY(-185%)'}
+                                justifyContent={'flex-end'}
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
+            <h1
+                style={{
+                    color: 'white',
+                    width: '100%',
+                    textAlign: 'center',
+                    marginTop: '18px',
+                    fontSize: '70px',
+                    fontFamily: 'Authoritative',
+                    marginTop: '-140vh',
+                }}
+            >
+                Và còn nhiều hơn thế nữa...
+            </h1>
 
             <ParallaxScroll />
 
-            <GradientText />
+            <div className={styles.row}>
+                <div className={styles.column}>
+                    <GradientText
+                        content={
+                            'Lịch sử Việt Nam là một chuỗi các trang sử hào hùng, đầy kiêu hãnh nhưng cũng không kém phần bi thương vì những cuộc chiến tranh tàn khốc. Mỗi một cuộc chiến tranh đều để lại những vết thương và nỗi đau sâu sắc hằn mãi trong tâm hồn người Việt….'
+                        }
+                        fontSize={'35px'}
+                        width={'100%'}
+                        transform={'translateY(-50%)'}
+                    />
+                </div>
+            </div>
 
             <MaskText />
 

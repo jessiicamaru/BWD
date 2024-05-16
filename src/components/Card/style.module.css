@@ -38,7 +38,7 @@
 }
 .cardContainer .card .body .description p::first-letter {
     font-size: 28px;
-    font-family: 'Title';
+    font-family: 'Avo';
 }
 .cardContainer .card .body .description span {
     display: flex;

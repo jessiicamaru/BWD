@@ -7,7 +7,7 @@ import gsap from 'gsap';
 // const phrase =
 //     'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.';
 
-export default function Index({ content, fontFamily, fontSize, width, transform }) {
+export default function Index({ content, fontFamily, fontSize, width, transform, justifyContent, height }) {
     let refs = useRef([]);
     const body = useRef(null);
     const container = useRef(null);
@@ -66,9 +66,10 @@ export default function Index({ content, fontFamily, fontSize, width, transform 
                 fontSize: fontSize ? fontSize : '3.5vw',
                 width: width ? width : '90%',
                 transform: transform ? transform : '',
+                height: height ? height : '',
             }}
         >
-            <div ref={body} className={styles.gradientTextBox} style={{}}>
+            <div ref={body} className={styles.gradientTextBox} style={{ justifyContent: justifyContent ? justifyContent : '' }}>
                 {content ? splitWords(content) : ''}
             </div>
         </div>
