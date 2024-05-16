@@ -21,10 +21,10 @@ export default function Index() {
         <div className={styles.header} ref={header}>
             <ul className={styles.navigation}>
                 <li>
-                    <a href="/">Giới thiệu</a>
+                    <a href="#">Giới thiệu</a>
                 </li>
                 <li>
-                    <a href="/">Giai đoạn</a>
+                    <a href="#">Giai đoạn</a>
                     <ul className={styles.subnav}>
                         <li>
                             <a href="#project1">TIỀN LỊCH SỬ VÀ SƠ KHAI DỰNG NƯỚC</a>
