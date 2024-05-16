@@ -1,19 +1,21 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import styles from './style.module.css';
 
 export default function Index() {
     const header = useRef(null);
 
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            header.current.style.top = '0';
-        } else {
-            header.current.style.top = '-80px';
-        }
-        prevScrollpos = currentScrollPos;
-    };
+    useEffect(() => {
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                header.current.style.top = '0';
+            } else {
+                header.current.style.top = '-80px';
+            }
+            prevScrollpos = currentScrollPos;
+        };
+    }, []);
 
     console.log(header);
 
