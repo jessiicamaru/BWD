@@ -31,3 +31,12 @@
     transform: scale(1.11);
     object-fit: cover;
 }
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .maskTextContainer {
+        margin-top: -40vh;
+    }
+    .stickyMask {
+        mask-position: 52.35% center;
+    }
+}

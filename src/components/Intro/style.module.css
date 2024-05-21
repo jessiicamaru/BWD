@@ -44,3 +44,13 @@
     object-fit: cover;
     object-position: top;
 }
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .backgroundImage {
+        height: 100vh;
+    }
+
+    .homeHeader {
+        height: 100vh;
+    }
+}

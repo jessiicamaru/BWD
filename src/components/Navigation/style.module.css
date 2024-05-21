@@ -51,3 +51,10 @@
 .navigation li:hover .subnav {
     display: block;
 }
+
+.navigationList {
+    display: none;
+    padding: 12px;
+    background-color: blue;
+    color: white;
+}
