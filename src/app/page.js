@@ -22,6 +22,8 @@ import {
     project4_2,
     project4_3,
     project4_1,
+    project5_2,
+    project5_3,
 } from '../data';
 
 export default function Home() {
@@ -204,12 +206,18 @@ export default function Home() {
                             {
                                 content:
                                     'Từ năm 1954 đến năm 1975, Việt Nam lại phải tiến hành một cuộc chiến tranh giải phóng và thống nhất đất nước. Với bao gian khổ, chiến tranh đã kết thúc thắng lợi sau Chiến dịch Hồ Chí Minh lịch sử năm 1975.',
-                                image: '',
+                                image: {
+                                    src: project5_2,
+                                    position: '',
+                                },
                             },
                             {
                                 content:
                                     'Chiến dịch Hồ Chí Minh đã đi vào lịch sử dân tộc như một mốc son chói lọi nhất, một biểu tượng về sự đoàn kết, anh dũng chiến đấu để gìn giữ dân tộc. Từ đó đến nay, nước Việt Nam thống nhất và đã mở ra một kỷ nguyên mới. Kỷ nguyên của hòa bình, thống nhất, độc lập tự do và xây dựng đất nước.',
-                                image: '',
+                                image: {
+                                    src: project5_3,
+                                    position: '',
+                                },
                             },
                             {
                                 content: '',

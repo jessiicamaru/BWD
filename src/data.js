@@ -44,6 +44,14 @@ import project3_2 from '../public/images/project3_2.jpg';
 import project4_1 from '../public/images/project4_1.jpg';
 import project4_2 from '../public/images/project4_2.png';
 import project4_3 from '../public/images/project4_3.jpg';
+import project5_2 from '../public/images/project5_2.png';
+import project5_3 from '../public/images/project5_3.jpg';
+
+import amthuc from '../public/images/amthuc.jpeg';
+import aodai from '../public/images/aodai.jpg';
+import luanuoc from '../public/images/luanuoc.jpg';
+import nonla from '../public/images/nonla.jpg';
+import thocung from '../public/images/thocung.jpg';
 
 export {
     floating1,
@@ -87,4 +95,11 @@ export {
     project4_1,
     project4_2,
     project4_3,
+    project5_2,
+    project5_3,
+    amthuc,
+    aodai,
+    luanuoc,
+    nonla,
+    thocung,
 };

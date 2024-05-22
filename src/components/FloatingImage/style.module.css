@@ -4,6 +4,7 @@
     overflow: hidden;
     position: relative;
     font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
 }
 .floatingContainer .title {
     position: absolute;
