@@ -10,7 +10,7 @@ export default function Index({ imgs, title, imgAtLeft }) {
             </div>
             <div className={styles.letterContainerRight}>
                 {imgs.map((img, index) => {
-                    return <Image src={img} key={index} className={styles.image} />;
+                    return <Image src={img} key={index} className={styles.image} alt="img" />;
                 })}
             </div>
         </div>
