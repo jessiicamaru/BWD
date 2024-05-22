@@ -52,9 +52,8 @@
     display: block;
 }
 
-.navigationList {
-    display: none;
-    padding: 12px;
-    background-color: blue;
-    color: white;
+@media (max-width: 739px) {
+    .navigation {
+        display: none;
+    }
 }

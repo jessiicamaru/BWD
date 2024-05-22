@@ -68,7 +68,7 @@
     display: flex;
     align-items: flex-end;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -82,8 +82,60 @@
     width: 70%;
 }
 
+.comment {
+    display: block;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-150%);
+    font-style: italic;
+    color: #ccc;
+}
+
 @media (min-width: 740px) and (max-width: 1023px) {
     .imgContent {
         width: 100%;
+    }
+
+    .pContainer {
+        height: 80vh;
+    }
+
+    .comment {
+        transform: translateY(-250%);
+    }
+}
+
+@media (max-width: 739px) {
+    .projects:nth-child(1) {
+        margin-top: 50px;
+    }
+
+    .projectDescription {
+        flex-wrap: wrap;
+    }
+
+    .imageContainer {
+        width: 100%;
+    }
+
+    .imageContainer {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .pContainer {
+        height: 70vh;
+    }
+
+    .imgContent {
+        width: 90%;
+    }
+
+    .comment {
+        transform: translateY(-10%);
     }
 }

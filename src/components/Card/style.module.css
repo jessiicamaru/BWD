@@ -64,3 +64,13 @@
 .cardContainer .card .body .imageContainer img {
     object-fit: cover;
 }
+
+@media (max-width: 739px) {
+    .cardContainer .card .body {
+        flex-wrap: wrap;
+    }
+
+    .cardContainer .card .body .description {
+        width: 100%;
+    }
+}

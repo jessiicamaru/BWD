@@ -21,7 +21,9 @@ export default function Index() {
 
     return (
         <div className={styles.header} ref={header}>
-            <button className={styles.navigationList}>Click me</button>
+            {/* <button className={styles.navigationList}>
+                <i class="fas fa-bars"></i>
+            </button> */}
             <ul className={styles.navigation}>
                 <li>
                     <a href="#">Giới thiệu</a>

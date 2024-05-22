@@ -54,3 +54,18 @@
         height: 100vh;
     }
 }
+
+@media (max-width: 739px) {
+    .intro {
+        margin-top: 25vh;
+    }
+
+    .introImage {
+        width: 200px;
+        height: 300px;
+    }
+
+    .backgroundImage {
+        height: 70vh;
+    }
+}

@@ -38,6 +38,7 @@ export default function Home() {
                                 image: {
                                     src: project1_1,
                                     position: '',
+                                    comment: 'Trống đồng Đông Sơn',
                                 },
                             },
                         ],
@@ -203,6 +204,7 @@ export default function Home() {
                         width: '100%',
                         textAlign: 'center',
                         marginTop: '18px',
+                        marginBottom: '18px',
                         fontFamily: 'Authoritative',
                         fontSize: '50px',
                     }}

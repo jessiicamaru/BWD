@@ -25,16 +25,31 @@ function AnimatedText({ children }) {
     const text = useRef(null);
 
     useLayoutEffect(() => {
+        let width = window.innerWidth;
+        let start = '';
+        let end = '';
+
+        if (width < 1024 && width >= 740) {
+            start = '0px bottom-=300px';
+            end = '-200px';
+        } else if (width < 740) {
+            start = '0px bottom-=400px';
+            end = '-350px';
+        } else {
+            start = '0px bottom';
+            end = '-400px';
+        }
+
         gsap.registerPlugin(ScrollTrigger);
         gsap.from(text.current, {
             scrollTrigger: {
                 trigger: text.current,
                 scrub: true,
-                start: `${window.innerWidth < 1024 && window.innerWidth > 740 ? '0px bottom-=300px' : '0px bottom'}`,
+                start: `${start}`,
                 end: 'bottom+=400px bottom',
             },
             opacity: 0,
-            left: `${window.innerWidth < 1024 && window.innerWidth > 740 ? '-200px' : '-400px'}`,
+            left: `${end}`,
             ease: 'power3.Out',
         });
     }, []);

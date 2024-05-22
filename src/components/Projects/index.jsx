@@ -14,13 +14,21 @@ export default function Index({ imageAtLeft, content }) {
     let title = content.title;
     let contentDescription = content.description;
 
+    let start = '0';
+    let end = '0';
+
     useLayoutEffect(() => {
+        if (window.innerWidth > 739) {
+            start = 'top-=100px';
+            end = desciption.current.offsetHeight - imageContainer.current.offsetHeight + 'px';
+        }
+
         gsap.registerPlugin(ScrollTrigger);
         ScrollTrigger.create({
             trigger: imageContainer.current,
             pin: true,
-            start: 'top-=100px',
-            end: desciption.current.offsetHeight - imageContainer.current.offsetHeight + 'px',
+            start: start,
+            end: end,
         });
     }, []);
 
@@ -47,13 +55,16 @@ export default function Index({ imageAtLeft, content }) {
                                     <div className={styles.pContainer} key={index}>
                                         <p>{contentText.content}</p>
                                         {contentText.image.src ? (
-                                            <img
-                                                src={contentText.image.src.src}
-                                                fill={true}
-                                                alt="project image"
-                                                priority={true}
-                                                className={styles.imgContent}
-                                            />
+                                            <>
+                                                <img
+                                                    src={contentText.image.src.src}
+                                                    fill={true}
+                                                    alt="project image"
+                                                    priority={true}
+                                                    className={styles.imgContent}
+                                                />
+                                                <span className={styles.comment}>{contentText.image.comment}</span>
+                                            </>
                                         ) : (
                                             ''
                                         )}
@@ -63,13 +74,16 @@ export default function Index({ imageAtLeft, content }) {
                             return (
                                 <div className={styles.pContainer} key={index}>
                                     {contentText.image.src ? (
-                                        <img
-                                            src={contentText.image.src.src}
-                                            fill={true}
-                                            alt="project image"
-                                            priority={true}
-                                            className={styles.imgContent}
-                                        />
+                                        <>
+                                            <img
+                                                src={contentText.image.src.src}
+                                                fill={true}
+                                                alt="project image"
+                                                priority={true}
+                                                className={styles.imgContent}
+                                            />
+                                            <span className={styles.comment}>{contentText.image.comment}</span>
+                                        </>
                                     ) : (
                                         ''
                                     )}

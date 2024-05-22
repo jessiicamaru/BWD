@@ -36,3 +36,19 @@
     font-family: 'Avo', sans-serif;
     padding: 0 10%;
 }
+
+@media (max-width: 739px) {
+    .letterContainer {
+        flex-wrap: wrap;
+    }
+
+    .letterContainerLeft .title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .letterContainerRight,
+    .letterContainerLeft {
+        width: 100%;
+    }
+}
