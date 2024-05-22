@@ -3,7 +3,26 @@ import { useEffect } from 'react';
 import styles from './page.module.css';
 import { Intro, Description, Projects, FloatingImage, ParallaxScroll, GradientText, CardScroll, MaskText, Letters, Navigation } from '../components';
 
-import { gd2, gd3, meChoCon, ty, tsdd, project1, project1_1, project2, project3, project3_1, project4, project5_1 } from '../data';
+import {
+    gd2,
+    gd3,
+    meChoCon,
+    ty,
+    tsdd,
+    project1,
+    project1_1,
+    project2,
+    project3,
+    project3_3,
+    project4,
+    project5_1,
+    project2_2,
+    project3_1,
+    project3_2,
+    project4_2,
+    project4_3,
+    project4_1,
+} from '../data';
 
 export default function Home() {
     useEffect(() => {
@@ -72,7 +91,10 @@ export default function Home() {
                             {
                                 content:
                                     'Các phong trào đấu tranh của nhân dân ta đã làm cho kẻ thù suy yếu, đồng thời cổ vũ tinh thần đấu tranh của nhân dân ta, tạo điều kiện cho sự ra đời của chính quyền tự chủ ở thế kỷ 10.',
-                                image: '',
+                                image: {
+                                    src: project2_2,
+                                    position: '',
+                                },
                             },
                         ],
                     }}
@@ -94,18 +116,24 @@ export default function Home() {
                             {
                                 content:
                                     'Sau đó, Việt Nam bước vào thời kỳ phục hưng và phát triển dưới các triều đại Lý, Trần, Hồ, Lê Sơ. Đại Việt – tên nước dưới thời Lý – Trần – Lê Sơ được biết đến là một đất nước thịnh vượng ở Châu Á. Đánh dấu thời kỳ hoàng kim của lịch sử Việt Nam.',
-                                image: '',
+                                image: {
+                                    src: project3_1,
+                                    position: '',
+                                },
                             },
                             {
                                 content:
                                     'Một thành tựu quan trọng của triều đại Lý – Trần là sự ra đời của chữ Nôm. Ngoài ra, thời kỳ này còn đánh dấu sự phát triển huy hoàng về giáo dục, khoa học, văn hóa, nghệ thuật, luật pháp,… Thời kỳ này được gọi là thời đại văn minh Đại Việt. Thăng Long (tên cũ của thủ đô Hà Nội) được chính thức công nhận là kinh đô của Đại Việt theo tuyên bố dời đô về Hà Nội năm 1010 của Lý Thái Tổ.',
-                                image: '',
+                                image: {
+                                    src: project3_2,
+                                    position: '',
+                                },
                             },
                             {
                                 content:
                                     'Từ thế kỷ 16, sự lạc hậu, yếu kém của chế độ phong kiến theo tư tưởng Khổng Tử lộ rõ, chế độ phong kiến rơi vào tình trạng suy tàn. Đại Việt sa lầy vào nội chiến, chia rẽ, cản trở nặng nề sự phát triển của đất nước bất chấp những phát triển nhất định về kinh tế, văn hóa, thương mại, giao lưu giữa thế kỷ 16 và 18.',
                                 image: {
-                                    src: project3_1,
+                                    src: project3_3,
                                     position: '',
                                 },
                             },
@@ -129,12 +157,25 @@ export default function Home() {
                             {
                                 content:
                                     'Tháng 8 năm 1945, dưới sự lãnh đạo của Đảng Cộng sản do Nguyễn Ái Quốc (sau này là Chủ tịch Hồ Chí Minh) đứng đầu đã phát động thành công cuộc tổng khởi nghĩa giành chính quyền. Chiều ngày 30/8/1945  Vua Bảo Đại trao lại ấn kiếm cho đại diện Chính phủ cách mạng dưới sự lãnh đạo của Chủ tịch Hồ Chí Minh, chấm dứt vĩnh viễn chế độ quân chủ tại Việt Nam.',
-                                image: '',
+                                image: {
+                                    src: project4_1,
+                                    position: '',
+                                },
                             },
                             {
                                 content:
                                     'Ngày 2/9/1945, tại quảng trường Ba Đình (Hà Nội) thay mặt Chính phủ lâm thời, Chủ tịch Hồ Chí Minh đọc bản tuyên ngôn độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa. Cách mạng Tháng Tám thành công là thắng lợi vĩ đại đầu tiên của Nhân dân ta từ khi có Đảng lãnh đạo, mở ra bước ngoặt vĩ đại trong lịch sử. Nước Việt Nam từ một nước thuộc địa nửa phong kiến trở thành một nước độc lập, tự do và dân chủ.',
-                                image: '',
+                                image: {
+                                    src: project4_2,
+                                    position: '',
+                                },
+                            },
+                            {
+                                content: '',
+                                image: {
+                                    src: project4_3,
+                                    position: '',
+                                },
                             },
                         ],
                     }}

@@ -7,18 +7,18 @@ import floating6 from '../public/images/ct9.jpg';
 import floating7 from '../public/images/ct10.jpg';
 import floating8 from '../public/images/ct13.jpg';
 
-import pic1 from '../public/prallaxImages/1.jpg';
-import pic2 from '../public/prallaxImages/2.jpg';
-import pic3 from '../public/prallaxImages/3.jpg';
-import pic4 from '../public/prallaxImages/4.jpg';
-import pic5 from '../public/prallaxImages/5.jpg';
-import pic6 from '../public/prallaxImages/6.jpg';
-import pic7 from '../public/prallaxImages/7.jpg';
-import pic8 from '../public/prallaxImages/8.jpg';
-import pic9 from '../public/prallaxImages/9.jpg';
-import pic10 from '../public/prallaxImages/10.jpg';
-import pic11 from '../public/prallaxImages/11.jpg';
-import pic12 from '../public/prallaxImages/12.jpg';
+import pic1 from '../public/prallaxImages/12_1.jpg';
+import pic2 from '../public/prallaxImages/12_2.jpg';
+import pic3 from '../public/prallaxImages/12_3.jpg';
+import pic4 from '../public/prallaxImages/12_4.jpg';
+import pic5 from '../public/prallaxImages/12_5.jpg';
+import pic6 from '../public/prallaxImages/12_6.jpg';
+import pic7 from '../public/prallaxImages/12_7.jpg';
+import pic8 from '../public/prallaxImages/12_8.jpg';
+import pic9 from '../public/prallaxImages/12_9.jpg';
+import pic10 from '../public/prallaxImages/12_10.jpg';
+import pic11 from '../public/prallaxImages/12_11.jpg';
+import pic12 from '../public/prallaxImages/12_12.jpg';
 
 import CotCo from '../public/images/CotCo.jpg';
 import CotCo1 from '../public/images/CotCo1.jpg';
@@ -35,9 +35,15 @@ import project1 from '../public/images/1.jpg';
 import project1_1 from '../public/images/1_1.jpg';
 import project2 from '../public/images/2.png';
 import project3 from '../public/images/3.jpg';
-import project3_1 from '../public/images/3_1.png';
+import project3_3 from '../public/images/3_1.png';
 import project4 from '../public/images/4.jpg';
 import project5_1 from '../public/images/5_1.jpg';
+import project2_2 from '../public/images/project2_2.jpg';
+import project3_1 from '../public/images/project3_1.jpg';
+import project3_2 from '../public/images/project3_2.jpg';
+import project4_1 from '../public/images/project4_1.jpg';
+import project4_2 from '../public/images/project4_2.png';
+import project4_3 from '../public/images/project4_3.jpg';
 
 export {
     floating1,
@@ -72,7 +78,13 @@ export {
     project1_1,
     project2,
     project3,
-    project3_1,
+    project3_3,
     project4,
     project5_1,
+    project2_2,
+    project3_1,
+    project3_2,
+    project4_1,
+    project4_2,
+    project4_3,
 };
