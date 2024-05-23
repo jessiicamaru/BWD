@@ -12,12 +12,12 @@
 
 .imageContainer {
     position: relative;
-    height: 700px;
+    height: 100vh;
     width: 40%;
 }
 
 .imageContainer img {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .title {
