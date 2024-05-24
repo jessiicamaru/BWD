@@ -55,7 +55,7 @@ export default function Index({ imageAtLeft, content }) {
                                     <div className={styles.pContainer} key={index}>
                                         <p>{contentText.content}</p>
                                         {contentText.image.src ? (
-                                            <>
+                                            <div className={styles.commentContainer}>
                                                 <img
                                                     src={contentText.image.src.src}
                                                     fill={true}
@@ -64,7 +64,7 @@ export default function Index({ imageAtLeft, content }) {
                                                     className={styles.imgContent}
                                                 />
                                                 <span className={styles.comment}>{contentText.image.comment}</span>
-                                            </>
+                                            </div>
                                         ) : (
                                             ''
                                         )}
@@ -74,7 +74,7 @@ export default function Index({ imageAtLeft, content }) {
                             return (
                                 <div className={styles.pContainer} key={index}>
                                     {contentText.image.src ? (
-                                        <>
+                                        <div className={styles.commentContainer}>
                                             <img
                                                 src={contentText.image.src.src}
                                                 fill={true}
@@ -83,7 +83,7 @@ export default function Index({ imageAtLeft, content }) {
                                                 className={styles.imgContent}
                                             />
                                             <span className={styles.comment}>{contentText.image.comment}</span>
-                                        </>
+                                        </div>
                                     ) : (
                                         ''
                                     )}

@@ -93,7 +93,7 @@ export default function Home() {
                             },
                             {
                                 content:
-                                    'Có những phong trào tiêu biểu như Hai Bà Trưng nổi dậy được  tự chủ chính quyền trong 3 năm, Lý Bí nổi dậy đánh đuổi Thứ sử giao Châu tự xưng là Lý Nam Đế lập ra nhà nước tự chủ Vạn Xuân,…',
+                                    'Có những phong trào tiêu biểu chống lại quân xâm lược phương như Hai Bà Trưng nổi dậy được tự chủ chính quyền trong 3 năm, Lý Bí nổi dậy đánh đuổi Thứ sử giao Châu tự xưng là Lý Nam Đế lập ra nhà nước tự chủ Vạn Xuân hay khởi nghĩa Phùng năm 776 giành được tự chủ trong thời gian ngắn,...',
                                 image: '',
                             },
 
@@ -133,6 +133,7 @@ export default function Home() {
                                 image: {
                                     src: project3_1,
                                     position: '',
+                                    comment: 'Chiến thằng trên sông bạch đằng năm 938',
                                 },
                             },
                             {
@@ -174,6 +175,7 @@ export default function Home() {
                                 image: {
                                     src: project4_1,
                                     position: '',
+                                    comment: 'Pháp đổ bộ tiến công vào nước ta',
                                 },
                             },
                             {
@@ -213,6 +215,7 @@ export default function Home() {
                                 image: {
                                     src: project5_1,
                                     position: '',
+                                    comment: 'Chiến thắng chấn động năm châu Điện Biên Phủ',
                                 },
                             },
                             {
@@ -221,6 +224,7 @@ export default function Home() {
                                 image: {
                                     src: project5_2,
                                     position: '',
+                                    comment: 'Miền Bắc xây dựng Chủ nghĩa xã hội',
                                 },
                             },
                             {
@@ -229,6 +233,7 @@ export default function Home() {
                                 image: {
                                     src: project5_3,
                                     position: '',
+                                    comment: 'Xe tăng húc đổ cổng Dinh Độc Lập, kết thúc chiến dịch Hồ Chí Minh lịch sử',
                                 },
                             },
                             {
