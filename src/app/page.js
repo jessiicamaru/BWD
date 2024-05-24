@@ -1,7 +1,19 @@
 'use client';
 import { useEffect } from 'react';
 import styles from './page.module.css';
-import { Intro, Description, Projects, FloatingImage, ParallaxScroll, GradientText, CardScroll, MaskText, Letters, Navigation } from '../components';
+import {
+    Intro,
+    Description,
+    Projects,
+    FloatingImage,
+    ParallaxScroll,
+    GradientText,
+    CardScroll,
+    MaskText,
+    Letters,
+    Navigation,
+    Footer,
+} from '../components';
 
 import {
     gd2,
@@ -55,7 +67,7 @@ export default function Home() {
                             },
                             {
                                 content:
-                                    'Văn Lang – nhà nước đầu tiên của VN được thành lập vào thế kỷ thứ 7 trước Công nguyên, nhờ cần cù lao động và tính sáng tạo của mình cư dân Văn Lang đã tạo nên một nền văn minh có ảnh hướng tới toàn bộ khu vực Đông Nam Á đó chính là là nền văn minh sông Hồng (hay văn minh Đông Sơn) mà biểu tượng  là trống đồng Đông Sơn - một di sản phản ánh tinh hoa lối sống, truyền thống và văn hóa của người Việt Cổ. ',
+                                    'Văn Lang – nhà nước đầu tiên của Việt Nam được thành lập vào thế kỷ thứ 7 trước Công nguyên, nhờ cần cù lao động và tính sáng tạo của mình cư dân Văn Lang đã tạo nên một nền văn minh có ảnh hướng tới toàn bộ khu vực Đông Nam Á đó chính là là nền văn minh sông Hồng (hay văn minh Đông Sơn) mà biểu tượng  là trống đồng Đông Sơn - một di sản phản ánh tinh hoa lối sống, truyền thống và văn hóa của người Việt Cổ. ',
                                 image: {
                                     src: project1_1,
                                     position: '',
@@ -362,6 +374,8 @@ export default function Home() {
             </div>
 
             <CardScroll />
+
+            <Footer />
         </main>
     );
 }
