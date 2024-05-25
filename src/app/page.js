@@ -34,6 +34,7 @@ import {
     project4_2,
     project4_3,
     project4_1,
+    project5,
     project5_2,
     project5_3,
 } from '../data';
@@ -202,6 +203,7 @@ export default function Home() {
                 <Projects
                     imageAtLeft={false}
                     content={{
+                        mainImage: project5,
                         title: 'Giai đoạn thống nhất đất nước',
                         description: [
                             {
