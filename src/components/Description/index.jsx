@@ -4,11 +4,11 @@ import gsap from 'gsap';
 import styles from './style.module.css';
 
 const phrases = [
-    'Los Flamencos National Reserve',
-    'is a nature reserve located',
-    'in the commune of San Pedro de Atacama',
-    'The reserve covers a total area',
-    'of 740 square kilometres (290 sq mi)',
+    'Việt Nam - 4000 năm lịch sử ',
+    'với những thăng trầm sóng gió ',
+    'nhưng trong những trang sử ấy ',
+    'vẫn toát lên vẻ hào hùng, bất khuất của dân tộc',
+    'trong quá trình dựng nước và giữ nước...',
 ];
 
 export default function Index() {
