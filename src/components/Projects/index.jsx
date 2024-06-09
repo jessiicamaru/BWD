@@ -46,7 +46,7 @@ export default function Index({ imageAtLeft, content }) {
                                 <div className={styles.pContainer} key={index}>
                                     <p>
                                         <span className={styles.title}>{title}</span>
-                                        {contentText.content}
+                                        <span className={styles.contentBox}>{contentText.content}</span>
                                     </p>
                                 </div>
                             );
@@ -54,7 +54,9 @@ export default function Index({ imageAtLeft, content }) {
                             if (contentText.image.position === 'under') {
                                 return (
                                     <div className={styles.pContainer} key={index}>
-                                        <p>{contentText.content}</p>
+                                        <p>
+                                            <span className={styles.contentBox}>{contentText.content}</span>
+                                        </p>
                                         {contentText.image.src ? (
                                             <div className={styles.commentContainer}>
                                                 <img
@@ -88,7 +90,7 @@ export default function Index({ imageAtLeft, content }) {
                                     ) : (
                                         ''
                                     )}
-                                    <p>{contentText.content}</p>
+                                    <span className={styles.contentBox}>{contentText.content}</span>
                                 </div>
                             );
                         }

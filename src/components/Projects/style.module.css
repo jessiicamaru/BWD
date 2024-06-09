@@ -104,6 +104,10 @@
     color: #ccc;
 }
 
+.contentBox {
+    text-align: justify;
+}
+
 @media (min-width: 740px) and (max-width: 1023px) {
     .imgContent {
         width: 100%;
