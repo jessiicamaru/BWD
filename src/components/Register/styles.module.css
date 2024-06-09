@@ -128,3 +128,23 @@
     margin-right: 8px;
     height: 10px;
 }
+
+.backButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 16px 24px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.backIcon {
+    height: 24px;
+    margin-right: 8px;
+    color: white;
+}
+
+.backButton:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

@@ -52,6 +52,32 @@
     display: block;
 }
 
+.actions {
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+    display: flex;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+}
+
+.actions > li {
+    display: inline-block;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.actions > li:nth-child(1) {
+    border-right: 1px solid white;
+}
+
+.actionsContainer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 739px) {
     .navigation {
         display: none;

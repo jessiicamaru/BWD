@@ -71,6 +71,9 @@
     height: 100vh;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.pcontainer + :not(.title) {
     text-align: justify;
 }
 
