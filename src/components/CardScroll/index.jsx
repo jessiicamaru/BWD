@@ -1,3 +1,4 @@
+'use client';
 import styles from './style.module.css';
 import Card from '../Card';
 import { useScroll } from 'framer-motion';

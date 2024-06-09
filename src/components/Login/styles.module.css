@@ -1,0 +1,130 @@
+.container {
+    background-color: white;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    transition: all 0.2s ease;
+    font-family: Avo, sans-serif;
+    border-radius: 10px;
+}
+
+.leftSide {
+    width: 40%;
+    background-image: url(./login.jpg);
+    height: 100%;
+    background-position: right center;
+    background-size: cover;
+}
+
+.rightSide {
+    width: 60%;
+    position: relative;
+    padding: 24px;
+}
+
+.form1 {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    right: 24px;
+}
+
+.rightLine > input,
+.rightLine > span,
+.leftLine > input,
+.leftLine > span,
+.line {
+    width: 100%;
+}
+
+.rightLine,
+.leftLine {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.rightLine {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.line {
+    width: 100%;
+    display: flex;
+    margin: 26px 0;
+}
+
+.line input {
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: solid 2px #ccc;
+}
+
+.line input:focus {
+    border: solid 2px #354750;
+    outline: #354750;
+}
+
+.heading {
+    margin-left: 10px;
+}
+
+.submit {
+    padding: 8px 16px;
+    border: none;
+    background-color: #354750;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.submit:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.nestInput {
+    position: relative;
+}
+
+.nestInput .xmark,
+.nestInput .check {
+    display: none;
+}
+
+.nestInput.invalid {
+    color: red;
+}
+
+.nestInput.invalid .xmark {
+    display: inline-block;
+}
+
+.nestInput.invalid > input {
+    border: solid 2px red;
+}
+
+.nestInput.valid {
+    color: green;
+}
+
+.nestInput.valid .xmark {
+    display: none;
+}
+
+.nestInput.valid > input {
+    border: solid 2px green;
+}
+
+.message {
+    position: absolute;
+    bottom: -35%;
+    left: 5%;
+    font-size: 11px;
+}
+
+.icon {
+    margin-right: 8px;
+    height: 10px;
+}

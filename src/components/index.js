@@ -9,5 +9,6 @@ import Letters from './Letters';
 import CardScroll from './CardScroll';
 import Navigation from './Navigation';
 import Footer from './Footer';
+import Login from './Login';
 
-export { Intro, Description, Projects, FloatingImage, ParallaxScroll, GradientText, CardScroll, MaskText, Letters, Navigation, Footer };
+export { Intro, Description, Projects, FloatingImage, ParallaxScroll, GradientText, CardScroll, MaskText, Letters, Navigation, Footer, Login };

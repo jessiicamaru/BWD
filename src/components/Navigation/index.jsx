@@ -1,3 +1,6 @@
+'use client';
+import Link from 'next/link';
+
 import { useRef, useEffect } from 'react';
 import styles from './style.module.css';
 
@@ -56,6 +59,9 @@ export default function Index() {
                 </li>
                 <li>
                     <a href="#vanhoa">Văn hóa</a>
+                </li>
+                <li>
+                    <Link href="/login">Đăng nhập</Link>
                 </li>
             </ul>
         </div>

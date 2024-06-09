@@ -71,6 +71,7 @@
     height: 100vh;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: justify;
 }
 
 .imgContainer {
