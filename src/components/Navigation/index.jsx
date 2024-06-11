@@ -20,8 +20,6 @@ export default function Index() {
         };
     }, []);
 
-    console.log(header);
-
     return (
         <>
             <div className={styles.header} ref={header}>

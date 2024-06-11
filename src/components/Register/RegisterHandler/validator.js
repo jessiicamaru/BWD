@@ -1,6 +1,10 @@
-import styles from './styles.module.css';
+import styles from '../styles.module.css';
+import { actions } from '@/store/registerStore';
+import sendEmail from './sendEmail';
 
-export function Validate(options) {
+export default function Validate({ options, context }) {
+    const [state, dispatch] = context;
+
     let form = options.form;
     let selectorRules = {};
     let submitButton = options.submitInfo;
@@ -104,11 +108,10 @@ export function Validate(options) {
         });
 
         if (isFormValid) {
-            console.log('success');
+            dispatch(actions.setVerifyCode(sendEmail));
+            dispatch(actions.setFormValid(true));
         }
     };
-
-    console.log(selectorRules);
 }
 
 Validate.isRequired = function (selector) {

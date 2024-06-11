@@ -23,11 +23,18 @@
     padding: 24px;
 }
 
-.form1 {
+.form2 {
     position: absolute;
     top: 24px;
     left: 24px;
     right: 24px;
+}
+
+.form2 > p > span {
+    font-weight: 600;
+    color: #354750;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .rightLine > input,
@@ -70,8 +77,7 @@
 .heading {
     margin-left: 10px;
 }
-
-.submit {
+.verify {
     padding: 8px 16px;
     border: none;
     background-color: #354750;
@@ -80,54 +86,9 @@
     width: 100%;
 }
 
-.submit:hover {
+.verify:hover {
     opacity: 0.8;
     cursor: pointer;
-}
-
-.nestInput {
-    position: relative;
-}
-
-.nestInput .xmark,
-.nestInput .check {
-    display: none;
-}
-
-.nestInput.invalid {
-    color: red;
-}
-
-.nestInput.invalid .xmark {
-    display: inline-block;
-}
-
-.nestInput.invalid > input {
-    border: solid 2px red;
-}
-
-.nestInput.valid {
-    color: green;
-}
-
-.nestInput.valid .xmark {
-    display: none;
-}
-
-.nestInput.valid > input {
-    border: solid 2px green;
-}
-
-.message {
-    position: absolute;
-    bottom: -35%;
-    left: 5%;
-    font-size: 11px;
-}
-
-.icon {
-    margin-right: 8px;
-    height: 10px;
 }
 
 .backButton {

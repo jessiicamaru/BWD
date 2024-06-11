@@ -7,7 +7,6 @@ import Lenis from '@studio-freight/lenis';
 
 export default function Index({ content }) {
     const projects = content;
-    console.log(content);
 
     const container = useRef(null);
     const { scrollYProgress } = useScroll({

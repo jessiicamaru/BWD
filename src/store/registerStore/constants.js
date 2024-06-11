@@ -1,0 +1,9 @@
+export const SET_FIRST_NAME_INPUT = 'set_first_name_input';
+export const SET_LAST_NAME_INPUT = 'set_last_name_input';
+export const SET_PHONE_NUMBER_INPUT = 'set_phone_number_input';
+export const SET_EMAIL_INPUT = 'set_email_input';
+export const SET_PASSWORD_INPUT = 'set_password_input';
+export const SET_FORM_VALID = 'set_form_valid';
+export const SET_VERIFY_CODE = 'set_verify_code';
+export const SET_SUCCESS = 'set_success';
+export const GET_STATE = 'get_state';

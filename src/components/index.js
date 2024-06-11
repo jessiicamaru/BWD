@@ -10,5 +10,20 @@ import CardScroll from './CardScroll';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import Register from './Register';
+import Verify from './Verify';
 
-export { Intro, Description, Projects, FloatingImage, ParallaxScroll, GradientText, CardScroll, MaskText, Letters, Navigation, Footer, Register };
+export {
+    Intro,
+    Description,
+    Projects,
+    FloatingImage,
+    ParallaxScroll,
+    GradientText,
+    CardScroll,
+    MaskText,
+    Letters,
+    Navigation,
+    Footer,
+    Register,
+    Verify,
+};

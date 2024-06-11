@@ -7,7 +7,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import img from 'public/images/salar_de_atacama.jpg';
 
 export default function Index({ imageAtLeft, content }) {
-    console.log(content);
     const container = useRef(null);
     const imageContainer = useRef(null);
     const desciption = useRef(null);
