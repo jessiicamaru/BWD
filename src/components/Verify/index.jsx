@@ -60,8 +60,6 @@ export default function Index() {
     };
 
     useEffect(() => {
-        console.log(state.success);
-        console.log(location);
         if (state.success === true) {
             location.href = '/';
         }

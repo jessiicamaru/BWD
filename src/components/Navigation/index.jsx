@@ -4,6 +4,12 @@ import Link from 'next/link';
 import { useRef, useEffect } from 'react';
 import styles from './style.module.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
+
+import Tippy from '@tippyjs/react/headless';
+import 'tippy.js/dist/tippy.css';
+
 export default function Index() {
     const header = useRef(null);
 
@@ -17,6 +23,10 @@ export default function Index() {
                 header.current.style.top = '-80px';
             }
             prevScrollpos = currentScrollPos;
+        };
+
+        return () => {
+            window.onscroll = () => {};
         };
     }, []);
 
@@ -62,6 +72,8 @@ export default function Index() {
                 </ul>
             </div>
             <div className={styles.actionsContainer}>
+                <FontAwesomeIcon icon={faEllipsisV} className={styles.actionsIcon} />
+
                 <ul className={styles.actions}>
                     <li>
                         <Link href="/register">Đăng ký</Link>

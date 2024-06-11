@@ -1,6 +1,8 @@
 import { constants } from '../registerStore';
 
-const initState = JSON.parse(localStorage.getItem('BWD_STATE')) || {
+let flag = false;
+if (typeof window !== 'undefined') flag = true;
+const initState = (flag && JSON.parse(localStorage.getItem('BWD_STATE'))) || {
     firstNameInput: '',
     lastNameInput: '',
     emailInput: '',

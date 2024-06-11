@@ -55,6 +55,7 @@ export default {
                     image: {
                         src: project1_1,
                         position: '',
+                        comment: 'Trống đồng Đông Sơn',
                     },
                 },
             ],
