@@ -62,6 +62,7 @@ export default function Index() {
     useEffect(() => {
         if (state.success === true) {
             location.href = '/';
+            localStorage.setItem('BWD_STATE', JSON.stringify(state));
         }
     }, [state.success]);
 

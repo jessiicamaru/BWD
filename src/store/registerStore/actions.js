@@ -7,11 +7,11 @@ import {
     SET_FORM_VALID,
     SET_VERIFY_CODE,
     SET_SUCCESS,
-    GET_STATE,
+    SET_DEFAULT_STATE,
 } from './constants';
 
-export const getState = () => ({
-    type: GET_STATE,
+export const setDefaultState = () => ({
+    type: SET_DEFAULT_STATE,
 });
 
 export const setFirstNameInput = (payload) => ({

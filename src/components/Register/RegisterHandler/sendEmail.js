@@ -19,7 +19,5 @@ export default function sendEmail({ firstName, lastName, email }) {
         .then((res) => console.log('successfully sent email'))
         .catch();
 
-    localStorage.setItem('VERIFY_CODE', JSON.stringify(formattedNumber));
-
     return formattedNumber;
 }

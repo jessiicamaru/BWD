@@ -15,8 +15,31 @@ const initState = (flag && JSON.parse(localStorage.getItem('BWD_STATE'))) || {
 
 function reducer(state, action) {
     switch (action.type) {
-        case constants.GET_STATE:
-            return state;
+        case constants.SET_DEFAULT_STATE:
+            localStorage.setItem(
+                'BWD_STATE',
+                JSON.stringify({
+                    firstNameInput: '',
+                    lastNameInput: '',
+                    emailInput: '',
+                    passwordInput: '',
+                    phoneNumberInput: '',
+                    formValid: false,
+                    verifyCode: '',
+                    success: false,
+                })
+            );
+            return {
+                ...state,
+                firstNameInput: '',
+                lastNameInput: '',
+                emailInput: '',
+                passwordInput: '',
+                phoneNumberInput: '',
+                formValid: false,
+                verifyCode: '',
+                success: false,
+            };
         case constants.SET_FIRST_NAME_INPUT:
             return {
                 ...state,

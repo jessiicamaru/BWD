@@ -6,4 +6,4 @@ export const SET_PASSWORD_INPUT = 'set_password_input';
 export const SET_FORM_VALID = 'set_form_valid';
 export const SET_VERIFY_CODE = 'set_verify_code';
 export const SET_SUCCESS = 'set_success';
-export const GET_STATE = 'get_state';
+export const SET_DEFAULT_STATE = 'set_default_state';

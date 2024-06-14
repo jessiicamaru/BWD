@@ -1,0 +1,64 @@
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 12;
+}
+
+.sideBarContainer {
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    padding: 16px;
+    animation: Slide 0.3s ease;
+}
+
+.sideBarContainer li {
+    padding: 16px 16px;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-bottom: 8px;
+}
+
+.sideBarContainer li > a {
+    color: black;
+}
+
+.sideBarContainer li:hover > a,
+.sideBarContainer li:hover {
+    background-color: #690705;
+    color: white;
+    cursor: pointer;
+}
+
+.sideBarContainer > h1 {
+    text-align: center;
+    line-height: 1.5;
+    padding: 36px 8px;
+    color: #690705;
+}
+
+.sideBarButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #690705;
+    z-index: 11;
+    font-size: 24px;
+}
+
+@keyframes Slide {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

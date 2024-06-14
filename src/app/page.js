@@ -1,5 +1,5 @@
 'use client';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import styles from './page.module.css';
 import {
     Intro,
@@ -13,9 +13,13 @@ import {
     Letters,
     Navigation,
     Footer,
+    SideBar,
 } from '../components';
 
 import script from '../script';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
 export default function Home() {
     useEffect(() => {
@@ -32,13 +36,30 @@ export default function Home() {
     const { gradientText1, gradientText2 } = script.gradientText;
     const { cardScroll } = script;
 
+    const [sideBarState, setSideBarState] = useState(false);
+    const closeSideBarRef = useRef(null);
+
+    useEffect(() => {
+        closeSideBarRef.current &&
+            closeSideBarRef.current.addEventListener('click', () => {
+                setSideBarState(!sideBarState);
+            });
+    });
+
     return (
         <main className={styles.main}>
+            <button
+                className={styles.sideBarButton}
+                onClick={() => {
+                    setSideBarState(!sideBarState);
+                }}
+            >
+                <FontAwesomeIcon icon={faBars} />
+            </button>
+            {sideBarState && <SideBar ref={closeSideBarRef} />}
             <Navigation />
             <Intro />
             <Description />
-            {/* <div className={styles.background}>
-            </div> */}
             <div id="project1">
                 <Projects
                     imageAtLeft={false}

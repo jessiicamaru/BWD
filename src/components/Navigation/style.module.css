@@ -57,6 +57,7 @@
     padding: 24px;
 }
 
+.accountActions,
 .actionsIcon,
 .actions {
     font-size: 16px;
@@ -65,17 +66,19 @@
     display: flex;
     position: absolute;
     right: 0;
-    z-index: 100;
+    z-index: 11;
 }
 
 .actionsIcon,
+.accountActions > li,
 .actions > li {
     display: inline-block;
     padding: 8px 16px;
     cursor: pointer;
 }
 
-.actionsIcon,
+.accountActions > li:hover,
+.actionsIcon:hover,
 .actions > li:hover {
     opacity: 0.8;
 }
@@ -84,10 +87,42 @@
     border-right: 1px solid white;
 }
 
+.accountContainer,
 .actionsContainer {
     height: 80px;
     display: flex;
     align-items: center;
+}
+
+.accountContainer {
+    justify-content: flex-end;
+}
+
+.accountContainer .accountIcon {
+    margin-right: 10px;
+}
+
+.account {
+    padding: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    z-index: 999;
+}
+
+.accountActions {
+    display: none;
+}
+
+.account:hover + .accountActions {
+    display: block !important;
+    top: 60px;
+}
+
+.accountActions:hover {
+    display: block;
+    top: 60px;
 }
 
 @media (max-width: 739px) {
@@ -103,7 +138,7 @@
 
     .actions:hover {
         display: block;
-        top: 80px;
+        top: 60px;
     }
 
     .actionsIcon:hover + .actions {

@@ -11,6 +11,7 @@ import Navigation from './Navigation';
 import Footer from './Footer';
 import Register from './Register';
 import Verify from './Verify';
+import SideBar from './SideBar';
 
 export {
     Intro,
@@ -26,4 +27,5 @@ export {
     Footer,
     Register,
     Verify,
+    SideBar,
 };

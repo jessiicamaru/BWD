@@ -35,23 +35,12 @@ export default {
             description: [
                 {
                     content:
-                        'Từ thế kỷ thứ 2 trước Công nguyên, nước ta đã bị các triều đại Trung Quốc khác nhau thống trị trong hơn một nghìn năm, trong thời kỳ này sự tồn vong của dân tộc bị thử thách đã khơi dậy tinh thần bất khuất kiên cường của người dân Việt Nam.',
+                        'Việt Nam nằm trong khu vực được xem là cái nôi của nhân loại, một trong những trung tâm nông nghiệp trồng lúa nước sớm nhất, nơi diễn ra các cuộc cách mạng đá và luyện kim. Người ta thường hay nhắc tới các truyền thuyết về Kinh Dương Vương, Lạc Long Quân, Phù Đổng Thiên Vương, Sơn Tinh – Thủy Tinh nhằm giải thích nguồn gốc và sự đấu tranh để tồn tại của dân tộc. ',
                     image: '',
                 },
                 {
                     content:
-                        'Có những phong trào tiêu biểu chống lại quân xâm lược phương như Hai Bà Trưng nổi dậy được tự chủ chính quyền trong 3 năm, Lý Bí nổi dậy đánh đuổi Thứ sử giao Châu tự xưng là Lý Nam Đế lập ra nhà nước tự chủ Vạn Xuân hay khởi nghĩa Phùng năm 776 giành được tự chủ trong thời gian ngắn,...',
-                    image: '',
-                },
-
-                {
-                    content:
-                        'Trong suốt 10 thế kỷ không lúc nào bọn đô hộ phương Bắc được ăn ngon, ngủ yên, phong trào đấu tranh của nhân dân ta nổ ra mạnh mẽ, liên tục, trên một không gian rộng lớn. Phong trào đã lôi cuốn được hàng vạn nhân dân, tầng lớp quan lại, binh lính người Việt tham gia, thậm chí có lúc còn kết hợp với phong trào đấu tranh của nhân dân Trung Quốc.',
-                    image: '',
-                },
-                {
-                    content:
-                        'Các phong trào đấu tranh của nhân dân ta đã làm cho kẻ thù suy yếu, đồng thời cổ vũ tinh thần đấu tranh của nhân dân ta, tạo điều kiện cho sự ra đời của chính quyền tự chủ ở thế kỷ 10.',
+                        'Văn Lang – nhà nước đầu tiên của Việt Nam được thành lập vào thế kỷ thứ 7 trước Công nguyên, nhờ cần cù lao động và tính sáng tạo của mình cư dân Văn Lang đã tạo nên một nền văn minh có ảnh hướng tới toàn bộ khu vực Đông Nam Á đó chính là là nền văn minh sông Hồng (hay văn minh Đông Sơn) mà biểu tượng  là trống đồng Đông Sơn - một di sản phản ánh tinh hoa lối sống, truyền thống và văn hóa của người Việt Cổ. ',
                     image: {
                         src: project1_1,
                         position: '',
