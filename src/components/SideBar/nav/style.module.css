@@ -1,0 +1,20 @@
+.nav {
+    overflow: hidden;
+    padding: 24px;
+}
+.nav .wrapper {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+.nav .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media only screen and (min-width: 1000px) {
+    .nav .wrapper {
+        margin-bottom: 0px;
+        justify-content: space-between;
+    }
+}

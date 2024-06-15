@@ -56,7 +56,7 @@ export default function Home() {
             >
                 <FontAwesomeIcon icon={faBars} />
             </button>
-            {sideBarState && <SideBar ref={closeSideBarRef} />}
+            {sideBarState && <SideBar ref={closeSideBarRef} isActive={sideBarState} />}
             <Navigation />
             <Intro />
             <Description />

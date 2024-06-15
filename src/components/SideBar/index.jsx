@@ -1,35 +1,32 @@
 'use client';
-import { useEffect, useRef, useState, forwardRef } from 'react';
 import styles from './style.module.css';
 import Link from 'next/link';
+import { forwardRef, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { opacity, background } from './anim';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-function Index(props, ref) {
+import Nav from './nav';
+
+function index(props, ref) {
+    console.log(props);
+    const isActive = props.isActive;
     return (
-        <div className={styles.main}>
-            <div className={styles.sideBarContainer}>
-                <button className={styles.sideBarButton} ref={ref}>
-                    <FontAwesomeIcon icon={faTimes} />
-                </button>
-                <h1>Việt Nam hùng cường</h1>
-                <ul>
-                    <li>
-                        <Link href="/giaidoan">Giai đoạn</Link>
-                    </li>
-                    <li>
-                        <Link href="/chungtich">Chứng tích</Link>
-                    </li>
-                    <li>
-                        <Link href="/noidau">Nỗi đau</Link>
-                    </li>
-                    <li>
-                        <Link href="/vanhoa">Văn hóa</Link>
-                    </li>
-                </ul>
+        <div className={styles.header}>
+            <div className={styles.bar}>
+                <div className={styles.el} ref={ref}>
+                    <div className={`${styles.burger} ${isActive ? styles.burgerActive : ''}`}></div>
+                    <div className={styles.label}>
+                        <motion.p variants={opacity} animate={!isActive ? 'open' : 'closed'}></motion.p>
+                        <motion.p variants={opacity} animate={isActive ? 'open' : 'closed'}></motion.p>
+                    </div>
+                </div>
             </div>
+            <motion.div variants={background} initial="initial" animate={isActive ? 'open' : 'closed'} className={styles.background}></motion.div>
+            <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
         </div>
     );
 }
 
-export default forwardRef(Index);
+export default forwardRef(index);

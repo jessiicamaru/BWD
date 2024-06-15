@@ -54,6 +54,13 @@ import luanuoc from '../public/images/luanuoc.jpg';
 import nonla from '../public/images/nonla.jpg';
 import thocung from '../public/images/thocung.jpg';
 
+import aboutus from '../public/headerImages/about_us.png';
+import cart from '../public/headerImages/cart.png';
+import contact from '../public/headerImages/contact.png';
+import home from '../public/headerImages/home.png';
+import lookbook from '../public/headerImages/lookbook.png';
+import shop from '../public/headerImages/shop.png';
+
 export {
     floating1,
     floating2,
@@ -104,4 +111,10 @@ export {
     luanuoc,
     nonla,
     thocung,
+    aboutus,
+    cart,
+    contact,
+    home,
+    lookbook,
+    shop,
 };
