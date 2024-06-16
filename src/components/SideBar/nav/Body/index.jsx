@@ -8,7 +8,8 @@ export default function Body({ links, selectedLink, setSelectedLink }) {
         if (location) {
             let url = location.href;
 
-            location.href = location.origin + '/';
+            url = url.slice(0, url.lastIndexOf('/'));
+            location.href = url;
         }
     };
 
