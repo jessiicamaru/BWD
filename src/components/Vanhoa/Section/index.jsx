@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import { VanhoaSectionBackground } from '@/data';
 import { useScroll, useTransform, motion } from 'framer-motion';
