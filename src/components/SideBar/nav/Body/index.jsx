@@ -4,6 +4,14 @@ import styles from './style.module.css';
 import { blur, translate } from '../../anim';
 
 export default function Body({ links, selectedLink, setSelectedLink }) {
+    const setLocationBack = () => {
+        if (location) {
+            let url = location.href;
+
+            location.href = location.origin + '/';
+        }
+    };
+
     const getChars = (word) => {
         let chars = [];
         word.split('').forEach((char, i) => {
@@ -43,7 +51,7 @@ export default function Body({ links, selectedLink, setSelectedLink }) {
             {links.map((link, index) => {
                 const { title, href } = link;
                 return (
-                    <Link key={`l_${index}`} href={href}>
+                    <Link key={`l_${index}`} href={href === 'back' ? '' : href} onClick={href === 'back' && setLocationBack}>
                         <motion.p
                             onMouseOver={() => {
                                 setSelectedLink({ isActive: true, index });

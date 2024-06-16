@@ -14,7 +14,6 @@ export default function Index({ links }) {
 
     const [state, dispatch] = useContext(RegisterContext);
     let username = state.firstNameInput + ' ' + state.lastNameInput;
-    console.log(state);
 
     useEffect(() => {
         var prevScrollpos = window.pageYOffset;

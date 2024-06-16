@@ -15,6 +15,11 @@ const links = [
         src: home,
     },
     {
+        title: 'TRANG CHỦ',
+        href: 'back',
+        src: home,
+    },
+    {
         title: 'Shop',
         href: '/shop',
         src: shop,
