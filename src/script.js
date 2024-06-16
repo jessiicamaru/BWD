@@ -241,7 +241,7 @@ export default {
         gradientText1:
             'Lịch sử Việt Nam là một chuỗi các trang sử hào hùng, đầy kiêu hãnh nhưng cũng không kém phần bi thương vì những cuộc chiến tranh tàn khốc. Mỗi một cuộc chiến tranh đều để lại những vết thương và nỗi đau sâu sắc hằn mãi trong tâm hồn người Việt….',
         gradientText2:
-            'Cha ông đã dành cả cuộc đời để bảo vệ đất nước, từ những trận đánh đến những công cuộc xây dựng đất nước. Đằng sau sức mạnh của lịch sử là một văn hóa đậm chất, phản ánh bản sắc và tinh thần bất khuất của dân tộc. Cùng nhau, chúng ta hãy dõi theo dấu vết của cha ông, khám phá những giá trị văn hóa vô giá mà họ để lại, để hiểu và trân trọng sâu sắc hơn những di sản của Việt Nam.',
+            'Thế hệ đi trước đã hy sinh từng giọt máu, từng hơi thở để bảo vệ đất nước, bảo vệ niềm tự hào dân tộc và nền văn hóa của cha ông. Dù trong hoàn cảnh khó khăn nào, họ vẫn vun đắp và truyền bá những giá trị văn hóa bền vững. Văn hóa là đòn bẩy để giữ vững tinh thần và nhận diện dân tộc trong bao biến cố lịch sử. Chính sự kiên cường và lòng tự hào về văn hóa đã giúp họ vượt qua mọi khó khăn, góp phần vào sự nghiệp xây dựng và phát triển đất nước.',
     },
 
     cardScroll: [

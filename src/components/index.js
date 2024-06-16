@@ -13,6 +13,10 @@ import Register from './Register';
 import Verify from './Verify';
 import SideBar from './SideBar';
 
+import VanhoaDescription from './Vanhoa/Description';
+import VanhoaIntro from './Vanhoa/Intro';
+import VanhoaSection from './Vanhoa/Section';
+
 export {
     Intro,
     Description,
@@ -28,4 +32,7 @@ export {
     Register,
     Verify,
     SideBar,
+    VanhoaDescription,
+    VanhoaIntro,
+    VanhoaSection,
 };

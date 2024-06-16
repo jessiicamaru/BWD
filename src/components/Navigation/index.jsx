@@ -41,36 +41,36 @@ export default function Index() {
                 <div className={styles.header} ref={header}>
                     <ul className={styles.navigation}>
                         <li>
-                            <a href="#">Giới thiệu</a>
+                            <Link href="#">Giới thiệu</Link>
                         </li>
                         <li>
-                            <a href="#">Giai đoạn</a>
+                            <Link href="#">Giai đoạn</Link>
                             <ul className={styles.subnav}>
                                 <li>
-                                    <a href="#project1">TIỀN LỊCH SỬ VÀ SƠ KHAI DỰNG NƯỚC</a>
+                                    <Link href="#project1">TIỀN LỊCH SỬ VÀ SƠ KHAI DỰNG NƯỚC</Link>
                                 </li>
                                 <li>
-                                    <a href="#project2">ĐẤU TRANH GIỮ NƯỚC</a>
+                                    <Link href="#project2">ĐẤU TRANH GIỮ NƯỚC</Link>
                                 </li>
                                 <li>
-                                    <a href="#project3">PHONG KIẾN XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC</a>
+                                    <Link href="#project3">PHONG KIẾN XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC</Link>
                                 </li>
                                 <li>
-                                    <a href="#project4">ĐẤU TRANH GIẢI PHÓNG DÂN TỘC</a>
+                                    <Link href="#project4">ĐẤU TRANH GIẢI PHÓNG DÂN TỘC</Link>
                                 </li>
                                 <li>
-                                    <a href="#project5">THỐNG NHẤT ĐẤT NƯỚC</a>
+                                    <Link href="#project5">THỐNG NHẤT ĐẤT NƯỚC</Link>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#chungtich">Chứng tích</a>
+                            <Link href="#chungtich">Chứng tích</Link>
                         </li>
                         <li>
-                            <a href="#noidau">Nỗi đau</a>
+                            <Link href="#noidau">Nỗi đau</Link>
                         </li>
                         <li>
-                            <a href="#vanhoa">Văn hóa</a>
+                            <Link href="#vanhoa">Văn hóa</Link>
                         </li>
                     </ul>
                 </div>

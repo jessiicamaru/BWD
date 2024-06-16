@@ -7,6 +7,21 @@ export default function Body({ links, selectedLink, setSelectedLink }) {
     const getChars = (word) => {
         let chars = [];
         word.split('').forEach((char, i) => {
+            if (char === ' ') {
+                chars.push(
+                    <motion.span
+                        custom={[i * 0.02, (word.length - i) * 0.01]}
+                        variants={translate}
+                        initial="initial"
+                        animate="enter"
+                        exit="exit"
+                        key={char + i}
+                    >
+                        &nbsp;
+                    </motion.span>
+                );
+            }
+
             chars.push(
                 <motion.span
                     custom={[i * 0.02, (word.length - i) * 0.01]}

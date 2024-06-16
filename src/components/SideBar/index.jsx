@@ -1,11 +1,8 @@
 'use client';
 import styles from './style.module.css';
-import Link from 'next/link';
-import { forwardRef, useState } from 'react';
+import { forwardRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { opacity, background } from './anim';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import Nav from './nav';
 

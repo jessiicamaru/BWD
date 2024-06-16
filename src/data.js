@@ -61,6 +61,9 @@ import home from '../public/headerImages/home.png';
 import lookbook from '../public/headerImages/lookbook.png';
 import shop from '../public/headerImages/shop.png';
 
+import VanhoaIntroBackground from '../public/VanhoaPage/2.jpg';
+import VanhoaSectionBackground from '../public/VanhoaPage/1.jpg';
+
 export {
     floating1,
     floating2,
@@ -117,4 +120,6 @@ export {
     home,
     lookbook,
     shop,
+    VanhoaIntroBackground,
+    VanhoaSectionBackground,
 };

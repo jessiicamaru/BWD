@@ -10,7 +10,7 @@ import { aboutus, cart, contact, home, lookbook, shop } from '@/data';
 
 const links = [
     {
-        title: 'Home',
+        title: 'VĂN HÓA',
         href: '/',
         src: home,
     },
