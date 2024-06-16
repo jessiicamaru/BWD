@@ -28,6 +28,81 @@ import {
 } from './data';
 
 export default {
+    navigationPage1: [
+        {
+            href: '#',
+            content: 'Giới thiệu',
+            subnav: null,
+        },
+        {
+            href: '#',
+            content: 'Giai đoạn',
+            subnav: [
+                {
+                    href: '#project1',
+                    content: 'TIỀN LỊCH SỬ VÀ SƠ KHAI DỰNG NƯỚC',
+                    subnav: null,
+                },
+                {
+                    href: '#project2',
+                    content: 'ĐẤU TRANH GIỮ NƯỚC',
+                    subnav: null,
+                },
+                {
+                    href: '#project3',
+                    content: 'PHONG KIẾN XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC',
+                    subnav: null,
+                },
+                {
+                    href: '#project4',
+                    content: 'ĐẤU TRANH GIẢI PHÓNG DÂN TỘC',
+                    subnav: null,
+                },
+                {
+                    href: '#project5',
+                    content: 'THỐNG NHẤT ĐẤT NƯỚC',
+                    subnav: null,
+                },
+            ],
+        },
+        {
+            href: '#chungtich',
+            content: 'Chứng tích',
+            subnav: null,
+        },
+        {
+            href: '#noidau',
+            content: 'Nỗi đau',
+            subnav: null,
+        },
+        {
+            href: '#vanhoa',
+            content: 'Văn hóa',
+            subnav: null,
+        },
+    ],
+    navigationVanhoaPage: [
+        {
+            href: '#',
+            content: 'Giới thiệu',
+            subnav: null,
+        },
+        {
+            href: '#chungtich',
+            content: 'Văn hóa bắc bộ',
+            subnav: null,
+        },
+        {
+            href: '#noidau',
+            content: 'Văn hóa trung bộ',
+            subnav: null,
+        },
+        {
+            href: '#vanhoa',
+            content: 'Văn hóa nam bộ',
+            subnav: null,
+        },
+    ],
     project: {
         script1: {
             mainImage: project1,

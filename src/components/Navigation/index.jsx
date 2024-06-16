@@ -7,11 +7,9 @@ import styles from './style.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisV, faSignOutAlt, faUser } from '@fortawesome/free-solid-svg-icons';
 
-import Tippy from '@tippyjs/react/headless';
-import 'tippy.js/dist/tippy.css';
 import { RegisterContext, actions } from '@/store/registerStore';
 
-export default function Index() {
+export default function Index({ links }) {
     const header = useRef(null);
 
     const [state, dispatch] = useContext(RegisterContext);
@@ -35,44 +33,30 @@ export default function Index() {
         };
     }, []);
 
+    const renderNav = (links) => {
+        if (!links) return;
+        return links.map((link) => {
+            if (!link.subnav)
+                return (
+                    <li>
+                        <Link href={link.href}>{link.content}</Link>
+                    </li>
+                );
+
+            return (
+                <li>
+                    <Link href={link.href}>{link.content}</Link>
+                    <ul className={styles.subnav}>{renderNav(link.subnav)}</ul>
+                </li>
+            );
+        });
+    };
+
     if (state.success) {
         return (
             <>
                 <div className={styles.header} ref={header}>
-                    <ul className={styles.navigation}>
-                        <li>
-                            <Link href="#">Giới thiệu</Link>
-                        </li>
-                        <li>
-                            <Link href="#">Giai đoạn</Link>
-                            <ul className={styles.subnav}>
-                                <li>
-                                    <Link href="#project1">TIỀN LỊCH SỬ VÀ SƠ KHAI DỰNG NƯỚC</Link>
-                                </li>
-                                <li>
-                                    <Link href="#project2">ĐẤU TRANH GIỮ NƯỚC</Link>
-                                </li>
-                                <li>
-                                    <Link href="#project3">PHONG KIẾN XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC</Link>
-                                </li>
-                                <li>
-                                    <Link href="#project4">ĐẤU TRANH GIẢI PHÓNG DÂN TỘC</Link>
-                                </li>
-                                <li>
-                                    <Link href="#project5">THỐNG NHẤT ĐẤT NƯỚC</Link>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <Link href="#chungtich">Chứng tích</Link>
-                        </li>
-                        <li>
-                            <Link href="#noidau">Nỗi đau</Link>
-                        </li>
-                        <li>
-                            <Link href="#vanhoa">Văn hóa</Link>
-                        </li>
-                    </ul>
+                    <ul className={styles.navigation}>{renderNav(links)}</ul>
                 </div>
                 <div className={styles.accountContainer}>
                     <div className={styles.account}>
@@ -97,40 +81,7 @@ export default function Index() {
     return (
         <>
             <div className={styles.header} ref={header}>
-                <ul className={styles.navigation}>
-                    <li>
-                        <a href="#">Giới thiệu</a>
-                    </li>
-                    <li>
-                        <a href="#">Giai đoạn</a>
-                        <ul className={styles.subnav}>
-                            <li>
-                                <a href="#project1">TIỀN LỊCH SỬ VÀ SƠ KHAI DỰNG NƯỚC</a>
-                            </li>
-                            <li>
-                                <a href="#project2">ĐẤU TRANH GIỮ NƯỚC</a>
-                            </li>
-                            <li>
-                                <a href="#project3">PHONG KIẾN XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC</a>
-                            </li>
-                            <li>
-                                <a href="#project4">ĐẤU TRANH GIẢI PHÓNG DÂN TỘC</a>
-                            </li>
-                            <li>
-                                <a href="#project5">THỐNG NHẤT ĐẤT NƯỚC</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#chungtich">Chứng tích</a>
-                    </li>
-                    <li>
-                        <a href="#noidau">Nỗi đau</a>
-                    </li>
-                    <li>
-                        <a href="#vanhoa">Văn hóa</a>
-                    </li>
-                </ul>
+                <ul className={styles.navigation}>{renderNav(links)}</ul>
             </div>
             <div className={styles.actionsContainer}>
                 <FontAwesomeIcon icon={faEllipsisV} className={styles.actionsIcon} />

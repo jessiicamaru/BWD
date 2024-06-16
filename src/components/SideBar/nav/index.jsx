@@ -11,7 +11,7 @@ import { aboutus, cart, contact, home, lookbook, shop } from '@/data';
 const links = [
     {
         title: 'VĂN HÓA',
-        href: '/',
+        href: '/vanhoa',
         src: home,
     },
     {

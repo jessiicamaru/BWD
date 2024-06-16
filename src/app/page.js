@@ -16,7 +16,7 @@ import {
     SideBar,
 } from '../components';
 
-import script from '../script';
+import script from '@/script';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
@@ -35,6 +35,7 @@ export default function Home() {
     const { gradientLetter1, gradientLetter2 } = script.gradientLetter;
     const { gradientText1, gradientText2 } = script.gradientText;
     const { cardScroll } = script;
+    const navigation = script.navigationPage1;
 
     const [sideBarState, setSideBarState] = useState(false);
     const closeSideBarRef = useRef(null);
@@ -57,7 +58,7 @@ export default function Home() {
                 <FontAwesomeIcon icon={faBars} />
             </button>
             {sideBarState && <SideBar ref={closeSideBarRef} isActive={sideBarState} />}
-            <Navigation />
+            <Navigation links={navigation} />
             <Intro />
             <Description />
             <div id="project1">
