@@ -1,3 +1,4 @@
+'use client';
 import styles from './styles.module.css';
 import { zp1, zp2, zp3, zp4, zp5, zp6, zp7 } from '@/data';
 import Image from 'next/image';
