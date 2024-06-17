@@ -16,6 +16,8 @@ import SideBar from './SideBar';
 import VanhoaDescription from './Vanhoa/Description';
 import VanhoaIntro from './Vanhoa/Intro';
 import VanhoaSection from './Vanhoa/Section';
+import ZoomParallax from './Vanhoa/ZoomParallax';
+import Chungtich from './Chungtich';
 
 export {
     Intro,
@@ -35,4 +37,6 @@ export {
     VanhoaDescription,
     VanhoaIntro,
     VanhoaSection,
+    ZoomParallax,
+    Chungtich,
 };

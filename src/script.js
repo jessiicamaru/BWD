@@ -103,6 +103,23 @@ export default {
             subnav: null,
         },
     ],
+    navigationChungtichPage: [
+        {
+            href: '#',
+            content: 'Giới thiệu',
+            subnav: null,
+        },
+        {
+            href: '#chungtich',
+            content: 'Nhà tù hỏa lò',
+            subnav: null,
+        },
+        {
+            href: '#noidau',
+            content: 'Cầu hiền lương',
+            subnav: null,
+        },
+    ],
     project: {
         script1: {
             mainImage: project1,

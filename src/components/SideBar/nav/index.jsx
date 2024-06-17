@@ -20,8 +20,8 @@ const links = [
         src: home,
     },
     {
-        title: 'Shop',
-        href: '/shop',
+        title: 'CHỨNG TÍCH',
+        href: '/chungtich',
         src: shop,
     },
     {

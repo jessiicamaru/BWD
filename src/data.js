@@ -63,6 +63,27 @@ import shop from '../public/headerImages/shop.png';
 
 import VanhoaIntroBackground from '../public/VanhoaPage/2.jpg';
 import VanhoaSectionBackground from '../public/VanhoaPage/1.jpg';
+import zp1 from '../public/vanhoaPage/zp1.jpeg';
+import zp2 from '../public/vanhoaPage/zp2.jpeg';
+import zp3 from '../public/vanhoaPage/zp3.jpg';
+import zp4 from '../public/vanhoaPage/zp4.jpg';
+import zp5 from '../public/vanhoaPage/zp5.jpg';
+import zp6 from '../public/vanhoaPage/zp6.jpg';
+import zp7 from '../public/vanhoaPage/zp7.jpeg';
+
+import c2 from '../public/ChungtichPage/c2.jpg';
+import decimal from '../public/ChungtichPage/decimal.jpg';
+import funny from '../public/ChungtichPage/funny.jpg';
+import google from '../public/ChungtichPage/google.jpg';
+import maven from '../public/ChungtichPage/maven.jpg';
+import panda from '../public/ChungtichPage/panda.jpg';
+import powell from '../public/ChungtichPage/powell.jpg';
+import wix from '../public/ChungtichPage/wix.jpg';
+import c2montreal from '../public/ChungtichPage/c2montreal.png';
+import officestudio from '../public/ChungtichPage/officestudio.png';
+import locomotive from '../public/ChungtichPage/locomotive.png';
+import silencio from '../public/ChungtichPage/silencio.png';
+import background from '../public/ChungtichPage/background.jpg';
 
 export {
     floating1,
@@ -122,4 +143,24 @@ export {
     shop,
     VanhoaIntroBackground,
     VanhoaSectionBackground,
+    zp1,
+    zp2,
+    zp3,
+    zp4,
+    zp5,
+    zp6,
+    zp7,
+    c2,
+    decimal,
+    funny,
+    google,
+    maven,
+    panda,
+    powell,
+    wix,
+    c2montreal,
+    officestudio,
+    locomotive,
+    silencio,
+    background,
 };
