@@ -63,13 +63,13 @@ import shop from '../public/headerImages/shop.png';
 
 import VanhoaIntroBackground from '../public/VanhoaPage/2.jpg';
 import VanhoaSectionBackground from '../public/VanhoaPage/1.jpg';
-import zp1 from '../public/vanhoaPage/zp1.jpeg';
-import zp2 from '../public/vanhoaPage/zp2.jpeg';
-import zp3 from '../public/vanhoaPage/zp3.jpg';
-import zp4 from '../public/vanhoaPage/zp4.jpg';
-import zp5 from '../public/vanhoaPage/zp5.jpg';
-import zp6 from '../public/vanhoaPage/zp6.jpg';
-import zp7 from '../public/vanhoaPage/zp7.jpeg';
+import zp1 from '../public/VanhoaPage/zp1.jpeg';
+import zp2 from '../public/VanhoaPage/zp2.jpeg';
+import zp3 from '../public/VanhoaPage/zp3.jpg';
+import zp4 from '../public/VanhoaPage/zp4.jpg';
+import zp5 from '../public/VanhoaPage/zp5.jpg';
+import zp6 from '../public/VanhoaPage/zp6.jpg';
+import zp7 from '../public/VanhoaPage/zp7.jpeg';
 
 import c2 from '../public/ChungtichPage/c2.jpg';
 import decimal from '../public/ChungtichPage/decimal.jpg';
