@@ -2,12 +2,29 @@
 import styles from './style.module.css';
 import { useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import useMousePosition from './utils/useMousePosition';
+// import useMousePosition from './utils/useMousePosition';
 
 export default function Index() {
     const containerRef = useRef(null);
+
+    const useMousePosition = () => {
+        const [mousePosition, setMousePosition] = useState({ x: null, y: null });
+
+        const updateMousePosition = (e) => {
+            setMousePosition({ x: e.clientX, y: e.clientY });
+        };
+
+        useEffect(() => {
+            containerRef.current.addEventListener('mousemove', updateMousePosition);
+
+            return () => containerRef.current.removeEventListener('mousemove', updateMousePosition);
+        }, []);
+
+        return mousePosition;
+    };
+
     const [isHovered, setIsHovered] = useState(false);
-    const { x, y } = useMousePosition(containerRef.current);
+    const { x, y } = useMousePosition();
     const size = isHovered ? 400 : 40;
 
     return (

@@ -34,18 +34,24 @@ export default function Index({ links }) {
 
     const renderNav = (links) => {
         if (!links) return;
-        return links.map((link) => {
+        return links.map((link, index) => {
             if (!link.subnav)
                 return (
                     <li>
-                        <Link href={link.href}>{link.content}</Link>
+                        <Link href={link.href} key={`navg${index}${link.content}`}>
+                            {link.content}
+                        </Link>
                     </li>
                 );
 
             return (
                 <li>
-                    <Link href={link.href}>{link.content}</Link>
-                    <ul className={styles.subnav}>{renderNav(link.subnav)}</ul>
+                    <Link href={link.href} key={`navg${index}${link.content}`}>
+                        {link.content}
+                    </Link>
+                    <ul className={styles.subnav} key={`subnavg${index}${link.content}`}>
+                        {renderNav(link.subnav)}
+                    </ul>
                 </li>
             );
         });
