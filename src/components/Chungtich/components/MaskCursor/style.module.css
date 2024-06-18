@@ -24,7 +24,7 @@
     color: #ec4e39;
 }
 .main .mask {
-    mask-image: url('/mask.svg');
+    mask-image: url('./mask.svg');
     mask-repeat: no-repeat;
     mask-size: 40px;
     background: #ec4e39;
