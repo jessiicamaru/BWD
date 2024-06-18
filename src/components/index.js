@@ -18,12 +18,14 @@ import VanhoaIntro from './Vanhoa/Intro';
 import VanhoaSection from './Vanhoa/Section';
 import ZoomParallax from './Vanhoa/ZoomParallax';
 import Chungtich from './Chungtich';
+import Contact from './Contact';
 
 export {
     Intro,
     Description,
     Projects,
     FloatingImage,
+    Contact,
     ParallaxScroll,
     GradientText,
     CardScroll,

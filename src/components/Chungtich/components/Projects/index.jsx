@@ -6,30 +6,9 @@ import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import Image from 'next/image';
 import Rounded from '../../common/RoundedButton';
-import { c2montreal, officestudio, locomotive, silencio } from '@/data';
+import script from '@/script';
 
-const projects = [
-    {
-        title: 'C2 Montreal',
-        src: c2montreal,
-        color: '#000000',
-    },
-    {
-        title: 'Office Studio',
-        src: officestudio,
-        color: '#8C8C8C',
-    },
-    {
-        title: 'Locomotive',
-        src: locomotive,
-        color: '#EFE8D3',
-    },
-    {
-        title: 'Silencio',
-        src: silencio,
-        color: '#706D63',
-    },
-];
+const projects = script.chungtichPage.projects;
 
 const scaleAnimation = {
     initial: { scale: 0, x: '-50%', y: '-50%' },
@@ -85,12 +64,9 @@ export default function Home() {
         >
             <div className={styles.body}>
                 {projects.map((project, index) => {
-                    return <Project index={index} title={project.title} manageModal={manageModal} key={index} />;
+                    return <Project index={index} title={project.title} manageModal={manageModal} subtitle={project.subtitle} key={index} />;
                 })}
             </div>
-            <Rounded>
-                <p>More work</p>
-            </Rounded>
             <>
                 <motion.div
                     ref={modalContainer}

@@ -25,6 +25,10 @@ import {
     luanuoc,
     nonla,
     thocung,
+    c2montreal,
+    officestudio,
+    locomotive,
+    silencio,
 } from './data';
 
 export default {
@@ -110,13 +114,13 @@ export default {
             subnav: null,
         },
         {
-            href: '#chungtich',
-            content: 'Nhà tù hỏa lò',
+            href: '#disan',
+            content: 'Di sản',
             subnav: null,
         },
         {
-            href: '#noidau',
-            content: 'Cầu hiền lương',
+            href: '#dauan',
+            content: 'Dấu ấn',
             subnav: null,
         },
     ],
@@ -378,4 +382,39 @@ export default {
             color: '#C2491D',
         },
     ],
+
+    chungtichPage: {
+        preLoader: ['Những', 'dấu', 'ấn', 'sống', 'động', 'của', 'quá', 'khứ'],
+        landing: 'Chứng tích lịch sử',
+        description: {
+            phrase1:
+                'Việt Nam có rất nhiều chứng tích lịch sử quan trọng, từ các di chỉ khảo cổ, các công trình kiến trúc đến những sự kiện lịch sử và các kỷ vật có giá trị. Những chứng tích này đóng vai trò lưu giữ và bảo tồn di sản văn hóa lịch sử, hơn nữa góp phần giáo dục, tôn vinh và thúc đẩy nhận thức về lịch sử, văn hóa dân tộc.',
+        },
+        projects: [
+            {
+                title: 'Dòng thời gian',
+                src: c2montreal,
+                color: '#000000',
+                subtitle: 'Tinh hoa',
+            },
+            {
+                title: 'Dấu ấn',
+                src: officestudio,
+                color: '#8C8C8C',
+                subtitle: 'Chứng tích',
+            },
+            {
+                title: 'Ống kính lịch sử',
+                src: locomotive,
+                color: '#EFE8D3',
+                subtitle: 'Thước phim',
+            },
+            {
+                title: 'Khoảnh khắc',
+                src: silencio,
+                color: '#706D63',
+                subtitle: 'Hình ảnh',
+            },
+        ],
+    },
 };

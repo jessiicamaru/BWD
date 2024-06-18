@@ -2,9 +2,11 @@ import styles from './style.module.css';
 import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
 import { slideUp, opacity } from './animation.js';
+import script from '@/script';
+import { descriptionImg } from '@/data';
+import Image from 'next/image';
 export default function index() {
-    const phrase =
-        'Helping brands to stand out in the digital era. Together we will set the new status quo. No nonsense, always on the cutting edge.';
+    const phrase = script.chungtichPage.description.phrase1;
     const description = useRef(null);
     const isInView = useInView(description);
     return (
@@ -21,9 +23,9 @@ export default function index() {
                         );
                     })}
                 </p>
-                <motion.p variants={opacity} animate={isInView ? 'open' : 'closed'}>
-                    The combination of my passion for design, code & interaction positions me in a unique place in the web design world.
-                </motion.p>
+                <motion.div variants={opacity} animate={isInView ? 'open' : 'closed'}>
+                    <Image src={descriptionImg} alt="" className={styles.descriptionImg} />
+                </motion.div>
             </div>
         </div>
     );

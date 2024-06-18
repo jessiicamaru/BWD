@@ -7,6 +7,7 @@ import { ScrollTrigger } from 'gsap/all';
 import { slideUp } from './animation';
 import { motion } from 'framer-motion';
 import { background } from '@/data';
+import script from '@/script';
 
 export default function Home() {
     const firstText = useRef(null);
@@ -14,6 +15,8 @@ export default function Home() {
     const slider = useRef(null);
     let xPercent = 0;
     let direction = -1;
+
+    const text = script.chungtichPage.landing;
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -47,8 +50,8 @@ export default function Home() {
             <Image src={background} fill={true} alt="background" />
             <div className={styles.sliderContainer}>
                 <div ref={slider} className={styles.slider}>
-                    <p ref={firstText}>Freelance Developer -</p>
-                    <p ref={secondText}>Freelance Developer -</p>
+                    <p ref={firstText}>{text} -</p>
+                    <p ref={secondText}>{text} -</p>
                 </div>
             </div>
             <div data-scroll data-scroll-speed={0.1} className={styles.description}>
@@ -58,8 +61,7 @@ export default function Home() {
                         fill="white"
                     />
                 </svg>
-                <p>Freelance</p>
-                <p>Designer & Developer</p>
+                <p>{text}</p>
             </div>
         </motion.main>
     );

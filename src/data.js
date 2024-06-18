@@ -83,7 +83,8 @@ import c2montreal from '../public/ChungtichPage/c2montreal.png';
 import officestudio from '../public/ChungtichPage/officestudio.png';
 import locomotive from '../public/ChungtichPage/locomotive.png';
 import silencio from '../public/ChungtichPage/silencio.png';
-import background from '../public/ChungtichPage/background.jpg';
+import background from '../public/ChungtichPage/background.png';
+import descriptionImg from '../public/ChungtichPage/descriptionImg.jpg';
 
 export {
     floating1,
@@ -163,4 +164,5 @@ export {
     locomotive,
     silencio,
     background,
+    descriptionImg,
 };

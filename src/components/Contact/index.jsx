@@ -1,9 +1,9 @@
 import styles from './style.module.css';
 import Image from 'next/image';
-import Rounded from '../../common/RoundedButton';
+import Rounded from '../Chungtich/common/RoundedButton';
 import { useRef } from 'react';
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
-import Magnetic from '../../common/Magnetic';
+import Magnetic from '../Chungtich/common/Magnetic';
 import { background } from '@/data';
 
 export default function index() {

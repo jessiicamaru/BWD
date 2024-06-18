@@ -14,6 +14,7 @@ import {
     Navigation,
     Footer,
     SideBar,
+    Contact,
 } from '../components';
 
 import script from '@/script';
@@ -216,7 +217,7 @@ export default function Home() {
 
             <CardScroll content={cardScroll} />
 
-            <Footer />
+            <Contact />
         </main>
     );
 }
