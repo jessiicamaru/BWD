@@ -3,7 +3,7 @@ import styles from './vanhoa.module.css';
 import { useEffect, useState, useRef } from 'react';
 import Lenis from 'lenis';
 
-import { VanhoaDescription, VanhoaIntro, VanhoaSection, SideBar, Navigation, ZoomParallax, Contact } from '@/components';
+import { VanhoaDescription, VanhoaIntro, VanhoaSection, SideBar, Navigation, ZoomParallax, Contact, MouseImage } from '@/components';
 import script from '@/script';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -43,7 +43,7 @@ export default function Vanhoa() {
             <VanhoaSection />
             <div style={{ height: '100vh' }}></div>
             <ZoomParallax />
-
+            <MouseImage />
             <Contact />
         </main>
     );

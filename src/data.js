@@ -71,6 +71,26 @@ import zp5 from '../public/VanhoaPage/zp5.jpg';
 import zp6 from '../public/VanhoaPage/zp6.jpg';
 import zp7 from '../public/VanhoaPage/zp7.jpeg';
 
+import mi0 from '../public/VanhoaPage/mi0.jpg';
+import mi1 from '../public/VanhoaPage/mi1.jpg';
+import mi2 from '../public/VanhoaPage/mi2.jpg';
+import mi3 from '../public/VanhoaPage/mi3.jpg';
+import mi4 from '../public/VanhoaPage/mi4.jpg';
+import mi5 from '../public/VanhoaPage/mi5.jpg';
+import mi6 from '../public/VanhoaPage/mi6.jpg';
+import mi7 from '../public/VanhoaPage/mi7.jpg';
+import mi8 from '../public/VanhoaPage/mi8.jpg';
+import mi9 from '../public/VanhoaPage/mi9.jpg';
+import mi10 from '../public/VanhoaPage/mi10.jpg';
+import mi11 from '../public/VanhoaPage/mi11.jpg';
+import mi12 from '../public/VanhoaPage/mi12.jpg';
+import mi13 from '../public/VanhoaPage/mi13.jpg';
+import mi14 from '../public/VanhoaPage/mi14.jpg';
+import mi15 from '../public/VanhoaPage/mi15.jpg';
+import mi16 from '../public/VanhoaPage/mi16.jpg';
+import mi17 from '../public/VanhoaPage/mi17.jpg';
+import mi18 from '../public/VanhoaPage/mi18.jpg';
+
 import c2 from '../public/ChungtichPage/c2.jpg';
 import decimal from '../public/ChungtichPage/decimal.jpg';
 import funny from '../public/ChungtichPage/funny.jpg';
@@ -83,7 +103,7 @@ import c2montreal from '../public/ChungtichPage/c2montreal.png';
 import officestudio from '../public/ChungtichPage/officestudio.png';
 import locomotive from '../public/ChungtichPage/locomotive.png';
 import silencio from '../public/ChungtichPage/silencio.png';
-import background from '../public/ChungtichPage/background.png';
+import background from '../public/ChungtichPage/background.jpg';
 import descriptionImg from '../public/ChungtichPage/descriptionImg.jpg';
 
 export {
@@ -165,4 +185,23 @@ export {
     silencio,
     background,
     descriptionImg,
+    mi0,
+    mi1,
+    mi2,
+    mi3,
+    mi4,
+    mi5,
+    mi6,
+    mi7,
+    mi8,
+    mi9,
+    mi10,
+    mi11,
+    mi12,
+    mi13,
+    mi14,
+    mi15,
+    mi16,
+    mi17,
+    mi18,
 };

@@ -1,7 +1,7 @@
 .container {
     height: 300vh;
     position: relative;
-    padding-bottom: 50%;
+    padding-bottom: 100px;
 }
 .container .sticky {
     position: sticky;
