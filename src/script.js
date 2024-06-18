@@ -384,7 +384,7 @@ export default {
     ],
 
     chungtichPage: {
-        preLoader: ['Những', 'dấu', 'ấn', 'sống', 'động', 'của', 'quá', 'khứ'],
+        preLoader: ['Những', 'Dấu', 'Ấn', 'Sống', 'Động', 'Của', 'Quá', 'Khứ'],
         landing: 'Chứng tích lịch sử',
         description: {
             phrase1:
@@ -416,5 +416,14 @@ export default {
                 subtitle: 'Hình ảnh',
             },
         ],
+    },
+
+    vanhoaPage: {
+        description: 'Bạn đã sẵn sàng khám phá văn hóa Việt Nam chưa?',
+        section: {
+            phrase1:
+                'Văn hóa Việt Nam là sự kết hợp của các yếu tố truyền thống và sự sáng tạo không ngừng nghỉ. Sự hòa quyện ấy tạo ra một nền văn hóa đa dạng, phong phú và độc đáo làm nên sức hút đặc biệt của nền văn hóa này.',
+            phrase2: 'Nền văn hóa độc đáo',
+        },
     },
 };

@@ -6,6 +6,7 @@ import Landing from './components/Landing';
 import Projects from './components/Projects';
 import Description from './components/Description';
 import SlidingImages from './components/SlidingImages';
+import MaskCursor from './components/MaskCursor';
 import Contact from '@/components/Contact';
 
 export default function Index() {
@@ -31,6 +32,7 @@ export default function Index() {
             <Description />
             <Projects />
             <SlidingImages />
+            <MaskCursor />
             <Contact />
         </>
     );

@@ -4,6 +4,7 @@ import { VanhoaSectionBackground } from '@/data';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import { useRef } from 'react';
 import styles from './style.module.css';
+import script from '@/script';
 
 export default function Index() {
     const container = useRef();
@@ -13,11 +14,13 @@ export default function Index() {
     });
     const y = useTransform(scrollYProgress, [0, 1], ['-10%', '10%']);
 
+    const { phrase1, phrase2 } = script.vanhoaPage.section;
+
     return (
         <div ref={container} className={styles.container} style={{ clipPath: 'polygon(0% 0, 100% 0%, 100% 100%, 0 100%)' }}>
             <div>
-                <p>Beauty and quality need the right time to be conceived and realised even in a world that is in too much of a hurry.</p>
-                <p>Background Parallax</p>
+                <p>{phrase1}</p>
+                <p>{phrase2}</p>
             </div>
             <div>
                 <motion.div style={{ y }}>
