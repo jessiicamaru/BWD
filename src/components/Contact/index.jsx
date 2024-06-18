@@ -1,9 +1,10 @@
+'use client';
 import styles from './style.module.css';
 import Image from 'next/image';
-import Rounded from '../Chungtich/common/RoundedButton';
+import Rounded from '@/components/Chungtich/common/RoundedButton';
 import { useRef } from 'react';
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
-import Magnetic from '../Chungtich/common/Magnetic';
+import Magnetic from '@/components/Chungtich/common/Magnetic';
 import { background } from '@/data';
 
 export default function index() {
@@ -23,9 +24,9 @@ export default function index() {
                         <div className={styles.imageContainer}>
                             <Image fill={true} alt={'image'} src={background} />
                         </div>
-                        <h2>Let's work</h2>
+                        <h2>Lịch sử là nền tảng</h2>
                     </span>
-                    <h2>together</h2>
+                    <h2>vững chắc cho tương lai</h2>
                     <motion.div style={{ x }} className={styles.buttonContainer}>
                         <Rounded backgroundColor={'#334BD3'} className={styles.button}>
                             <p>Get in touch</p>
