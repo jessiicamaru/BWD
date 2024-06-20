@@ -15,9 +15,11 @@ export default function Index() {
         };
 
         useEffect(() => {
-            containerRef.current.addEventListener('mousemove', updateMousePosition);
+            containerRef.current && containerRef.current.addEventListener('mousemove', updateMousePosition);
 
-            return () => containerRef.current.removeEventListener('mousemove', updateMousePosition);
+            return () => {
+                containerRef.current && containerRef.current.removeEventListener('mousemove', updateMousePosition);
+            };
         }, []);
 
         return mousePosition;

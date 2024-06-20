@@ -9,6 +9,8 @@ import SlidingImages from './components/SlidingImages';
 import MaskCursor from './components/MaskCursor';
 import Contact from '@/components/Contact';
 
+import ProjectsImages from './components/ProjectsImages';
+
 export default function Index() {
     const [isLoading, setIsLoading] = useState(true);
 
@@ -32,6 +34,7 @@ export default function Index() {
             <Description />
             <Projects />
             <SlidingImages />
+            <ProjectsImages />
             <MaskCursor />
             <Contact />
         </>
