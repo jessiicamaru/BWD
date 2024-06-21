@@ -19,6 +19,9 @@ export default function Home() {
     return (
         <main className={styles.main}>
             <GSAP />
+            <GSAP />
+            <GSAP />
+            <GSAP />
             <FramerMotion />
         </main>
     );
