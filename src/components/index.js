@@ -18,7 +18,7 @@ import VanhoaIntro from './Vanhoa/Intro';
 import VanhoaSection from './Vanhoa/Section';
 import ZoomParallax from './Vanhoa/ZoomParallax';
 import MouseImage from './Vanhoa/MouseImage';
-import Chungtich from './Chungtich';
+import VanhoaScroll from './Vanhoa/Scroll';
 import Contact from './Contact';
 
 export {
@@ -41,6 +41,6 @@ export {
     VanhoaIntro,
     VanhoaSection,
     ZoomParallax,
-    Chungtich,
     MouseImage,
+    VanhoaScroll,
 };

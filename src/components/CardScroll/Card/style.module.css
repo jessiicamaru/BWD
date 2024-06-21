@@ -65,6 +65,18 @@
     object-fit: cover;
 }
 
+.directButton {
+    background-color: transparent;
+    padding: 12px;
+    margin-top: 12px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.directButton a {
+    color: black;
+}
+
 @media (max-width: 739px) {
     .cardContainer .card {
         height: 850px;

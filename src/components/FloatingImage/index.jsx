@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useRef } from 'react';
 import gsap from 'gsap';
 import { floating1, floating2, floating3, floating4, floating5, floating6, floating7, floating8 } from 'src/data.js';
+import Link from 'next/link';
 
 export default function Index() {
     const plane1 = useRef(null);
@@ -69,6 +70,9 @@ export default function Index() {
             <div className={styles.title}>
                 <h1>Các chứng tích lịch sử</h1>
                 <h2>Việt Nam</h2>
+                <button className={styles.directButton}>
+                    <Link href="/chungtich">Tìm hiểu thêm về các chứng tích</Link>
+                </button>
             </div>
         </div>
     );

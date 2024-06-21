@@ -6,6 +6,22 @@
     padding-bottom: 200vh;
 }
 
+.title {
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.subtitle {
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 24px;
+    color: #ccc;
+    margin-bottom: 24px;
+}
+
 .main img {
     width: 30vw;
     height: auto;

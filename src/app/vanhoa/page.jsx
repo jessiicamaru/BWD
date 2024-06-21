@@ -3,11 +3,13 @@ import styles from './vanhoa.module.css';
 import { useEffect, useState, useRef } from 'react';
 import Lenis from 'lenis';
 
-import { VanhoaDescription, VanhoaIntro, VanhoaSection, SideBar, Navigation, ZoomParallax, Contact, MouseImage } from '@/components';
+import { VanhoaDescription, VanhoaIntro, VanhoaSection, SideBar, Navigation, ZoomParallax, Contact, MouseImage, VanhoaScroll } from '@/components';
 import script from '@/script';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+
+import Description2 from '@/components/Description2';
 
 export default function Vanhoa() {
     useEffect(() => {
@@ -43,6 +45,16 @@ export default function Vanhoa() {
             <VanhoaSection />
             <div style={{ height: '100vh' }}></div>
             <ZoomParallax />
+
+            <div className={styles.stickyMask}>
+                <video controls={false} autoPlay loop muted className={styles.video}>
+                    <source src="mp4/3.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+            <Description2 description={script.chungtichPage.description.phrase1} />
+
+            <VanhoaScroll />
             <MouseImage />
             <Contact />
         </main>

@@ -55,21 +55,18 @@ import nonla from '../public/images/nonla.jpg';
 import thocung from '../public/images/thocung.jpg';
 
 import aboutus from '../public/headerImages/about_us.png';
-import cart from '../public/headerImages/cart.png';
 import contact from '../public/headerImages/contact.png';
-import home from '../public/headerImages/home.png';
 import lookbook from '../public/headerImages/lookbook.png';
-import shop from '../public/headerImages/shop.png';
 
 import VanhoaIntroBackground from '../public/VanhoaPage/2.jpg';
 import VanhoaSectionBackground from '../public/VanhoaPage/1.jpg';
-import zp1 from '../public/VanhoaPage/zp1.jpeg';
-import zp2 from '../public/VanhoaPage/zp2.jpeg';
+import zp1 from '../public/VanhoaPage/zp1.jpg';
+import zp2 from '../public/VanhoaPage/zp2.jpg';
 import zp3 from '../public/VanhoaPage/zp3.jpg';
 import zp4 from '../public/VanhoaPage/zp4.jpg';
 import zp5 from '../public/VanhoaPage/zp5.jpg';
 import zp6 from '../public/VanhoaPage/zp6.jpg';
-import zp7 from '../public/VanhoaPage/zp7.jpeg';
+import zp7 from '../public/VanhoaPage/zp7.jpg';
 
 import mi0 from '../public/VanhoaPage/mi0.jpg';
 import mi1 from '../public/VanhoaPage/mi1.jpg';
@@ -105,6 +102,17 @@ import locomotive from '../public/ChungtichPage/locomotive.png';
 import silencio from '../public/ChungtichPage/silencio.png';
 import background from '../public/ChungtichPage/background.jpg';
 import descriptionImg from '../public/ChungtichPage/descriptionImg.jpg';
+
+import chungtich from '../public/Sidebar/chungtich.jpg';
+import trangchu from '../public/Sidebar/trangchu.jpg';
+import vanhoa from '../public/Sidebar/vanhoa.jpg';
+
+import vhs1 from '../public/VanhoaScroll/1.jpg';
+import vhs2 from '../public/VanhoaScroll/2.jpg';
+import vhs3 from '../public/VanhoaScroll/3.jpg';
+import vhs4 from '../public/VanhoaScroll/4.jpg';
+import vhs5 from '../public/VanhoaScroll/5.jpg';
+import vhs6 from '../public/VanhoaScroll/6.jpg';
 
 export {
     floating1,
@@ -157,11 +165,8 @@ export {
     nonla,
     thocung,
     aboutus,
-    cart,
     contact,
-    home,
     lookbook,
-    shop,
     VanhoaIntroBackground,
     VanhoaSectionBackground,
     zp1,
@@ -204,4 +209,13 @@ export {
     mi16,
     mi17,
     mi18,
+    chungtich,
+    trangchu,
+    vanhoa,
+    vhs1,
+    vhs2,
+    vhs3,
+    vhs4,
+    vhs5,
+    vhs6,
 };

@@ -6,23 +6,23 @@ import { height } from '../anim';
 import Body from './Body';
 import Footer from './Footer';
 import Image from './Image';
-import { aboutus, cart, contact, home, lookbook, shop } from '@/data';
+import { aboutus, cart, contact, home, lookbook, shop, chungtich, trangchu, vanhoa } from '@/data';
 
 const links = [
     {
         title: 'VĂN HÓA',
         href: '/vanhoa',
-        src: home,
+        src: vanhoa,
     },
     {
         title: 'TRANG CHỦ',
         href: 'back',
-        src: home,
+        src: trangchu,
     },
     {
         title: 'CHỨNG TÍCH',
         href: '/chungtich',
-        src: shop,
+        src: chungtich,
     },
     {
         title: 'About Us',

@@ -16,3 +16,19 @@
     z-index: 12;
     font-size: 24px;
 }
+
+.stickyMask {
+    display: flex;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+.video {
+    width: 80%;
+    transform: scale(1.11);
+    object-fit: cover;
+}

@@ -68,25 +68,30 @@ export default function Index() {
     };
 
     return (
-        <div
-            onMouseMove={(e) => {
-                manageMouseMove(e);
-            }}
-            className={styles.main}
-        >
-            {[...Array(19).keys()].map((_, index) => {
-                const ref = useRef(null);
-                refs.push(ref);
-                return (
-                    <Image
-                        onClick={() => {
-                            console.log(refs);
-                        }}
-                        ref={ref}
-                        src={imgsLists[index]}
-                    />
-                );
-            })}
-        </div>
+        <>
+            <h1 className={styles.title}>Di sản văn hóa</h1>
+            <h2 className={styles.subtitle}>Di chuột để xem ảnh </h2>
+
+            <div
+                onMouseMove={(e) => {
+                    manageMouseMove(e);
+                }}
+                className={styles.main}
+            >
+                {[...Array(19).keys()].map((_, index) => {
+                    const ref = useRef(null);
+                    refs.push(ref);
+                    return (
+                        <Image
+                            onClick={() => {
+                                console.log(refs);
+                            }}
+                            ref={ref}
+                            src={imgsLists[index]}
+                        />
+                    );
+                })}
+            </div>
+        </>
     );
 }

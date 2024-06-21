@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from './style.module.css';
 import { useTransform, motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
+import Link from 'next/link';
 
 const Card = ({ i, title, description, src, url, color, progress, range, targetScale }) => {
     const container = useRef(null);
@@ -20,6 +21,9 @@ const Card = ({ i, title, description, src, url, color, progress, range, targetS
                 <div className={styles.body}>
                     <div className={styles.description}>
                         <p>{description}</p>
+                        <button className={styles.directButton}>
+                            <Link href="/vanhoa">Tìm hiểu thêm về văn hóa</Link>
+                        </button>
                     </div>
 
                     <div className={styles.imageContainer}>
