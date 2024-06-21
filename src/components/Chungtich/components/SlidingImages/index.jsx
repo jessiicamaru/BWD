@@ -3,43 +3,43 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import styles from './style.module.css';
 import Image from 'next/image';
 
-import { c2, decimal, funny, google, maven, panda, powell, wix } from '@/data';
+import { ctsl1, ctsl2, ctsl3, ctsl4, ctsl5, ctsl6, ctsl7, ctsl8 } from '@/data';
 
 const slider1 = [
     {
         color: '#e3e5e7',
-        src: c2,
+        src: ctsl1,
     },
     {
         color: '#d6d7dc',
-        src: decimal,
+        src: ctsl2,
     },
     {
         color: '#e3e3e3',
-        src: funny,
+        src: ctsl3,
     },
     {
         color: '#21242b',
-        src: google,
+        src: ctsl4,
     },
 ];
 
 const slider2 = [
     {
         color: '#d4e3ec',
-        src: maven,
+        src: ctsl5,
     },
     {
         color: '#e5e0e1',
-        src: panda,
+        src: ctsl6,
     },
     {
         color: '#d7d4cf',
-        src: powell,
+        src: ctsl7,
     },
     {
         color: '#e1dad6',
-        src: wix,
+        src: ctsl8,
     },
 ];
 

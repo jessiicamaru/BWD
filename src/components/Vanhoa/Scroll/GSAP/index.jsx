@@ -7,14 +7,16 @@ import { vhs1, vhs2, vhs3 } from '@/data';
 import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
-const word = 'with gsap';
 
-export default function Index() {
+export default function Index({ imgs, title, subtitle }) {
     const container = useRef(null);
-    const images = [vhs1, vhs2, vhs3];
+    const images = imgs;
     const lettersRef = useRef([]);
     const imagesRef = useRef([]);
     const title1 = useRef(null);
+
+    const word = subtitle;
+
     useLayoutEffect(() => {
         const context = gsap.context(() => {
             const tl = gsap
@@ -45,8 +47,8 @@ export default function Index() {
     return (
         <div ref={container} className={styles.container}>
             <div className={styles.body}>
-                <h1 ref={title1}>Parallax</h1>
-                <h1>Scroll</h1>
+                <h1 ref={title1}></h1>
+                <h1>{title}</h1>
                 <div className={styles.word}>
                     <p>
                         {word.split('').map((letter, i) => {

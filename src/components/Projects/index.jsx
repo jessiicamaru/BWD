@@ -4,7 +4,6 @@ import styles from './style.module.css';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import img from 'public/images/salar_de_atacama.jpg';
 
 export default function Index({ imageAtLeft, content }) {
     const container = useRef(null);

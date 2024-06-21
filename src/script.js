@@ -27,14 +27,29 @@ import {
     descriptionImg,
     thocung,
     vhdescription,
-    officestudio,
-    locomotive,
-    silencio,
     pi1,
     pi2,
     pi3,
     pi4,
     pi5,
+    mnhv1,
+    mnhv2,
+    mnhv3,
+    vhsl11,
+    vhsl12,
+    vhsl13,
+    vhsl21,
+    vhsl22,
+    vhsl23,
+    vhsl31,
+    vhsl32,
+    vhsl33,
+    vhsl41,
+    vhsl42,
+    vhsl43,
+    vhsl51,
+    vhsl52,
+    vhsl53,
 } from './data';
 
 export default {
@@ -400,19 +415,19 @@ export default {
         projects: [
             {
                 title: 'Dấu ấn',
-                src: officestudio,
+                src: mnhv1,
                 color: '#8C8C8C',
                 subtitle: 'Chứng tích',
             },
             {
                 title: 'Ống kính lịch sử',
-                src: locomotive,
+                src: mnhv2,
                 color: '#EFE8D3',
                 subtitle: 'Thước phim',
             },
             {
                 title: 'Khoảnh khắc',
-                src: silencio,
+                src: mnhv3,
                 color: '#706D63',
                 subtitle: 'Hình ảnh',
             },
@@ -478,5 +493,32 @@ export default {
                 'Văn hóa Việt Nam là sự kết hợp của các yếu tố truyền thống và sự sáng tạo không ngừng nghỉ. Sự hòa quyện ấy tạo ra một nền văn hóa đa dạng, phong phú và độc đáo làm nên sức hút đặc biệt của nền văn hóa này.',
             phrase2: 'Nền văn hóa độc đáo',
         },
+        scroll: [
+            {
+                title: 'Lễ hội truyền thống',
+                subtitle: 'Tôn vinh nét đẹp xưa ',
+                imgs: [vhsl11, vhsl12, vhsl13],
+            },
+            {
+                title: 'Thờ cúng tổ tiên',
+                subtitle: 'Nhớ ơn tổ tiên',
+                imgs: [vhsl21, vhsl22, vhsl23],
+            },
+            {
+                title: 'Trồng lúa nước',
+                subtitle: ' Nền nông nghiệp lâu đời',
+                imgs: [vhsl31, vhsl32, vhsl33],
+            },
+            {
+                title: 'Nghệ thuật dân gian',
+                subtitle: 'Duy trì nền nghệ thuật',
+                imgs: [vhsl41, vhsl42, vhsl43],
+            },
+            {
+                title: 'Áo dài',
+                subtitle: 'Nét đẹp Việt Nam',
+                imgs: [vhsl51, vhsl52, vhsl53],
+            },
+        ],
     },
 };

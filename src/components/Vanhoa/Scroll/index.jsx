@@ -1,9 +1,11 @@
 'use client';
 import styles from './style.module.css';
 import GSAP from './GSAP';
-import FramerMotion from './FramerMotion';
 import Lenis from '@studio-freight/lenis';
 import { useEffect } from 'react';
+
+import script from '@/script';
+
 export default function Home() {
     useEffect(() => {
         const lenis = new Lenis();
@@ -16,13 +18,15 @@ export default function Home() {
         requestAnimationFrame(raf);
     }, []);
 
+    const scroll = script.vanhoaPage.scroll;
+
     return (
         <main className={styles.main}>
-            <GSAP />
-            <GSAP />
-            <GSAP />
-            <GSAP />
-            <FramerMotion />
+            <GSAP {...scroll[0]} />
+            <GSAP {...scroll[1]} />
+            <GSAP {...scroll[2]} />
+            <GSAP {...scroll[3]} />
+            <GSAP {...scroll[4]} />
         </main>
     );
 }

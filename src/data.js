@@ -55,8 +55,6 @@ import nonla from '../public/images/nonla.jpg';
 import thocung from '../public/images/thocung.jpg';
 
 import aboutus from '../public/headerImages/about_us.png';
-import contact from '../public/headerImages/contact.png';
-import lookbook from '../public/headerImages/lookbook.png';
 
 import VanhoaIntroBackground from '../public/VanhoaPage/vhbg2.jpg';
 import VanhoaSectionBackground from '../public/VanhoaPage/vhbg1.jpg';
@@ -95,18 +93,19 @@ import pi3 from '../public/ChungtichPage/pi3.jpg';
 import pi4 from '../public/ChungtichPage/pi4.jpg';
 import pi5 from '../public/ChungtichPage/pi5.jpg';
 
-import c2 from '../public/ChungtichPage/c2.jpg';
-import decimal from '../public/ChungtichPage/decimal.jpg';
-import funny from '../public/ChungtichPage/funny.jpg';
-import google from '../public/ChungtichPage/google.jpg';
-import maven from '../public/ChungtichPage/maven.jpg';
-import panda from '../public/ChungtichPage/panda.jpg';
-import powell from '../public/ChungtichPage/powell.jpg';
-import wix from '../public/ChungtichPage/wix.jpg';
-import c2montreal from '../public/ChungtichPage/c2montreal.png';
-import officestudio from '../public/ChungtichPage/officestudio.png';
-import locomotive from '../public/ChungtichPage/locomotive.png';
-import silencio from '../public/ChungtichPage/silencio.png';
+import mnhv1 from '../public/ChungtichPage/MenuHover1.jpg';
+import mnhv2 from '../public/ChungtichPage/MenuHover2.jpg';
+import mnhv3 from '../public/ChungtichPage/MenuHover3.jpg';
+
+import ctsl1 from '../public/ChungTichSlide/CTSL1.jpg';
+import ctsl2 from '../public/ChungTichSlide/CTSL2.png';
+import ctsl3 from '../public/ChungTichSlide/CTSL3.jpg';
+import ctsl4 from '../public/ChungTichSlide/CTSL4.jpg';
+import ctsl5 from '../public/ChungTichSlide/CTSL5.jpg';
+import ctsl6 from '../public/ChungTichSlide/CTSL6.jpg';
+import ctsl7 from '../public/ChungTichSlide/CTSL7.jpg';
+import ctsl8 from '../public/ChungTichSlide/CTSL8.jpg';
+
 import background from '../public/ChungtichPage/background.jpg';
 import descriptionImg from '../public/ChungtichPage/descriptionImg.jpg';
 
@@ -114,16 +113,51 @@ import chungtich from '../public/Sidebar/chungtich.jpg';
 import trangchu from '../public/Sidebar/trangchu.jpg';
 import vanhoa from '../public/Sidebar/vanhoa.jpg';
 
-import vhs1 from '../public/VanhoaScroll/1.jpg';
-import vhs2 from '../public/VanhoaScroll/2.jpg';
-import vhs3 from '../public/VanhoaScroll/3.jpg';
-import vhs4 from '../public/VanhoaScroll/4.jpg';
-import vhs5 from '../public/VanhoaScroll/5.jpg';
-import vhs6 from '../public/VanhoaScroll/6.jpg';
+import vhsl11 from '../public/VanhoaSlide/SL1.1.jpg';
+import vhsl12 from '../public/VanhoaSlide/SL1.2.jpg';
+import vhsl13 from '../public/VanhoaSlide/SL1.3.jpg';
+import vhsl21 from '../public/VanhoaSlide/SL2.1.jpg';
+import vhsl22 from '../public/VanhoaSlide/SL2.2.jpg';
+import vhsl23 from '../public/VanhoaSlide/SL2.3.jpg';
+import vhsl31 from '../public/VanhoaSlide/SL3.1.jpg';
+import vhsl32 from '../public/VanhoaSlide/SL3.2.jpg';
+import vhsl33 from '../public/VanhoaSlide/SL3.3.jpg';
+import vhsl41 from '../public/VanhoaSlide/SL4.1.jpg';
+import vhsl42 from '../public/VanhoaSlide/SL4.2.jpg';
+import vhsl43 from '../public/VanhoaSlide/SL4.3.jpg';
+import vhsl51 from '../public/VanhoaSlide/SL5.1.jpg';
+import vhsl52 from '../public/VanhoaSlide/SL5.2.jpg';
+import vhsl53 from '../public/VanhoaSlide/SL5.3.jpg';
 
 import sumenh from '../public/SumenhPage/2.jpg';
 
 export {
+    ctsl1,
+    ctsl2,
+    ctsl3,
+    ctsl4,
+    ctsl5,
+    ctsl6,
+    ctsl7,
+    ctsl8,
+    mnhv1,
+    mnhv2,
+    mnhv3,
+    vhsl11,
+    vhsl12,
+    vhsl13,
+    vhsl21,
+    vhsl22,
+    vhsl23,
+    vhsl31,
+    vhsl32,
+    vhsl33,
+    vhsl41,
+    vhsl42,
+    vhsl43,
+    vhsl51,
+    vhsl52,
+    vhsl53,
     sumenh,
     floating1,
     floating2,
@@ -175,8 +209,6 @@ export {
     nonla,
     thocung,
     aboutus,
-    contact,
-    lookbook,
     VanhoaIntroBackground,
     VanhoaSectionBackground,
     zp1,
@@ -186,18 +218,6 @@ export {
     zp5,
     zp6,
     zp7,
-    c2,
-    decimal,
-    funny,
-    google,
-    maven,
-    panda,
-    powell,
-    wix,
-    c2montreal,
-    officestudio,
-    locomotive,
-    silencio,
     background,
     descriptionImg,
     mi1,
@@ -221,12 +241,6 @@ export {
     chungtich,
     trangchu,
     vanhoa,
-    vhs1,
-    vhs2,
-    vhs3,
-    vhs4,
-    vhs5,
-    vhs6,
     pi1,
     pi2,
     pi3,
