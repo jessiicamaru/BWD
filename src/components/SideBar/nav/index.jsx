@@ -4,40 +4,30 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { height } from '../anim';
 import Body from './Body';
-import Footer from './Footer';
 import Image from './Image';
-import { aboutus, cart, contact, home, lookbook, shop, chungtich, trangchu, vanhoa } from '@/data';
+import { aboutus, chungtich, trangchu, vanhoa } from '@/data';
 
 const links = [
-    {
-        title: 'VĂN HÓA',
-        href: '/vanhoa',
-        src: vanhoa,
-    },
     {
         title: 'TRANG CHỦ',
         href: 'back',
         src: trangchu,
     },
     {
+        title: 'VĂN HÓA',
+        href: '/vanhoa',
+        src: vanhoa,
+    },
+
+    {
         title: 'CHỨNG TÍCH',
         href: '/chungtich',
         src: chungtich,
     },
     {
-        title: 'About Us',
-        href: '/about',
+        title: 'SỨ MỆNH',
+        href: '/sumenh',
         src: aboutus,
-    },
-    {
-        title: 'Lookbook',
-        href: '/lookbook',
-        src: lookbook,
-    },
-    {
-        title: 'Contact',
-        href: '/contact',
-        src: contact,
     },
 ];
 

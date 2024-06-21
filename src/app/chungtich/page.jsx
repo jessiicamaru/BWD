@@ -54,7 +54,7 @@ export default function Vanhoa() {
 
             <AnimatePresence mode="wait">{isLoading && <Preloader />}</AnimatePresence>
             <Landing />
-            <Description2 description={script.chungtichPage.description.phrase1} />
+            <Description2 description={script.chungtichPage.description.phrase1} img={script.chungtichPage.description.img} />
             <Projects />
             <SlidingImages />
             <ProjectsImages />

@@ -3,9 +3,8 @@ import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
 import { slideUp, opacity } from './animation.js';
 import script from '@/script';
-import { descriptionImg } from '@/data';
 import Image from 'next/image';
-export default function index({ description }) {
+export default function index({ description, img }) {
     const phrase = description;
     const descriptionRef = useRef(null);
     const isInView = useInView(descriptionRef);
@@ -24,7 +23,7 @@ export default function index({ description }) {
                     })}
                 </p>
                 <motion.div variants={opacity} animate={isInView ? 'open' : 'closed'}>
-                    <Image src={descriptionImg} alt="" className={styles.descriptionImg} />
+                    <Image src={img} alt="" className={styles.descriptionImg} />
                 </motion.div>
             </div>
         </div>

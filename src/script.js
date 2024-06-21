@@ -24,11 +24,17 @@ import {
     aodai,
     luanuoc,
     nonla,
+    descriptionImg,
     thocung,
-    c2montreal,
+    vhdescription,
     officestudio,
     locomotive,
     silencio,
+    pi1,
+    pi2,
+    pi3,
+    pi4,
+    pi5,
 } from './data';
 
 export default {
@@ -389,14 +395,9 @@ export default {
         description: {
             phrase1:
                 'Việt Nam có rất nhiều chứng tích lịch sử quan trọng, từ các di chỉ khảo cổ, các công trình kiến trúc đến những sự kiện lịch sử và các kỷ vật có giá trị. Những chứng tích này đóng vai trò lưu giữ và bảo tồn di sản văn hóa lịch sử, hơn nữa góp phần giáo dục, tôn vinh và thúc đẩy nhận thức về lịch sử, văn hóa dân tộc.',
+            img: descriptionImg,
         },
         projects: [
-            {
-                title: 'Dòng thời gian',
-                src: c2montreal,
-                color: '#000000',
-                subtitle: 'Tinh hoa',
-            },
             {
                 title: 'Dấu ấn',
                 src: officestudio,
@@ -416,10 +417,62 @@ export default {
                 subtitle: 'Hình ảnh',
             },
         ],
+        projectsImages: [
+            {
+                itemIndex: 1,
+                itemName: 'Thành cổ Quảng Trị',
+                itemImage: pi1,
+                itemDescription:
+                    'Thành cổ Quảng Trị là một trong những di tích lịch sử quan trọng ở tỉnh Quảng Trị, miền Trung Việt Nam. Được xây dựng vào thế kỷ 19, Thành cổ Quảng Trị từng là một trong những căn cứ quan trọng của quân đội Việt Nam trong cuộc kháng chiến chống lại thực dân Pháp và cuộc chiến tranh chống Mỹ cứu nước.',
+                itemDescription2:
+                    'Thành cổ Quảng Trị là một trong những di tích lịch sử quan trọng ở tỉnh Quảng Trị, miền Trung Việt Nam. Được xây dựng vào thế kỷ 19, Thành cổ Quảng Trị từng là một trong những căn cứ quan trọng của quân đội Việt Nam trong cuộc kháng chiến chống lại thực dân Pháp và cuộc chiến tranh chống Mỹ cứu nước.',
+            },
+            {
+                itemIndex: 2,
+                itemName: 'Hoàng thành Thăng Long',
+                itemImage: pi2,
+                itemDescription:
+                    'Hoàng thành Thăng Long, hay còn gọi là Cố đô Hà Nội, là trái tim văn hóa của thủ đô nghìn năm văn hiến. Được xây dựng từ thế kỷ 11, Hoàng thành Thăng Long là biểu tượng của sự giàu có và bền vững của văn hóa Việt.',
+                itemDescription2:
+                    'Hoàng thành Thăng Long, hay còn gọi là Cố đô Hà Nội, là trái tim văn hóa của thủ đô nghìn năm văn hiến. Được xây dựng từ thế kỷ 11, Hoàng thành Thăng Long là biểu tượng của sự giàu có và bền vững của văn hóa Việt.',
+            },
+            {
+                itemIndex: 3,
+                itemName: 'Đền Hùng - Phú Thọ',
+                itemImage: pi3,
+                itemDescription:
+                    'Đền Hùng là nơi tôn vinh 18 vị vua Hùng, những người được coi là các vị vua sáng lập nền văn minh và dân tộc Việt Nam từ hàng ngàn năm trước. Nơi đây tổ chức Lễ hội Đền Hùng vào ngày 10/3 âm lịch hàng năm, thu hút đông đảo du khách và người dân tham gia.',
+                itemDescription2:
+                    'Lễ hội Đền Hùng không chỉ là dịp để tưởng nhớ và tôn vinh các vị vua Hùng, mà còn là cơ hội để mỗi người Việt nhớ lại và học hỏi về truyền thống tôn sùng tổ tiên, lòng yêu nước sâu sắc và sự đoàn kết của dân tộc. Đây là sự kiện quan trọng giúp khẳng định và duy trì những giá trị văn hóa, lịch sử quan trọng của dân tộc Việt Nam.',
+            },
+            {
+                itemIndex: 4,
+                itemName: 'Di tích Tràng An',
+                itemImage: pi4,
+                itemDescription:
+                    'Di tích Tràng An là một trong những khu du lịch sinh thái và văn hóa nổi tiếng của Việt Nam, nằm ở thị xã Hoa Lư, tỉnh Ninh Bình. Được UNESCO công nhận là Di sản Văn hóa và Thiên nhiên thế giới vào năm 2014, Tràng An là một trong những điểm đến không thể bỏ qua khi du lịch Ninh Bình.',
+                itemDescription2:
+                    'Tràng An là minh chứng rực rỡ cho sự hài hòa giữa con người và thiên nhiên. Với hệ thống hang động và hệ sinh thái phong phú, khu vực này đã từng là nơi sinh sống của các cộng đồng cổ đại từ hàng ngàn năm trước. Các di tích tại đây còn lưu giữ nhiều dấu ấn văn hóa của người Việt xưa, từ các hầm mộ đến những nơi tín ngưỡng và sinh hoạt.',
+            },
+            {
+                itemIndex: 5,
+                itemName: 'Di tích Mỹ Sơn',
+                itemImage: pi5,
+                itemDescription:
+                    'Mỹ Sơn là một quần thể đền tháp của người Chăm cổ, nằm ở Quảng Nam. Được xây dựng từ thế kỷ 4 đến thế kỷ 14, Mỹ Sơn là một trong những điểm tham quan lịch sử và văn hóa hấp dẫn nhất miền Trung Việt Nam.',
+                itemDescription2:
+                    'Mỹ Sơn là minh chứng cho sự phát triển của văn hóa Chăm và mối quan hệ văn hóa giao lưu giữa các dân tộc trên đất nước Việt Nam. Đây là di sản văn hóa quan trọng, thể hiện sự đa dạng và phong phú của văn hóa Việt Nam.',
+            },
+        ],
     },
 
     vanhoaPage: {
-        description: 'Bạn đã sẵn sàng khám phá văn hóa Việt Nam chưa?',
+        title: 'Bạn đã sẵn sàng khám phá văn hóa Việt Nam chưa?',
+        description: {
+            content:
+                'Ẩm thực Việt Nam không chỉ là nghệ thuật ẩm thực mà còn là một biểu tượng của sự kết hợp tinh tế giữa truyền thống và khoa học. Mỗi món ăn thể hiện rõ bản sắc văn hóa địa phương và được chế biến với sự khéo léo, từ những kỹ thuật nấu nướng lâu đời đến những cách thức hiện đại. Việt Nam là nơi bạn có thể khám phá những hương vị đa dạng và sự sáng tạo vượt thời gian, mang đến trải nghiệm ẩm thực độc đáo và phong phú',
+            img: vhdescription,
+        },
         section: {
             phrase1:
                 'Văn hóa Việt Nam là sự kết hợp của các yếu tố truyền thống và sự sáng tạo không ngừng nghỉ. Sự hòa quyện ấy tạo ra một nền văn hóa đa dạng, phong phú và độc đáo làm nên sức hút đặc biệt của nền văn hóa này.',

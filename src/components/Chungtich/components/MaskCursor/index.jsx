@@ -47,14 +47,15 @@ export default function Index() {
                         setIsHovered(false);
                     }}
                 >
-                    A visual designer - with skills that haven't been replaced by A.I (yet) - making good shit only if the paycheck is equally good.
+                    Để có những chứng tích lịch sử như vậy, cha ông ta đã chịu đựng những mất mát đau khổ không thể diễn tả được. Chiến tranh đã cướp
+                    đi hàng triệu sinh mạng, phá hủy những làng mạc và những gia đình hạnh phúc.
                 </p>
             </motion.div>
 
             <div className={styles.body}>
                 <p>
-                    I'm a <span>selectively skilled</span> product designer with strong focus on producing high quality & impactful digital
-                    experience.
+                    Việt Nam là một đất nước giàu có về di sản lịch sử với hàng ngàn năm văn minh phát triển. Những chứng tích lịch sử là biểu hiện rõ
+                    nét của sự kiên cường, sự hi sinh và sự bền bỉ của con người Việt Nam qua các thế hệ.
                 </p>
             </div>
         </main>

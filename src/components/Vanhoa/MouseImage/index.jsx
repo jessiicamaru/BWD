@@ -1,11 +1,11 @@
 'use client';
 import styles from './style.module.css';
 import { useRef } from 'react';
-import { mi0, mi1, mi2, mi3, mi4, mi5, mi6, mi7, mi8, mi9, mi10, mi11, mi12, mi13, mi14, mi15, mi16, mi17, mi18 } from '@/data';
+import { mi1, mi2, mi3, mi4, mi5, mi6, mi7, mi8, mi9, mi10, mi11, mi12, mi13, mi14, mi15, mi16, mi17, mi18 } from '@/data';
 import Image from 'next/image';
 
 export default function Index() {
-    const imgsLists = [mi0, mi1, mi2, mi3, mi4, mi5, mi6, mi7, mi8, mi9, mi10, mi11, mi12, mi13, mi14, mi15, mi16, mi17, mi18];
+    const imgsLists = [mi1, mi2, mi3, mi4, mi5, mi6, mi7, mi8, mi9, mi10, mi11, mi12, mi13, mi14, mi15, mi16, mi17, mi18];
     let steps = 0;
     let currentIndex = 0;
     let nbOfImages = 0;

@@ -52,7 +52,7 @@ export default function Vanhoa() {
                 </video>
             </div>
 
-            <Description2 description={script.chungtichPage.description.phrase1} />
+            <Description2 description={script.vanhoaPage.description.content} img={script.vanhoaPage.description.img} />
 
             <VanhoaScroll />
             <MouseImage />

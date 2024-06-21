@@ -5,7 +5,6 @@ import Project from './components/project';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import Image from 'next/image';
-import Rounded from '../../common/RoundedButton';
 import script from '@/script';
 
 const projects = script.chungtichPage.projects;

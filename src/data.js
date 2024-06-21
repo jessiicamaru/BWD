@@ -58,8 +58,8 @@ import aboutus from '../public/headerImages/about_us.png';
 import contact from '../public/headerImages/contact.png';
 import lookbook from '../public/headerImages/lookbook.png';
 
-import VanhoaIntroBackground from '../public/VanhoaPage/2.jpg';
-import VanhoaSectionBackground from '../public/VanhoaPage/1.jpg';
+import VanhoaIntroBackground from '../public/VanhoaPage/vhbg2.jpg';
+import VanhoaSectionBackground from '../public/VanhoaPage/vhbg1.jpg';
 import zp1 from '../public/VanhoaPage/zp1.jpg';
 import zp2 from '../public/VanhoaPage/zp2.jpg';
 import zp3 from '../public/VanhoaPage/zp3.jpg';
@@ -68,25 +68,32 @@ import zp5 from '../public/VanhoaPage/zp5.jpg';
 import zp6 from '../public/VanhoaPage/zp6.jpg';
 import zp7 from '../public/VanhoaPage/zp7.jpg';
 
-import mi0 from '../public/VanhoaPage/mi0.jpg';
-import mi1 from '../public/VanhoaPage/mi1.jpg';
-import mi2 from '../public/VanhoaPage/mi2.jpg';
-import mi3 from '../public/VanhoaPage/mi3.jpg';
-import mi4 from '../public/VanhoaPage/mi4.jpg';
-import mi5 from '../public/VanhoaPage/mi5.jpg';
-import mi6 from '../public/VanhoaPage/mi6.jpg';
-import mi7 from '../public/VanhoaPage/mi7.jpg';
-import mi8 from '../public/VanhoaPage/mi8.jpg';
-import mi9 from '../public/VanhoaPage/mi9.jpg';
-import mi10 from '../public/VanhoaPage/mi10.jpg';
-import mi11 from '../public/VanhoaPage/mi11.jpg';
-import mi12 from '../public/VanhoaPage/mi12.jpg';
-import mi13 from '../public/VanhoaPage/mi13.jpg';
-import mi14 from '../public/VanhoaPage/mi14.jpg';
-import mi15 from '../public/VanhoaPage/mi15.jpg';
-import mi16 from '../public/VanhoaPage/mi16.jpg';
-import mi17 from '../public/VanhoaPage/mi17.jpg';
-import mi18 from '../public/VanhoaPage/mi18.jpg';
+import vhdescription from '../public/VanhoaPage/vhdescription.jpg';
+
+import mi1 from '../public/VanhoaPage/DC1.jpg';
+import mi2 from '../public/VanhoaPage/DC2.jpg';
+import mi3 from '../public/VanhoaPage/DC3.jpg';
+import mi4 from '../public/VanhoaPage/DC4.jpg';
+import mi5 from '../public/VanhoaPage/DC5.jpg';
+import mi6 from '../public/VanhoaPage/DC6.jpg';
+import mi7 from '../public/VanhoaPage/DC7.jpg';
+import mi8 from '../public/VanhoaPage/DC8.jpg';
+import mi9 from '../public/VanhoaPage/DC9.jpg';
+import mi10 from '../public/VanhoaPage/DC10.jpg';
+import mi11 from '../public/VanhoaPage/DC11.jpg';
+import mi12 from '../public/VanhoaPage/DC12.jpg';
+import mi13 from '../public/VanhoaPage/DC13.jpg';
+import mi14 from '../public/VanhoaPage/DC14.jpg';
+import mi15 from '../public/VanhoaPage/DC15.jpg';
+import mi16 from '../public/VanhoaPage/DC16.jpg';
+import mi17 from '../public/VanhoaPage/DC17.jpg';
+import mi18 from '../public/VanhoaPage/DC18.jpg';
+
+import pi1 from '../public/ChungtichPage/pi1.jpg';
+import pi2 from '../public/ChungtichPage/pi2.jpg';
+import pi3 from '../public/ChungtichPage/pi3.jpg';
+import pi4 from '../public/ChungtichPage/pi4.jpg';
+import pi5 from '../public/ChungtichPage/pi5.jpg';
 
 import c2 from '../public/ChungtichPage/c2.jpg';
 import decimal from '../public/ChungtichPage/decimal.jpg';
@@ -114,7 +121,10 @@ import vhs4 from '../public/VanhoaScroll/4.jpg';
 import vhs5 from '../public/VanhoaScroll/5.jpg';
 import vhs6 from '../public/VanhoaScroll/6.jpg';
 
+import sumenh from '../public/SumenhPage/2.jpg';
+
 export {
+    sumenh,
     floating1,
     floating2,
     floating3,
@@ -190,7 +200,6 @@ export {
     silencio,
     background,
     descriptionImg,
-    mi0,
     mi1,
     mi2,
     mi3,
@@ -218,4 +227,10 @@ export {
     vhs4,
     vhs5,
     vhs6,
+    pi1,
+    pi2,
+    pi3,
+    pi4,
+    pi5,
+    vhdescription,
 };
