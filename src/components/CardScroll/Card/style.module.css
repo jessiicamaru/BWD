@@ -16,6 +16,7 @@
     border-radius: 25px;
     padding: 50px;
     transform-origin: top;
+    color: white;
 }
 .cardContainer .card h2 {
     text-align: center;
@@ -66,15 +67,11 @@
 }
 
 .directButton {
-    background-color: transparent;
+    background-color: #690705;
     padding: 12px;
     margin-top: 12px;
-    border: 1px black solid;
+    border: 1px #690705 solid;
     border-radius: 10px;
-}
-
-.directButton a {
-    color: black;
 }
 
 @media (max-width: 739px) {

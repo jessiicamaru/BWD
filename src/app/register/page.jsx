@@ -5,7 +5,7 @@ import { Register as RegisterComponent } from '@/components';
 export default function Register() {
     return (
         <main className={styles.main}>
-            <RegisterComponent></RegisterComponent>
+            <RegisterComponent />
         </main>
     );
 }

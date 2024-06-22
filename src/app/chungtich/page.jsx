@@ -59,6 +59,7 @@ export default function Vanhoa() {
             <SlidingImages />
             <ProjectsImages />
 
+            <h1 style={{ width: '100%', textAlign: 'center', margin: '100px 0 50px' }}>Thước phim lịch sử</h1>
             <div className={styles.stickyMask}>
                 <video controls={false} autoPlay loop muted className={styles.video}>
                     <source src="mp4/4.mp4" type="video/mp4" />

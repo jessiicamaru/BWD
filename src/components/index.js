@@ -10,6 +10,7 @@ import CardScroll from './CardScroll';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import Register from './Register';
+import Login from './Login';
 import Verify from './Verify';
 import SideBar from './SideBar';
 
@@ -43,4 +44,5 @@ export {
     ZoomParallax,
     MouseImage,
     VanhoaScroll,
+    Login,
 };

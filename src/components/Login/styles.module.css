@@ -1,12 +1,13 @@
 .container {
     background-color: white;
-    width: 1000px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
     display: flex;
     transition: all 0.2s ease;
     font-family: Avo, sans-serif;
     border-radius: 10px;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .container > * {
@@ -14,15 +15,15 @@
 }
 
 .leftSide {
-    width: 40%;
-    background-image: url(./MenuHover1.jpg);
-    height: 100%;
+    width: 100%;
+    background-image: url(./CTSL8.jpg);
     background-position: center;
     background-size: cover;
+    border-bottom: 1px solid #354750;
 }
 
 .rightSide {
-    width: 60%;
+    width: 100%;
     position: relative;
     padding: 24px;
 }

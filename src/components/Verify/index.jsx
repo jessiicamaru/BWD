@@ -76,16 +76,16 @@ export default function Index() {
                 <div className={styles.leftSide}></div>
                 <div className={styles.rightSide}>
                     <div className={styles.form2}>
-                        <h1 className={styles.heading}>Verify your account</h1>
+                        <h1 className={styles.heading}>Xác minh tài khoản của bạn</h1>
                         <p style={{ width: '100%', padding: '12px 12px 0' }}>
-                            Check your email. We have just sent you an email, which has an code to verify your account. If you don't receive any
-                            email, click in{' '}
+                            Kiểm tra email. Chúng tôi vừa gửi tới bạn một bức thư kèm với mã xác minh tài khoản của bạn. Nếu kiểm tra không thấy hãy
+                            bấm vào{' '}
                             <span
                                 onclick={() => {
                                     dispatch(actions.setVerifyCode(sendEmail));
                                 }}
                             >
-                                Send again
+                                Gửi lại
                             </span>
                             .
                         </p>
@@ -108,7 +108,7 @@ export default function Index() {
                         </div>
 
                         <div style={{ width: '100%', padding: '0 10px', position: 'absolute' }} ref={verify} onClick={handleVerify}>
-                            <button className={styles.verify}>Verify</button>
+                            <button className={styles.verify}>Xác minh</button>
                         </div>
                     </div>
                 </div>

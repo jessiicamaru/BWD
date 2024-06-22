@@ -68,11 +68,10 @@ export default function Index() {
                 <Image src={floating5} alt="image" width={330} />
             </div>
             <div className={styles.title}>
-                <h1>Các chứng tích lịch sử</h1>
-                <h2>Việt Nam</h2>
-                <button className={styles.directButton}>
-                    <Link href="/chungtich">Tìm hiểu thêm về các chứng tích</Link>
-                </button>
+                <Link href="/chungtich">
+                    <h1>Các chứng tích lịch sử</h1>
+                    <h2>Việt Nam</h2>
+                </Link>
             </div>
         </div>
     );

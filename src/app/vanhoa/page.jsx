@@ -54,6 +54,8 @@ export default function Vanhoa() {
 
             <Description2 description={script.vanhoaPage.description.content} img={script.vanhoaPage.description.img} />
 
+            <h1 style={{ width: '100%', textAlign: 'center', margin: '100px 0 50px' }}>Và còn nhiều hơn thế nữa...</h1>
+
             <VanhoaScroll />
             <MouseImage />
             <Contact />

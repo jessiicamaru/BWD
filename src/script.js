@@ -113,18 +113,13 @@ export default {
             subnav: null,
         },
         {
-            href: '#chungtich',
-            content: 'Văn hóa bắc bộ',
+            href: '#truyenthong',
+            content: 'Truyền thống',
             subnav: null,
         },
         {
-            href: '#noidau',
-            content: 'Văn hóa trung bộ',
-            subnav: null,
-        },
-        {
-            href: '#vanhoa',
-            content: 'Văn hóa nam bộ',
+            href: '#disan',
+            content: 'Di sản',
             subnav: null,
         },
     ],
@@ -440,7 +435,7 @@ export default {
                 itemDescription:
                     'Thành cổ Quảng Trị là một trong những di tích lịch sử quan trọng ở tỉnh Quảng Trị, miền Trung Việt Nam. Được xây dựng vào thế kỷ 19, Thành cổ Quảng Trị từng là một trong những căn cứ quan trọng của quân đội Việt Nam trong cuộc kháng chiến chống lại thực dân Pháp và cuộc chiến tranh chống Mỹ cứu nước.',
                 itemDescription2:
-                    'Thành cổ Quảng Trị là một trong những di tích lịch sử quan trọng ở tỉnh Quảng Trị, miền Trung Việt Nam. Được xây dựng vào thế kỷ 19, Thành cổ Quảng Trị từng là một trong những căn cứ quan trọng của quân đội Việt Nam trong cuộc kháng chiến chống lại thực dân Pháp và cuộc chiến tranh chống Mỹ cứu nước.',
+                    'Thành cổ Quảng Trị là sự kiên cường, sự kiên định và tinh thần đoàn kết trong lòng dân tộc. Nó cho chúng ta thấy rằng chỉ có bằng sự đoàn kết và hy sinh thì mới có thể giữ vững được chủ quyền đất nước và bảo vệ được an ninh biên giới. Thành cổ Quảng Trị là minh chứng cho sự tự hào và niềm tin của người Việt Nam vào lịch sử và văn hóa của mình, đồng thời là một hành trình ghi dấu những trang sử vĩ đại trong lòng mỗi người con dân Việt Nam.',
             },
             {
                 itemIndex: 2,
@@ -449,7 +444,7 @@ export default {
                 itemDescription:
                     'Hoàng thành Thăng Long, hay còn gọi là Cố đô Hà Nội, là trái tim văn hóa của thủ đô nghìn năm văn hiến. Được xây dựng từ thế kỷ 11, Hoàng thành Thăng Long là biểu tượng của sự giàu có và bền vững của văn hóa Việt.',
                 itemDescription2:
-                    'Hoàng thành Thăng Long, hay còn gọi là Cố đô Hà Nội, là trái tim văn hóa của thủ đô nghìn năm văn hiến. Được xây dựng từ thế kỷ 11, Hoàng thành Thăng Long là biểu tượng của sự giàu có và bền vững của văn hóa Việt.',
+                    'Hoàng thành Thăng Long cho thấy rằng, sự phát triển bền vững của một quốc gia không chỉ dựa vào sức mạnh quân sự mà còn phụ thuộc vào sự bảo tồn và phát triển văn hóa, nghệ thuật, kiến trúc. Hoàng thành Thăng Long là biểu tượng cho sự tự hào dân tộc, nơi ghi dấu những thành tựu văn hóa, khoa học và đóng góp của các triều đại lớn trong lịch sử phát triển của Việt Nam.',
             },
             {
                 itemIndex: 3,

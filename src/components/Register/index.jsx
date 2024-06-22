@@ -27,6 +27,15 @@ export default function Index() {
         }
     }, [state.formValid]);
 
+    const setLocationBack = () => {
+        if (location) {
+            let url = location.href;
+
+            url = url.slice(0, url.lastIndexOf('/'));
+            location.href = url;
+        }
+    };
+
     useEffect(() => {
         if (form.current && submit.current) {
             Validate({
@@ -52,20 +61,20 @@ export default function Index() {
 
     return (
         <>
-            <div className={styles.backButton}>
+            <div className={styles.backButton} onClick={setLocationBack}>
                 <FontAwesomeIcon icon={faHome} className={styles.backIcon} />
-                <Link href="/">Quay lại</Link>
+                Quay lại
             </div>
             <div className={styles.container} ref={form}>
                 <div className={styles.leftSide}></div>
                 <div className={styles.rightSide}>
                     <div className={styles.form1}>
-                        <h1 className={styles.heading}>Sign up</h1>
+                        <h1 className={styles.heading}>Đăng kí</h1>
                         <div className={styles.line}>
                             <div className={clsx(styles.leftLine, styles.nestInput)}>
-                                <span>First name</span>
+                                <span>Họ</span>
                                 <input
-                                    placeholder="First name"
+                                    placeholder="Họ"
                                     type="text"
                                     id="firstName"
                                     onChange={(e) => {
@@ -77,9 +86,9 @@ export default function Index() {
                             </div>
 
                             <div className={clsx(styles.rightLine, styles.nestInput)}>
-                                <span>Last name</span>
+                                <span>Tên</span>
                                 <input
-                                    placeholder="Last name"
+                                    placeholder="Tên"
                                     type="text"
                                     id="lastName"
                                     onChange={(e) => {
@@ -92,9 +101,9 @@ export default function Index() {
                         </div>
                         <div className={styles.line}>
                             <div className={clsx(styles.leftLine, styles.nestInput)}>
-                                <span>Phone</span>
+                                <span>Số điện thoại</span>
                                 <input
-                                    placeholder="Phone"
+                                    placeholder="Số điện thoại"
                                     type="text"
                                     id="phoneNumber"
                                     onChange={(e) => {
@@ -121,9 +130,9 @@ export default function Index() {
                         </div>
                         <div className={styles.line} style={{ 'flex-wrap': 'wrap' }}>
                             <div className={clsx(styles.leftLine, styles.nestInput)} style={{ width: '100%' }}>
-                                <span>Password</span>
+                                <span>Mật khẩu</span>
                                 <input
-                                    placeholder="Password"
+                                    placeholder="Mật khẩu"
                                     type="password"
                                     id="password"
                                     onChange={(e) => {
@@ -148,7 +157,7 @@ export default function Index() {
                         </div>
                         <div style={{ width: '100%', padding: '0 10px' }}>
                             <button className={styles.submit} ref={submit}>
-                                Sign up
+                                Đăng kí
                             </button>
                         </div>
                     </div>
