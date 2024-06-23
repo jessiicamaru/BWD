@@ -1,15 +1,13 @@
 'use client';
 import styles from './vanhoa.module.css';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect } from 'react';
 import Lenis from 'lenis';
 
-import { VanhoaDescription, VanhoaIntro, VanhoaSection, SideBar, Navigation, ZoomParallax, Contact, MouseImage, VanhoaScroll } from '@/components';
+import { VanhoaDescription, VanhoaIntro, VanhoaSection, Navigation, ZoomParallax, Contact, MouseImage, VanhoaScroll } from '@/components';
 import script from '@/script';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-
-import Description2 from '@/components/Description2';
+import Description2 from '@/components/common/Description2';
+import DefaultLayout from '@/layouts/defaultLayout';
 
 export default function Vanhoa() {
     useEffect(() => {
@@ -23,42 +21,32 @@ export default function Vanhoa() {
         requestAnimationFrame(raf);
     }, []);
 
-    const [sideBarState, setSideBarState] = useState(false);
-    const closeSideBarRef = useRef(null);
-
     const navigation = script.navigationVanhoaPage;
 
     return (
         <main className={styles.main}>
-            <button
-                className={styles.sideBarButton}
-                onClick={() => {
-                    setSideBarState(!sideBarState);
-                }}
-            >
-                <FontAwesomeIcon icon={faBars} />
-            </button>
-            {sideBarState && <SideBar ref={closeSideBarRef} isActive={sideBarState} />}
-            <Navigation links={navigation} />
-            <VanhoaIntro />
-            <VanhoaDescription />
-            <VanhoaSection />
-            <div style={{ height: '100vh' }}></div>
-            <ZoomParallax />
+            <DefaultLayout>
+                <Navigation links={navigation} />
+                <VanhoaIntro />
+                <VanhoaDescription />
+                <VanhoaSection />
+                <div style={{ height: '100vh' }}></div>
+                <ZoomParallax />
 
-            <div className={styles.stickyMask}>
-                <video controls={false} autoPlay loop muted className={styles.video}>
-                    <source src="mp4/3.mp4" type="video/mp4" />
-                </video>
-            </div>
+                <div className={styles.stickyMask}>
+                    <video controls={false} autoPlay loop muted className={styles.video}>
+                        <source src="mp4/3.mp4" type="video/mp4" />
+                    </video>
+                </div>
 
-            <Description2 description={script.vanhoaPage.description.content} img={script.vanhoaPage.description.img} />
+                <Description2 description={script.vanhoaPage.description.content} img={script.vanhoaPage.description.img} />
 
-            <h1 style={{ width: '100%', textAlign: 'center', margin: '100px 0 50px' }}>Và còn nhiều hơn thế nữa...</h1>
+                <h1 style={{ width: '100%', textAlign: 'center', margin: '100px 0 50px' }}>Và còn nhiều hơn thế nữa...</h1>
 
-            <VanhoaScroll />
-            <MouseImage />
-            <Contact />
+                <VanhoaScroll />
+                <MouseImage />
+                {/* <Contact /> */}
+            </DefaultLayout>
         </main>
     );
 }

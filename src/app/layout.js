@@ -1,3 +1,5 @@
+'use client';
+
 import './globals.css';
 import { RegisterProvider } from '@/store/registerStore';
 
