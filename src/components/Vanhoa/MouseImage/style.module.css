@@ -4,6 +4,7 @@
     position: relative;
     overflow: hidden;
     padding-bottom: 200vh;
+    margin-bottom: 100px;
 }
 
 .title {
