@@ -7,7 +7,7 @@ import styles from './style.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisV, faSignOutAlt, faUser } from '@fortawesome/free-solid-svg-icons';
 
-import { RegisterContext, actions } from '@/store/registerStore';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Index({ links }) {
     const header = useRef(null);
