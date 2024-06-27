@@ -8,18 +8,20 @@ import Link from 'next/link';
 import { RegisterContext, actions } from '@/store/registerStore';
 
 import { sendEmail } from '@/components/Register/RegisterHandler';
+import { addUser } from './utils/userUtils';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Index() {
     const form = useRef(null);
     const verify = useRef(null);
     const inputRefs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
+    const [state, dispatch] = useContext(RegisterContext);
 
     const handleBack = () => {
         dispatch(actions.setFormValid(false));
         dispatch(actions.setSuccess(false));
+        localStorage.setItem('BWD_STATE', JSON.stringify(state));
     };
-
-    const [state, dispatch] = useContext(RegisterContext);
 
     const limitDigit = (input) => {
         let inputValue = input.value;
@@ -57,12 +59,34 @@ export default function Index() {
         console.log(code);
 
         code === state.verifyCode && dispatch(actions.setSuccess(true));
+        const id = uuidv4();
+        const newUser = {
+            userId: id,
+            firstName: state.firstNameInput,
+            lastName: state.lastNameInput,
+            email: state.emailInput,
+            phone: state.phoneNumberInput,
+            password: state.passwordInput,
+        };
+
+        localStorage.setItem(
+            'userName',
+            JSON.stringify({
+                id: id,
+                firstName: state.firstNameInput,
+                lastName: state.lastNameInput,
+                displayName: `${state.firstNameInput} ${state.lastNameInput}`,
+                state: true,
+            })
+        );
+
+        addUser(newUser);
     };
 
     useEffect(() => {
         if (state.success === true) {
+            localStorage.removeItem('BWD_STATE');
             location.href = '/';
-            localStorage.setItem('BWD_STATE', JSON.stringify(state));
         }
     }, [state.success]);
 

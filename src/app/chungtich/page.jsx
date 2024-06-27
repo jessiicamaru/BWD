@@ -1,6 +1,6 @@
 'use client';
 import styles from './chungtich.module.css';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 
 import { Navigation } from '@/components';
@@ -13,7 +13,6 @@ import Description2 from '@/components/common/Description2';
 import SlidingImages from '@/components/Chungtich/components/SlidingImages';
 import MaskCursor from '@/components/Chungtich/components/MaskCursor';
 import ProjectsImages from '@/components/Chungtich/components/ProjectsImages';
-import Contact from '@/components/common/Contact';
 import DefaultLayout from '@/layouts/defaultLayout';
 
 export default function Vanhoa() {

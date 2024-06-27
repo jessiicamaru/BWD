@@ -3,7 +3,6 @@ import styles from './sumenh.module.css';
 import Image from 'next/image';
 
 import { sumenh } from '@/data';
-import { Contact } from '@/components';
 import DefaultLayout from '@/layouts/defaultLayout';
 
 export default function Vanhoa() {

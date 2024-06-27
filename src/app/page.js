@@ -1,19 +1,7 @@
 'use client';
 import { useEffect, useRef } from 'react';
 import styles from './page.module.css';
-import {
-    Intro,
-    Description,
-    Projects,
-    FloatingImage,
-    ParallaxScroll,
-    GradientText,
-    CardScroll,
-    MaskText,
-    Letters,
-    Navigation,
-    Contact,
-} from '../components';
+import { Intro, Description, Projects, FloatingImage, ParallaxScroll, GradientText, CardScroll, MaskText, Letters, Navigation } from '../components';
 
 import DefaultLayout from '@/layouts/defaultLayout';
 

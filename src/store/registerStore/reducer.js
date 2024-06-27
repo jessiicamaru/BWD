@@ -11,6 +11,7 @@ const initState = (flag && JSON.parse(localStorage.getItem('BWD_STATE'))) || {
     formValid: false,
     verifyCode: '',
     success: false,
+    userId: '',
 };
 
 function reducer(state, action) {
@@ -80,6 +81,11 @@ function reducer(state, action) {
             return {
                 ...state,
                 success: action.payload,
+            };
+        case constants.SET_USER_ID:
+            return {
+                ...state,
+                userId: action.payload,
             };
         default:
             return state;

@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 
-import { useRef, useEffect, useContext } from 'react';
+import { useRef, useEffect, useContext, useState } from 'react';
 import styles from './style.module.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,9 +11,11 @@ import { RegisterContext, actions } from '@/store/registerStore';
 
 export default function Index({ links }) {
     const header = useRef(null);
+    const [userName, setUserName] = useState({});
 
-    const [state, dispatch] = useContext(RegisterContext);
-    let username = state.firstNameInput + ' ' + state.lastNameInput;
+    useEffect(() => {
+        setUserName(JSON.parse(localStorage.getItem('userName')));
+    }, []);
 
     useEffect(() => {
         var prevScrollpos = window.pageYOffset;
@@ -57,7 +59,7 @@ export default function Index({ links }) {
         });
     };
 
-    if (state.success) {
+    if (userName.state) {
         return (
             <>
                 <div className={styles.header} ref={header}>
@@ -66,12 +68,21 @@ export default function Index({ links }) {
                 <div className={styles.accountContainer}>
                     <div className={styles.account}>
                         <FontAwesomeIcon icon={faUser} className={styles.accountIcon} />
-                        {state.firstNameInput && state.lastNameInput ? <p>{username}</p> : <p></p>}
+                        <p>{userName.displayName}</p>
                     </div>
                     <ul className={styles.accountActions}>
                         <li
                             onClick={() => {
-                                dispatch(actions.setDefaultState());
+                                localStorage.setItem(
+                                    'userName',
+                                    JSON.stringify({
+                                        firstName: '',
+                                        lastName: '',
+                                        displayName: '',
+                                        state: false,
+                                    })
+                                );
+                                this.reload();
                             }}
                         >
                             <FontAwesomeIcon icon={faSignOutAlt} className={styles.accountIcon} />

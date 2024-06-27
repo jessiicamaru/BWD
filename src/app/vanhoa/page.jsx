@@ -3,7 +3,7 @@ import styles from './vanhoa.module.css';
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 
-import { VanhoaDescription, VanhoaIntro, VanhoaSection, Navigation, ZoomParallax, Contact, MouseImage, VanhoaScroll } from '@/components';
+import { VanhoaDescription, VanhoaIntro, VanhoaSection, Navigation, ZoomParallax, MouseImage, VanhoaScroll } from '@/components';
 import script from '@/script';
 
 import Description2 from '@/components/common/Description2';

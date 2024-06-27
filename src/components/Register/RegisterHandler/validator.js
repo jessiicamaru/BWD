@@ -2,7 +2,7 @@ import styles from '../styles.module.css';
 import { actions } from '@/store/registerStore';
 import sendEmail from './sendEmail';
 
-export default function Validate({ options, context }) {
+export default function Validate({ options, context, serverData }) {
     const [state, dispatch] = context;
 
     let form = options.form;
@@ -106,6 +106,17 @@ export default function Validate({ options, context }) {
                 isFormValid = false;
             }
         });
+
+        const { users } = serverData.data;
+
+        const userInvalid = users.find(
+            (user) => user.email === form.querySelector('#email').value || user.phone === form.querySelector('#phoneNumber').value
+        );
+
+        if (userInvalid) {
+            isFormValid = false;
+            alert('Email hoặc Số điện thoại đã được đăng kí');
+        }
 
         if (isFormValid) {
             dispatch(actions.setVerifyCode(sendEmail));

@@ -44,7 +44,7 @@ export default function Index({ imageAtLeft, content }) {
                                 <div className={styles.pContainer} key={index}>
                                     <p>
                                         <span className={styles.title}>{title}</span>
-                                        <span className={styles.contentBox}>{contentText.content}</span>
+                                        <p className={styles.contentBox}>{contentText.content}</p>
                                     </p>
                                 </div>
                             );
@@ -53,7 +53,7 @@ export default function Index({ imageAtLeft, content }) {
                                 return (
                                     <div className={styles.pContainer} key={index}>
                                         <p>
-                                            <span className={styles.contentBox}>{contentText.content}</span>
+                                            <p className={styles.contentBox}>{contentText.content}</p>
                                         </p>
                                         {contentText.image.src ? (
                                             <div className={styles.commentContainer}>
@@ -88,7 +88,7 @@ export default function Index({ imageAtLeft, content }) {
                                     ) : (
                                         ''
                                     )}
-                                    <span className={styles.contentBox}>{contentText.content}</span>
+                                    <p className={styles.contentBox}>{contentText.content}</p>
                                 </div>
                             );
                         }

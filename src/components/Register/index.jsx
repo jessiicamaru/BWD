@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faCircleDot } from '@fortawesome/free-regular-svg-icons';
-import { useRef, useEffect, useContext } from 'react';
+import { useRef, useEffect, useContext, useState } from 'react';
 import clsx from 'clsx';
 import Link from 'next/link';
 
@@ -16,7 +16,8 @@ export default function Index() {
     const submit = useRef(null);
 
     const [state, dispatch] = useContext(RegisterContext);
-    console.log(state);
+
+    const [serverData, setServerData] = useState(null);
 
     useEffect(() => {
         if (state.formValid) {
@@ -27,17 +28,28 @@ export default function Index() {
         }
     }, [state.formValid]);
 
-    const setLocationBack = () => {
-        if (location) {
-            let url = location.href;
+    useEffect(() => {
+        const query = `query Users {
+            users {
+                email
+                phone
+            }
+        }`;
 
-            url = url.slice(0, url.lastIndexOf('/'));
-            location.href = url;
-        }
-    };
+        fetch('http://localhost:4000/graphql', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                Aceept: 'application/json',
+            },
+            body: JSON.stringify({ query }),
+        })
+            .then((res) => res.json())
+            .then((data) => setServerData(data));
+    }, []);
 
     useEffect(() => {
-        if (form.current && submit.current) {
+        if (form.current && submit.current && serverData) {
             Validate({
                 options: {
                     form: form.current,
@@ -52,18 +64,23 @@ export default function Index() {
                         Validate.isEmail('#email'),
                         Validate.isRequired('#password'),
                         Validate.isPassword('#password'),
+                        Validate.isRequired('#passwordConfirmation'),
+                        Validate.isConfirmation('#passwordConfirmation', function () {
+                            return form.current.querySelector('#password').value;
+                        }),
                     ],
                 },
                 context: [state, dispatch],
+                serverData,
             });
         }
-    }, []);
+    }, [serverData]);
 
     return (
         <>
-            <div className={styles.backButton} onClick={setLocationBack}>
+            <div className={styles.backButton}>
                 <FontAwesomeIcon icon={faHome} className={styles.backIcon} />
-                Quay lại
+                <Link href={'/'}>Quay lại</Link>
             </div>
             <div className={styles.container} ref={form}>
                 <div className={styles.leftSide}></div>
@@ -153,6 +170,12 @@ export default function Index() {
                                     <FontAwesomeIcon icon={faCircleDot} className={clsx(styles.dot, styles.icon)} />
                                     Mật khẩu phải bao gồm chữ hoa
                                 </span>
+                            </div>
+
+                            <div className={clsx(styles.rightLine, styles.nestInput)} style={{ width: '100%' }}>
+                                <span>Xác nhận mật khẩu</span>
+                                <input placeholder="Xác nhận mật khẩu" type="password" id="passwordConfirmation" />
+                                <span className="message"></span>
                             </div>
                         </div>
                         <div style={{ width: '100%', padding: '0 10px' }}>

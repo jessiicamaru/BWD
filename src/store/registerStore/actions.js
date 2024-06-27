@@ -8,10 +8,16 @@ import {
     SET_VERIFY_CODE,
     SET_SUCCESS,
     SET_DEFAULT_STATE,
+    SET_USER_ID,
 } from './constants';
 
 export const setDefaultState = () => ({
     type: SET_DEFAULT_STATE,
+});
+
+export const setUserID = (payload) => ({
+    type: SET_USER_ID,
+    payload,
 });
 
 export const setFirstNameInput = (payload) => ({
