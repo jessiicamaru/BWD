@@ -19,6 +19,7 @@ export default function Index() {
     useEffect(() => {
         const query = `query Users {
             users {
+                id
                 firstName
                 lastName
                 email
@@ -46,11 +47,11 @@ export default function Index() {
                 const user = serverData.data.users.find((user) => {
                     return user.email === email && user.password === password;
                 });
-
                 if (user) {
                     localStorage.setItem(
                         'userName',
                         JSON.stringify({
+                            id: user.id,
                             firstName: user.firstName,
                             lastName: user.lastName,
                             displayName: user.firstName + ' ' + user.lastName,

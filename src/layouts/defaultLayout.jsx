@@ -5,10 +5,10 @@ import { SideBar, Contact, Chatbot } from '@/components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, memo } from 'react';
 import { ChatbotProvider } from '@/store/chatbotStore';
 
-export default function DefaultLayout({ children }) {
+function DefaultLayout({ children }) {
     const [sideBarState, setSideBarState] = useState(false);
     const closeSideBarRef = useRef(null);
 
@@ -37,3 +37,5 @@ export default function DefaultLayout({ children }) {
         </>
     );
 }
+
+export default memo(DefaultLayout);

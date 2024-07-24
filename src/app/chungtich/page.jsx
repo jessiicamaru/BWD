@@ -20,6 +20,8 @@ export default function Vanhoa() {
 
     const [isLoading, setIsLoading] = useState(true);
 
+    const scrpt = script;
+
     useEffect(() => {
         (async () => {
             const LocomotiveScroll = (await import('locomotive-scroll')).default;
@@ -33,14 +35,46 @@ export default function Vanhoa() {
         })();
     }, []);
 
+    function findContentAndLink(searchString) {
+        const pages = ['homePage', 'chungtichPage', 'vanhoaPage'];
+        const results = [];
+
+        pages.forEach((page) => {
+            const pageData = scrpt[page];
+            if (pageData) {
+                Object.values(pageData).forEach((item) => {
+                    if (item.content && item.link) {
+                        results.push({ content: item.content, link: item.link });
+                        if (item.content.includes(searchString)) {
+                        }
+                    }
+                    if (item.description) {
+                        item.description.forEach((desc) => {
+                            results.push({ content: desc.content, link: desc.link });
+                            if (desc.content && desc.content.includes(searchString)) {
+                            }
+                        });
+                    }
+                });
+            }
+        });
+
+        return results;
+    }
+
+    const searchString = 'Dương Vương';
+    const matchingItems = findContentAndLink(searchString);
+
+    console.log(matchingItems);
+
     return (
-        <main className={styles.main}>
-            <DefaultLayout>
+        <DefaultLayout>
+            <main className={styles.main}>
                 <Navigation links={navigation} />
 
                 <AnimatePresence mode="wait">{isLoading && <Preloader />}</AnimatePresence>
                 <Landing />
-                <Description2 description={script.chungtichPage.description.phrase1} img={script.chungtichPage.description.img} />
+                <Description2 description={script.chungtichPage.description.content} img={script.chungtichPage.description.img} />
                 <Projects />
                 <SlidingImages />
                 <ProjectsImages />
@@ -54,7 +88,7 @@ export default function Vanhoa() {
 
                 <MaskCursor />
                 {/* <Contact /> */}
-            </DefaultLayout>
-        </main>
+            </main>
+        </DefaultLayout>
     );
 }

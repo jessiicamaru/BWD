@@ -10,7 +10,7 @@ export default function Index({ imageAtLeft, content }) {
     const imageContainer = useRef(null);
     const desciption = useRef(null);
 
-    let title = content.title;
+    let title = content.content;
     let contentDescription = content.description;
 
     let start = '0';
@@ -57,8 +57,8 @@ export default function Index({ imageAtLeft, content }) {
                                         </p>
                                         {contentText.image.src ? (
                                             <div className={styles.commentContainer}>
-                                                <img
-                                                    src={contentText.image.src.src}
+                                                <Image
+                                                    src={contentText.image.src}
                                                     fill={true}
                                                     alt="project image"
                                                     priority={true}
@@ -76,8 +76,8 @@ export default function Index({ imageAtLeft, content }) {
                                 <div className={styles.pContainer} key={index}>
                                     {contentText.image.src ? (
                                         <div className={styles.commentContainer}>
-                                            <img
-                                                src={contentText.image.src.src}
+                                            <Image
+                                                src={contentText.image.src}
                                                 fill={true}
                                                 alt="project image"
                                                 priority={true}

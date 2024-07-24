@@ -14,7 +14,7 @@ export default function Index() {
     });
     const y = useTransform(scrollYProgress, [0, 1], ['-10%', '10%']);
 
-    const { phrase1, phrase2 } = script.vanhoaPage.section;
+    const { phrase1, phrase2 } = script.vanhoaPage.section.content;
 
     return (
         <div ref={container} className={styles.container} style={{ clipPath: 'polygon(0% 0, 100% 0%, 100% 100%, 0 100%)' }}>

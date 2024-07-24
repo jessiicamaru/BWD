@@ -42,14 +42,6 @@ export default function Index() {
                 t1.reverse();
             });
 
-            // function updateOverlay(dataItem) {
-            //     const itemName = father.current.querySelector('#item-category').previousElementSibling;
-            //     const itemCategory = father.current.querySelector('#item-category');
-
-            //     itemName.textContent = dataItem.itemName;
-            //     itemCategory.textContent = dataItem.itemCategory;
-            // }
-
             father.current.addEventListener('click', (e) => {
                 if (!overlay.contains(e.target) && !isItem(e.target)) {
                     t1.reverse();
@@ -67,7 +59,7 @@ export default function Index() {
             <div className={styles.overlay}>
                 <div className={styles.overlayHeader}>
                     <div className={styles.col}>
-                        <h1 id="item-name">{data[itemIndex].itemName}</h1>
+                        <h1 id="item-name">{data[itemIndex].content}</h1>
                         <p id="item-category"></p>
                     </div>
                     <div className={styles.col}>
@@ -100,7 +92,7 @@ export default function Index() {
                                 }}
                             >
                                 <div className={styles.itemIndex}>{item.itemIndex}</div>
-                                <div className={styles.itemName}>{item.itemName}</div>
+                                <div className={styles.content}>{item.content}</div>
                             </div>
                         );
                     })}

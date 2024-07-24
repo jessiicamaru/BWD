@@ -8,7 +8,8 @@ const API_URL = process.env.NEXT_PUBLIC_CHATBOT_API_URI;
 
 function formatTextWithLinksAndNewLines(text) {
     let formattedText = text.replace(/\[([^\]]+)\]\((https?:\/\/[^\s\)]+)\)/g, (url) => {
-        return `<a href="${url}">Tại đây</a>`;
+        url = url.slice(0, -1);
+        return `<a href="${url}" target="_blank">Tại đây</a>`;
     });
 
     formattedText = formattedText.replace(/\[.*?\]\(/g, '');
@@ -29,7 +30,7 @@ const getResponse = async (question, dispatch) => {
             Connection: 'keep-alive',
         },
         body: JSON.stringify({
-            bot_id: '7385121366972563463',
+            bot_id: process.env.NEXT_PUBLIC_CHATBOT_ID,
             user: '123333333',
             query: question,
             stream: false,
@@ -42,13 +43,13 @@ const getResponse = async (question, dispatch) => {
     const id = uuidv4();
 
     if (data) {
-        console.log(data);
+        // console.log(data);
 
         const response = data.messages.find((res) => res.type === 'answer');
 
         const formarttedRes = formatTextWithLinksAndNewLines(response.content);
 
-        console.log(formarttedRes);
+        // console.log(formarttedRes);
 
         dispatch(
             actions.setChatHistory({

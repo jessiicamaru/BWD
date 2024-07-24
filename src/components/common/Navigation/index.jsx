@@ -76,13 +76,14 @@ export default function Index({ links }) {
                                 localStorage.setItem(
                                     'userName',
                                     JSON.stringify({
+                                        id: '',
                                         firstName: '',
                                         lastName: '',
                                         displayName: '',
                                         state: false,
                                     })
                                 );
-                                this.reload();
+                                location.href = location.href;
                             }}
                         >
                             <FontAwesomeIcon icon={faSignOutAlt} className={styles.accountIcon} />

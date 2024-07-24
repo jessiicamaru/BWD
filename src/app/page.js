@@ -16,13 +16,13 @@ export default function Home() {
         })();
     }, []);
 
-    const { script1, script2, script3, script4, script5 } = script.project;
-    const { letters1, letters2, letters3, letters4 } = script.letters;
-    const { title1, title2 } = script.title;
-    const { gradientLetter1, gradientLetter2 } = script.gradientLetter;
-    const { gradientText1, gradientText2 } = script.gradientText;
-    const { cardScroll } = script;
-    const navigation = script.navigationPage1;
+    const { script1, script2, script3, script4, script5 } = script.homePage.project;
+    const { letters1, letters2, letters3, letters4 } = script.homePage.letters;
+    const { title1, title2 } = script.homePage.title;
+    const { gradientLetter1, gradientLetter2 } = script.homePage.gradientLetter;
+    const { gradientText1, gradientText2 } = script.homePage.gradientText;
+    const { cardScroll } = script.homePage;
+    const navigation = script.navigationHomePage;
 
     const [sideBarState, setSideBarState] = useState(false);
     const closeSideBarRef = useRef(null);
@@ -90,7 +90,7 @@ export default function Home() {
                 </div>
 
                 <div id="noidau">
-                    <GradientText content={gradientText1} />
+                    <GradientText content={gradientText1.content} />
 
                     <Letters {...letters1} imgAtLeft={false} />
 
@@ -185,7 +185,7 @@ export default function Home() {
 
                 <div className={styles.row}>
                     <div className={styles.column}>
-                        <GradientText content={gradientText2} fontSize={'35px'} width={'100%'} transform={'translateY(-50%)'} />
+                        <GradientText content={gradientText2.content} fontSize={'35px'} width={'100%'} transform={'translateY(-50%)'} />
                     </div>
                 </div>
 

@@ -1,3 +1,3 @@
-export const SET_RESPONSE = 'set_response';
-export const SET_QUESTION = 'set_question';
+export const SET_ALL_CHAT_HISTORY = 'set_all_chat_history';
 export const SET_CHAT_HISTORY = 'set_chat_history';
+export const DEFAULT = 'default';

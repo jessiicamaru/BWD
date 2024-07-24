@@ -209,3 +209,15 @@ li.question div p.content {
     opacity: 0.7;
     z-index: 5;
 }
+
+.overlay button {
+    border-radius: 8px;
+    border: 1px solid #724ae8;
+    padding: 16px;
+}
+
+.overlay button a {
+    color: #724ae8;
+    font-weight: 700;
+    padding: 16px;
+}

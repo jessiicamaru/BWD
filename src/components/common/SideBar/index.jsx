@@ -7,7 +7,6 @@ import { opacity, background } from './anim';
 import Nav from './nav';
 
 function index(props, ref) {
-    console.log(props);
     const isActive = props.isActive;
     return (
         <div className={styles.header}>
@@ -20,8 +19,26 @@ function index(props, ref) {
                     </div>
                 </div>
             </div>
+
             <motion.div variants={background} initial="initial" animate={isActive ? 'open' : 'closed'} className={styles.background}></motion.div>
-            <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
+            <AnimatePresence mode="wait">
+                {isActive && (
+                    <>
+                        <input
+                            type="text"
+                            style={{
+                                position: 'absolute',
+                                zIndex: '99999',
+                                width: '100%',
+                                padding: '16px 32px',
+                                lineHeight: '1.5',
+                                fontSize: '24px',
+                            }}
+                        />
+                        <Nav />
+                    </>
+                )}
+            </AnimatePresence>
         </div>
     );
 }

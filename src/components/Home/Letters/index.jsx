@@ -1,12 +1,12 @@
 import styles from './style.module.css';
 import Image from 'next/image';
 
-export default function Index({ imgs, title, imgAtLeft }) {
+export default function Index({ imgs, content, imgAtLeft }) {
     // console.log(title);
     return (
         <div className={styles.letterContainer} style={imgAtLeft ? { flexDirection: 'row-reverse' } : { flexDirection: 'row' }}>
             <div className={styles.letterContainerLeft}>
-                <span className={styles.title}>{title}</span>
+                <span className={styles.title}>{content}</span>
             </div>
             <div className={styles.letterContainerRight}>
                 {imgs.map((img, index) => {

@@ -18,7 +18,7 @@ export default function Home() {
         requestAnimationFrame(raf);
     }, []);
 
-    const scroll = script.vanhoaPage.scroll;
+    const scroll = script.vanhoaPage.scroll.content;
 
     return (
         <main className={styles.main}>

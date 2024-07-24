@@ -83,7 +83,8 @@
 }
 
 .imgContent {
-    width: 70%;
+    position: static !important;
+    width: 70% !important;
 }
 
 .commentContainer {
