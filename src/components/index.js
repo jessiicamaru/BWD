@@ -16,6 +16,7 @@ import SideBar from '@/components/common/SideBar';
 import Navigation from '@/components/common/Navigation';
 import Contact from '@/components/common/Contact';
 import Chatbot from '@/components/common/Chatbot';
+import Search from '@/components/common/Search';
 
 import VanhoaDescription from '@/components/Vanhoa/Description';
 import VanhoaIntro from '@/components/Vanhoa/Intro';
@@ -25,6 +26,7 @@ import MouseImage from '@/components/Vanhoa/MouseImage';
 import VanhoaScroll from '@/components/Vanhoa/Scroll';
 
 export {
+    Search,
     Intro,
     Description,
     Projects,

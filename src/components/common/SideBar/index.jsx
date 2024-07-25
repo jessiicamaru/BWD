@@ -3,6 +3,7 @@ import styles from './style.module.css';
 import { forwardRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { opacity, background } from './anim';
+import { Search } from '@/components';
 
 import Nav from './nav';
 
@@ -22,22 +23,9 @@ function index(props, ref) {
 
             <motion.div variants={background} initial="initial" animate={isActive ? 'open' : 'closed'} className={styles.background}></motion.div>
             <AnimatePresence mode="wait">
-                {isActive && (
-                    <>
-                        <input
-                            type="text"
-                            style={{
-                                position: 'absolute',
-                                zIndex: '99999',
-                                width: '100%',
-                                padding: '16px 32px',
-                                lineHeight: '1.5',
-                                fontSize: '24px',
-                            }}
-                        />
-                        <Nav />
-                    </>
-                )}
+                <Search />
+
+                {isActive && <Nav />}
             </AnimatePresence>
         </div>
     );

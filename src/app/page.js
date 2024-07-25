@@ -16,11 +16,11 @@ export default function Home() {
         })();
     }, []);
 
-    const { script1, script2, script3, script4, script5 } = script.homePage.project;
-    const { letters1, letters2, letters3, letters4 } = script.homePage.letters;
+    const { script1, script2, script3, script4, script5 } = script.homePage;
+    const { letters1, letters2, letters3, letters4 } = script.homePage;
     const { title1, title2 } = script.homePage.title;
-    const { gradientLetter1, gradientLetter2 } = script.homePage.gradientLetter;
-    const { gradientText1, gradientText2 } = script.homePage.gradientText;
+    const { gradientLetter1, gradientLetter2 } = script.homePage;
+    const { gradientText1, gradientText2 } = script.homePage;
     const { cardScroll } = script.homePage;
     const navigation = script.navigationHomePage;
 

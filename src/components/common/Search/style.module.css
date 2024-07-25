@@ -1,0 +1,59 @@
+.main {
+    padding: 32px 0 0 32px;
+    position: absolute;
+    width: 100%;
+}
+
+.searchContainer {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 100px;
+    overflow: hidden;
+    animation: fade 2s ease;
+}
+
+.searchInput {
+    width: 95%;
+    padding: 16px 32px;
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+.searchIcon {
+    color: #ccc;
+    font-size: 24px;
+    margin-right: 16px;
+}
+
+.wrapper {
+    z-index: 9999;
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate(32.2222px, 110px);
+    width: 500px;
+    background-color: white;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    60% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}

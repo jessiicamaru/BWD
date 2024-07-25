@@ -1,6 +1,6 @@
 'use client';
 
-import { SideBar, Contact, Chatbot } from '@/components';
+import { SideBar, Contact, Chatbot, Search } from '@/components';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -31,9 +31,9 @@ function DefaultLayout({ children }) {
             {sideBarState && <SideBar ref={closeSideBarRef} isActive={sideBarState} />}
             {children}
             <Contact />
-            {/* <ChatbotProvider>
+            <ChatbotProvider>
                 <Chatbot />
-            </ChatbotProvider> */}
+            </ChatbotProvider>
         </>
     );
 }
