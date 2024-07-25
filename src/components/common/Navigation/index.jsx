@@ -13,8 +13,16 @@ export default function Index({ links }) {
     const header = useRef(null);
     const [userName, setUserName] = useState({});
 
+    const [color, setColor] = useState('white');
+
     useEffect(() => {
         setUserName(JSON.parse(localStorage.getItem('userName')));
+    }, []);
+
+    useEffect(() => {
+        if (location.href.includes('/vanhoa') || location.href.includes('/chungtich')) {
+            setColor('#690705');
+        }
     }, []);
 
     useEffect(() => {
@@ -104,11 +112,15 @@ export default function Index({ links }) {
                 <FontAwesomeIcon icon={faEllipsisV} className={styles.actionsIcon} />
 
                 <ul className={styles.actions}>
-                    <li>
-                        <Link href="/register">Đăng ký</Link>
+                    <li style={{ borderRight: `1px solid ${color}` }}>
+                        <Link href="/register" style={{ color: color }}>
+                            Đăng ký
+                        </Link>
                     </li>
                     <li>
-                        <Link href="/login">Đăng nhập</Link>
+                        <Link href="/login" style={{ color: color }}>
+                            Đăng nhập
+                        </Link>
                     </li>
                 </ul>
             </div>

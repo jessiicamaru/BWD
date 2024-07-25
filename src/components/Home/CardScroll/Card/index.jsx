@@ -4,7 +4,7 @@ import { useTransform, motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import Link from 'next/link';
 
-const Card = ({ i, title, description, src, url, color, progress, range, targetScale }) => {
+const Card = ({ i, title, content, src, url, color, progress, range, targetScale }) => {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,
@@ -20,7 +20,7 @@ const Card = ({ i, title, description, src, url, color, progress, range, targetS
                 <h2>{title}</h2>
                 <div className={styles.body}>
                     <div className={styles.description}>
-                        <p>{description}</p>
+                        <p>{content}</p>
                         <button className={styles.directButton}>
                             <Link href="/vanhoa">Tìm hiểu thêm về văn hóa</Link>
                         </button>

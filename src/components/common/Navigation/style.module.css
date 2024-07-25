@@ -83,10 +83,6 @@
     opacity: 0.8;
 }
 
-.actions > li:nth-child(1) {
-    border-right: 1px solid white;
-}
-
 .accountContainer,
 .actionsContainer {
     height: 80px;

@@ -21,7 +21,7 @@ export default function Home() {
     const { title1, title2 } = script.homePage.title;
     const { gradientLetter1, gradientLetter2 } = script.homePage;
     const { gradientText1, gradientText2 } = script.homePage;
-    const { cardScroll } = script.homePage;
+    const cardScroll = script.homePage.cardScroll;
     const navigation = script.navigationHomePage;
 
     const [sideBarState, setSideBarState] = useState(false);

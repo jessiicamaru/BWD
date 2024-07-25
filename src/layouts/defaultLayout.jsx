@@ -15,7 +15,9 @@ function DefaultLayout({ children }) {
     const [iconColor, setIconColor] = useState('white');
 
     useEffect(() => {
-        location && location.href !== location.origin + '/' && setIconColor('#690705');
+        if (location.href.includes('/vanhoa') || location.href.includes('/chungtich')) {
+            setIconColor('#690705');
+        }
     }, []);
 
     return (
