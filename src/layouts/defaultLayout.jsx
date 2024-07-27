@@ -33,9 +33,9 @@ function DefaultLayout({ children }) {
             {sideBarState && <SideBar ref={closeSideBarRef} isActive={sideBarState} />}
             {children}
             <Contact />
-            {/* <ChatbotProvider>
+            <ChatbotProvider>
                 <Chatbot />
-            </ChatbotProvider> */}
+            </ChatbotProvider>
         </>
     );
 }

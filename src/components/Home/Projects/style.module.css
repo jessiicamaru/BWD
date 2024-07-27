@@ -107,6 +107,7 @@
 
 .contentBox {
     text-align: justify;
+    display: block;
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
