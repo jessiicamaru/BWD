@@ -102,7 +102,7 @@ function index() {
                             </div>
                         </li>
 
-                        {/* {state.history &&
+                        {state.history &&
                             state.history.map((item) => {
                                 return (
                                     <>
@@ -122,7 +122,7 @@ function index() {
                                         </li>
                                     </>
                                 );
-                            })} */}
+                            })}
                     </ul>
 
                     <div
