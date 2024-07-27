@@ -116,6 +116,8 @@ export default function Validate({ options, context, serverData }) {
         if (userInvalid) {
             isFormValid = false;
             alert('Email hoặc Số điện thoại đã được đăng kí');
+        } else {
+            isFormValid = true;
         }
 
         if (isFormValid) {
