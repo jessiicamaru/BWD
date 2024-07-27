@@ -50,7 +50,7 @@
     bottom: calc(-150%);
     right: 0;
     width: 70%;
-    height: 700px;
+    height: 100vh;
     padding: 24px;
     background: #fff;
     color: #000;
@@ -112,7 +112,7 @@
 }
 
 .itemDetails p {
-    font-size: 18px;
+    font-size: 14px;
     text-align: justify;
     width: 50%;
 }
