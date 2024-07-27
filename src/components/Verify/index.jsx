@@ -81,6 +81,7 @@ export default function Index() {
         );
 
         addUser(newUser);
+        location.href = '/';
     };
 
     useEffect(() => {
