@@ -67,7 +67,7 @@ export default function Index({ links }) {
         });
     };
 
-    if (userName.state) {
+    if (userName?.state) {
         return (
             <>
                 <div className={styles.header} ref={header}>
