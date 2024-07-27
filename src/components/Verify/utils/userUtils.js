@@ -12,7 +12,7 @@ export const addUser = async (newUser) => {
     }
 `;
 
-    const res = await fetch('http://localhost:4000/graphql', {
+    const res = await fetch('https://bwd-server.onrender.com/graphql', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

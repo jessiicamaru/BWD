@@ -36,7 +36,7 @@ export default function Index() {
             }
         }`;
 
-        fetch('http://localhost:4000/graphql', {
+        fetch('https://bwd-server.onrender.com/graphql', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
