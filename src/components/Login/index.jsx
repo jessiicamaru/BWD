@@ -107,7 +107,7 @@ export default function Index() {
                         </div>
                         <div style={{ width: '100%', padding: '0 10px' }}>
                             <button className={styles.submit} ref={submit}>
-                                Sign up
+                                Đăng nhập
                             </button>
                         </div>
                     </div>

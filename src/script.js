@@ -176,14 +176,14 @@ export default {
                 },
                 {
                     content:
-                        'Có những phong trào tiêu biểu chống lại quân xâm lược phương như Hai Bà Trưng nổi dậy được tự chủ chính quyền trong 3 năm, Lý Bí nổi dậy đánh đuổi Thứ sử giao Châu tự xưng là Lý Nam Đế lập ra nhà nước tự chủ Vạn Xuân hay khởi nghĩa Phùng năm 776 giành được tự chủ trong thời gian ngắn,...',
+                        'Có những phong trào tiêu biểu chống lại quân xâm lược phương như Hai Bà Trưng nổi dậy được tự chủ chính quyền trong 3 năm, Lý Bí nổi dậy đánh đuổi Thứ sử Giao Châu tự xưng là Lý Nam Đế lập ra nhà nước tự chủ Vạn Xuân hay khởi nghĩa Phùng năm 776 giành được tự chủ trong thời gian ngắn,...',
                     image: '',
                     link: '/',
                 },
 
                 {
                     content:
-                        'Trong suốt 10 thế kỷ không lúc nào bọn đô hộ phương Bắc được ăn ngon, ngủ yên, phong trào đấu tranh của nhân dân ta nổ ra mạnh mẽ, liên tục, trên một không gian rộng lớn. Phong trào đã lôi cuốn được hàng vạn nhân dân, tầng lớp quan lại, binh lính người Việt tham gia, thậm chí có lúc còn kết hợp với phong trào đấu tranh của nhân dân Trung Quốc.',
+                        'Trong suốt 10 thế kỷ, không lúc nào bọn đô hộ phương Bắc được ăn ngon, ngủ yên . Phong trào đấu tranh của nhân dân ta nổ ra mạnh mẽ, liên tục, trên một không gian rộng lớn. Phong trào đã lôi cuốn được hàng vạn nhân dân, tầng lớp quan lại, binh lính người Việt tham gia, thậm chí có lúc còn kết hợp với phong trào đấu tranh của nhân dân Trung Quốc.',
                     image: '',
                     link: '/',
                 },
@@ -206,17 +206,17 @@ export default {
             description: [
                 {
                     content:
-                        'Chiến thắng Bạch Đằng năm 938 đã chấm dứt thời kỳ 1000 năm Bắc thuôc.  Mở ra kỷ nguyên mới trong lịch sử Việt Nam - kỷ nguyên phát triển của nhà nước phong kiến độc lập, kỷ nguyên xây dựng và bảo vệ tổ quốc.',
+                        'Chiến thắng Bạch Đằng năm 938 đã chấm dứt thời kỳ 1000 năm Bắc thuộc.  Mở ra kỷ nguyên mới trong lịch sử Việt Nam - kỷ nguyên phát triển của nhà nước phong kiến độc lập, kỷ nguyên xây dựng và bảo vệ tổ quốc.',
                     image: '',
                     link: '/',
                 },
                 {
                     content:
-                        'Sau đó, Việt Nam bước vào thời kỳ phục hưng và phát triển dưới các triều đại Lý, Trần, Hồ, Lê Sơ. Đại Việt – tên nước dưới thời Lý – Trần – Lê Sơ được biết đến là một đất nước thịnh vượng ở Châu Á. Đánh dấu thời kỳ hoàng kim của lịch sử Việt Nam.',
+                        'Sau đó, Việt Nam bước vào thời kỳ phục hưng và phát triển dưới các triều đại Lý, Trần, Hồ, Lê Sơ. Đại Việt – tên nước dưới thời Lý – Trần – Lê Sơ được biết đến là một đất nước thịnh vượng ở châu Á. Đánh dấu thời kỳ hoàng kim của lịch sử Việt Nam.',
                     image: {
                         src: project3_1,
                         position: '',
-                        comment: 'Chiến thằng trên sông bạch đằng năm 938',
+                        comment: 'Chiến thắng trên sông bạch đằng năm 938',
                     },
                     link: '/',
                 },
@@ -264,7 +264,7 @@ export default {
                 },
                 {
                     content:
-                        'Ngày 2/9/1945, tại quảng trường Ba Đình (Hà Nội) thay mặt Chính phủ lâm thời, Chủ tịch Hồ Chí Minh đọc bản tuyên ngôn độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa. Cách mạng Tháng Tám thành công là thắng lợi vĩ đại đầu tiên của Nhân dân ta từ khi có Đảng lãnh đạo, mở ra bước ngoặt vĩ đại trong lịch sử. Nước Việt Nam từ một nước thuộc địa nửa phong kiến trở thành một nước độc lập, tự do và dân chủ.',
+                        'Ngày 2/9/1945, tại Quảng trường Ba Đình (Hà Nội) thay mặt Chính phủ lâm thời, Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa. Cách mạng Tháng Tám thành công là thắng lợi vĩ đại đầu tiên của nhân dân ta từ khi có Đảng lãnh đạo, mở ra bước ngoặt vĩ đại trong lịch sử. Nước Việt Nam từ một nước thuộc địa nửa phong kiến trở thành một nước độc lập, tự do và dân chủ.',
                     image: {
                         src: project4_2,
                         position: '',
@@ -309,7 +309,7 @@ export default {
                     image: {
                         src: project5_2,
                         position: '',
-                        comment: 'Miền Bắc xây dựng Chủ nghĩa xã hội',
+                        comment: 'Miền Bắc xây dựng chủ nghĩa xã hội',
                     },
                     link: '/',
                 },
@@ -381,7 +381,7 @@ export default {
 
         gradientText2: {
             content:
-                'Thế hệ đi trước đã hy sinh từng giọt máu, từng hơi thở để bảo vệ đất nước, bảo vệ niềm tự hào dân tộc và nền văn hóa của cha ông. Dù trong hoàn cảnh khó khăn nào, họ vẫn vun đắp và truyền bá những giá trị văn hóa bền vững. Văn hóa là đòn bẩy để giữ vững tinh thần và nhận diện dân tộc trong bao biến cố lịch sử. Chính sự kiên cường và lòng tự hào về văn hóa đã giúp họ vượt qua mọi khó khăn, góp phần vào sự nghiệp xây dựng và phát triển đất nước.',
+                'Thế hệ đi trước đã hy sinh từng chảy máu, từng hơi thở để bảo vệ đất nước, bảo vệ niềm tự hào dân tộc và nền văn hóa của cha ông. Dù trong hoàn cảnh khó khăn nào, họ vẫn xây dựng và truyền bá những giá trị văn hóa bền vững. Văn hóa là Đòn bẫy để củng cố tinh thần và nhận diện dân tộc trong bao biến cố lịch sử. Chính sự cứng rắn và lòng tự hào về văn hóa đã giúp cha ông ta vượt qua mọi khó khăn, góp phần vào sự nghiệp xây dựng và phát triển đất nước.',
             link: '/#noidau',
         },
 
@@ -421,7 +421,7 @@ export default {
             {
                 title: 'Ẩm thực',
                 content:
-                    'Ẩm thực Việt Nam là một bức tranh đa sắc màu, phản ánh tinh hoa và sự phong phú của đất nước. Từ những món ăn giản dị hàng ngày đến những đặc sản vùng miền, ẩm thực Việt Nam luôn chinh phục lòng người bằng hương vị tinh tế và sự cân bằng hoàn hảo của các nguyên liệu. Không chỉ những món ăn nối tiếng, mỗi vùng miền của Việt Nam còn có những đặc sản riêng tạo nên sự đa dạng và phong phú không nơi nào có được.',
+                    'Ẩm thực Việt Nam là một bức tranh đa sắc màu, phản ánh tinh hoa và sự phong phú của đất nước. Từ những món ăn giản dị hàng ngày đến những đặc sản vùng miền, ẩm thực Việt Nam luôn chinh phục lòng người bằng hương vị tinh tế và sự cân bằng hoàn hảo của các nguyên liệu. Không chỉ những món ăn nổi tiếng tiếng, mỗi vùng miền của Việt Nam còn có những đặc sản riêng tạo nên sự đa dạng và phong phú không nơi nào có được.',
                 src: amthuc,
                 link: '/#vanhoa',
                 color: '#C2491D',
@@ -516,7 +516,7 @@ export default {
         title: 'Bạn đã sẵn sàng khám phá văn hóa Việt Nam chưa?',
         description: {
             content:
-                'Ẩm thực Việt Nam không chỉ là nghệ thuật ẩm thực mà còn là một biểu tượng của sự kết hợp tinh tế giữa truyền thống và khoa học. Mỗi món ăn thể hiện rõ bản sắc văn hóa địa phương và được chế biến với sự khéo léo, từ những kỹ thuật nấu nướng lâu đời đến những cách thức hiện đại. Việt Nam là nơi bạn có thể khám phá những hương vị đa dạng và sự sáng tạo vượt thời gian, mang đến trải nghiệm ẩm thực độc đáo và phong phú',
+                'Ẩm thực Việt Nam không chỉ là nghệ thuật ẩm thực mà còn là một biểu tượng của sự kết hợp tinh tế giữa truyền thống và khoa học. Mỗi món ăn thể hiện rõ bản sắc văn hóa địa phương và được chế biến với sự khéo léo, từ những kỹ thuật nấu nướng lâu đời đến những cách thức hiện đại. Việt Nam là nơi bạn có thể khám phá những hương vị đa dạng và sự sáng tạo vượt thời gian, mang đến trải nghiệm ẩm thực độc đáo và phong phú.',
             img: vhdescription,
             link: '/vanhoa',
         },

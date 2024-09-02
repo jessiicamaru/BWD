@@ -185,7 +185,13 @@ export default function Home() {
 
                 <div className={styles.row}>
                     <div className={styles.column}>
-                        <GradientText content={gradientText2.content} fontSize={'35px'} width={'100%'} transform={'translateY(-50%)'} />
+                        <GradientText
+                            content={gradientText2.content}
+                            fontSize={'35px'}
+                            width={'100%'}
+                            transform={'translateY(-50%)'}
+                            fontFamily={'Authoritative'}
+                        />
                     </div>
                 </div>
 

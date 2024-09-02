@@ -1,7 +1,7 @@
 .container {
     background-color: white;
     width: 1000px;
-    height: 500px;
+    height: 550px;
     display: flex;
     transition: all 0.2s ease;
     font-family: Avo, sans-serif;
