@@ -33,6 +33,7 @@
     width: 40%;
     position: relative;
     top: 10%;
+    text-align: justify;
 }
 .cardContainer .card .body .description p {
     font-size: 16px;

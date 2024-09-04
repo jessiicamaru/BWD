@@ -6,12 +6,10 @@ import clsx from 'clsx';
 import { useEffect, useRef, useState, useContext, memo } from 'react';
 import { chatbotHandler } from './utils/ChatbotHandler';
 import { ChatbotContext, actions } from '@/store/chatbotStore';
-import Link from 'next/link';
 
 function index() {
     const [openState, setOpenState] = useState(false);
     const [loading, setLoading] = useState(true);
-    const [isAccessible, setIsAccessible] = useState(false);
 
     const [state, dispatch] = useContext(ChatbotContext);
 
@@ -58,14 +56,6 @@ function index() {
             closeButton.current && closeButton.current.removeEventListener('click', () => {});
             chatBox.current && chatBox.current.removeEventListener('click', () => {});
         };
-    }, []);
-
-    useEffect(() => {
-        const user = JSON.parse(localStorage.getItem('userName'));
-
-        if (user?.id) {
-            setIsAccessible(true);
-        }
     }, []);
 
     useEffect(() => {
@@ -132,17 +122,6 @@ function index() {
                         })}
                     >
                         <p>Đợi một chút nhé...</p>
-                    </div>
-
-                    <div
-                        className={clsx(styles.overlay, {
-                            [styles.open]: !isAccessible,
-                            [styles.close]: isAccessible,
-                        })}
-                    >
-                        <button>
-                            <Link href={'/login'}>Đăng nhập để sử dụng</Link>
-                        </button>
                     </div>
                 </div>
 

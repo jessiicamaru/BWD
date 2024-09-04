@@ -28,7 +28,7 @@ export default function Index({ content }) {
 
     return (
         <div ref={container} className={styles.main}>
-            <h1 style={{ color: 'black', textAlign: 'center', paddingTop: '20px' }}>Những nét đẹp văn hóa </h1>
+            <h1 style={{ color: 'black', textAlign: 'center', padding: '20px' }}>Những nét đẹp văn hóa </h1>
             {projects.map((project, i) => {
                 const targetScale = 1 - (projects.length - i) * 0.05;
                 return <Card key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * 0.25, 1]} targetScale={targetScale} />;

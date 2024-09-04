@@ -39,7 +39,7 @@ export default function Vanhoa() {
                     </video>
                 </div>
 
-                <Description2 description={script.vanhoaPage.description.content} img={script.vanhoaPage.description.img} />
+                <Description2 description={script.vanhoaPage.description.content} img={script.vanhoaPage.description.img} fontSize={'23px'} />
 
                 <h1 style={{ width: '100%', textAlign: 'center', margin: '100px 0 50px' }}>Và còn nhiều hơn thế nữa...</h1>
 

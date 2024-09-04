@@ -3,12 +3,11 @@ import { useLayoutEffect, useRef } from 'react';
 import styles from '../style.module.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { vhs1, vhs2, vhs3 } from '@/data';
 import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Index({ imgs, title, subtitle }) {
+export default function Index({ imgs, content, subtitle }) {
     const container = useRef(null);
     const images = imgs;
     const lettersRef = useRef([]);
@@ -48,7 +47,7 @@ export default function Index({ imgs, title, subtitle }) {
         <div ref={container} className={styles.container}>
             <div className={styles.body}>
                 <h1 ref={title1}></h1>
-                <h1>{title}</h1>
+                <h1>{content}</h1>
                 <div className={styles.word}>
                     <p>
                         {word.split('').map((letter, i) => {
