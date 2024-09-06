@@ -57,7 +57,9 @@ export default function Index() {
                     submitInfo: submit.current,
                     rules: [
                         Validate.isRequired('#firstName'),
+                        Validate.isSpecialChar('#firstName'),
                         Validate.isRequired('#lastName'),
+                        Validate.isSpecialChar('#lastName'),
                         Validate.isPhoneNumber('#phoneNumber'),
                         Validate.isRequired('#phoneNumber'),
                         Validate.isRequired('#email'),
@@ -175,7 +177,7 @@ export default function Index() {
                             <div className={clsx(styles.rightLine, styles.nestInput)} style={{ width: '100%' }}>
                                 <span>Xác nhận mật khẩu</span>
                                 <input placeholder="Xác nhận mật khẩu" type="password" id="passwordConfirmation" />
-                                <span className="message"></span>
+                                <span className={styles.message}></span>
                             </div>
                         </div>
                         <div style={{ width: '100%', padding: '0 10px' }}>

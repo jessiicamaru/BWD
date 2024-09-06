@@ -9,7 +9,7 @@ export default function Validate({ options, context, serverData }) {
     let selectorRules = {};
     let submitButton = options.submitInfo;
 
-    let isFormValid = true;
+    let isFormValid = false;
 
     function validator(inputElement, rule) {
         let errorElement = parentElement(inputElement);
@@ -174,6 +174,19 @@ Validate.isPhoneNumber = function (selector) {
         test(value) {
             if (/[A-Z]/.test(value) || /[a-z]/.test(value)) {
                 return 'Nhập số điện thoại hợp lệ';
+            } else {
+                return undefined;
+            }
+        },
+    };
+};
+
+Validate.isSpecialChar = function (selector) {
+    return {
+        selector,
+        test(value) {
+            if (/[!@#$%^&*(),.?":{}|<>]/.test(value)) {
+                return 'Không được bao gồm kí tự đặc biệt';
             } else {
                 return undefined;
             }

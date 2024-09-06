@@ -16,16 +16,20 @@ export default function Index() {
     }, []);
 
     const animate = () => {
-        const maskSizeProgress = targetMaskSize * getScrollProgress();
-        stickyMask.current.style.webkitMaskSize = (initialMaskSize + maskSizeProgress) * 150 + '%';
-        requestAnimationFrame(animate);
+        if (stickyMask.current) {
+            const maskSizeProgress = targetMaskSize * getScrollProgress();
+            stickyMask.current.style.webkitMaskSize = (initialMaskSize + maskSizeProgress) * 150 + '%';
+            requestAnimationFrame(animate);
+        }
     };
 
     const getScrollProgress = () => {
-        const scrollProgress = stickyMask.current.offsetTop / (container.current.getBoundingClientRect().height - window.innerHeight);
-        const delta = scrollProgress - easedScrollProgress;
-        easedScrollProgress += delta * easing;
-        return easedScrollProgress;
+        if (stickyMask.current && stickyMask.current.offsetTop) {
+            const scrollProgress = stickyMask.current.offsetTop / (container.current.getBoundingClientRect().height - window.innerHeight);
+            const delta = scrollProgress - easedScrollProgress;
+            easedScrollProgress += delta * easing;
+            return easedScrollProgress;
+        }
     };
 
     return (

@@ -8,16 +8,13 @@ import Wrapper from './Wrapper';
 import useDebounce from './hooks/useDebounced';
 import findContentAndLink from './utils/search';
 
-import Link from 'next/link';
-import Tippy from '@tippyjs/react';
-
 function index() {
     const [rs, setRs] = useState([]);
 
     const [searchValue, setSearchValue] = useState('');
     const [visible, setVisible] = useState(false);
 
-    const debounced = useDebounce(searchValue, 500);
+    const debounced = useDebounce(searchValue, 1000);
 
     useEffect(() => {
         const results = findContentAndLink(debounced.trim());

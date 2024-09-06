@@ -7,10 +7,9 @@ export default function Index({ results }) {
     return (
         <ul className={styles.wrapper}>
             {results.map((item) => {
-                let id = useId();
                 return (
                     <li>
-                        <Link href={item.link} key={id}>
+                        <Link href={item.link} key={item.link}>
                             {item.content}
                         </Link>
                     </li>

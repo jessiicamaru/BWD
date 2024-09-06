@@ -2,6 +2,7 @@ import 'dotenv/config';
 
 import { actions } from '@/store/chatbotStore';
 import { v4 as uuidv4 } from 'uuid';
+import style from '../style.module.css';
 
 const API_KEY = process.env.NEXT_PUBLIC_CHATBOT_API_KEY;
 const API_URL = process.env.NEXT_PUBLIC_CHATBOT_API_URI;
@@ -14,7 +15,7 @@ function formatTextWithLinksAndNewLines(text) {
 
     formattedText = formattedText.replace(/\[.*?\]\(/g, '');
 
-    let paragraphs = formattedText.split('\n\n').map((paragraph) => `<p>${paragraph.trim()}</p>`);
+    let paragraphs = formattedText.split('\n\n').map((paragraph) => `<p class=${style.content}>${paragraph.trim()}</p>`);
 
     return paragraphs.join('');
 }
